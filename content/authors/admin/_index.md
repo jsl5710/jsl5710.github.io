@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Data Science & AI
+title: Jason Lucas
 
 # Name pronunciation (optional)
 #name_pronunciation: Chien Shiung Wu
@@ -29,11 +29,13 @@ bio: My research interests include low-resource multilingual NLP, linguistics, a
 
 # Interests to show in About widget
 interests:
+  - AI for Cybersecurity
   - Natural Language Processing
   - Adversarial Machine Learning
   - Adaptative and Alignment Tuning
   - Low-Resource Multilingual NLP
   - Fake News Generation/Detection
+  - Human-AI Lanaguage Technology 
 
 # Education to show in About widget
 education:
