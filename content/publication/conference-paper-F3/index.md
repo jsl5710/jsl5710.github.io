@@ -1,5 +1,5 @@
 ---
-title: 'An example conference paper'
+title: 'Fighting Fire with Fire: The Dual Role of LLMs in Crafting and Detecting Elusive Disinformation'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -36,7 +36,7 @@ abstract:  Recent ubiquity and disruptive impacts of large language models (LLMs
 
 
 # Summary. An optional shortened abstract.
-summary: Fighting Fire With Fire, F3, is a collaboration with Penn State and MIT Lincoln. Our study demonstrates the dual capacity of LLMs for offensive misuse and defense detection against disinformation without requiring additional training.
+summary: This research project is a collaboration with Penn State and MIT Lincoln Lab. Our study demonstrates the dual capacity of LLMs for offensive misuse and defense detection against disinformation without requiring additional training.
 
 tags: []
 
