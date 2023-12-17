@@ -9,7 +9,7 @@ date: '2023-04-27T00:00:00Z'
 external_link: ''
 
 image:
-  caption: Photo by rawpixel on Unsplash
+  caption: Photo by DALL-E 3
   focal_point: Smart
 
 links:
