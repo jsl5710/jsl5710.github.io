@@ -29,13 +29,11 @@ bio: My research interests include low-resource multilingual NLP, linguistics, a
 
 # Interests to show in About widget
 interests:
-  - AI for Cybersecurity
   - Natural Language Processing
+  - Low-Resource Multilingual NLP
   - Adversarial Machine Learning
   - Adaptative and Alignment Tuning
-  - Low-Resource Multilingual NLP
   - Fake News Generation/Detection
-  - Human-AI Lanaguage Technology 
 
 # Education to show in About widget
 education:
