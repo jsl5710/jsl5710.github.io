@@ -1,5 +1,5 @@
 ---
-title: [F3] Fighting Fire With Fire
+title: Fighting Fire With Fire
 summary: An example of using the in-built project page.
 tags:
   - Deep Learning
