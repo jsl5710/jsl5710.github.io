@@ -17,7 +17,7 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2023-05-12T00:00:00Z'
+date: '2023-12-05T00:00:00Z'
 doi: '10.18653/v1/2023.emnlp-main.883'
 
 # Schedule page publish date (NOT publication's date).
@@ -54,7 +54,7 @@ url_dataset: 'https://github.com/mickeymst/F3'
 url_poster: ''
 url_project: ''
 url_slides: 'https://drive.google.com/drive/mobile/folders/1BZqJ7RHNXCVJNnZKkgbj4GZavYe2kc4r?usp=sharing'
-url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_source: 'https://pike.psu.edu/publications/emnlp23-f3.pdf'
 url_video: 'https://underline.io/events/431/sessions/16376/lecture/88747-fighting-fire-with-fire-the-dual-role-of-llms-in-crafting-and-detecting-elusive-disinformation'
 
 # Featured image
