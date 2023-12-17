@@ -6,18 +6,22 @@ title: 'An example conference paper'
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
-  - Robert Ford
+  - Adaku Uchendu
+  - Michiharu Yamashita
+  - Jooyoung Lee
+  - Shaurya Rohatgi
+  - Dongwon Lee
 
 # Author notes (optional)
-author_notes:
-  - 'Equal contribution'
-  - 'Equal contribution'
+# author_notes:
+#   - 'Equal contribution'
+#   - 'Equal contribution'
 
-date: '2013-07-01T00:00:00Z'
-doi: ''
+date: '2023-05-12T00:00:00Z'
+doi: '10.18653/v1/2023.emnlp-main.883'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2017-01-01T00:00:00Z'
+# publishDate: '2017-01-01T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -25,13 +29,14 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Hugo Blox Builder Conference*
-publication_short: In *ICW*
+publication: In *Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing*
+publication_short: In *EMNLP*
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract:  Recent ubiquity and disruptive impacts of large language models (LLMs) have raised concerns about their potential to be misused (*.i.e, generating large-scale harmful and misleading content*). To combat this emerging risk of LLMs, we propose a novel “***Fighting Fire with Fire***” (F3) strategy that harnesses modern LLMs’ generative and emergent reasoning capabilities to counter human-written and LLM-generated disinformation. First, we leverage GPT-3.5-turbo to synthesize authentic and deceptive LLM-generated content through paraphrase-based and perturbation-based prefix-style prompts, respectively. Second, we apply zero-shot in-context semantic reasoning techniques with cloze-style prompts to discern genuine from deceptive posts and news articles. In our extensive experiments, we observe GPT-3.5-turbo’s zero-shot superiority for both in-distribution and out-of-distribution datasets, where GPT-3.5-turbo consistently achieved accuracy at 68-72%, unlike the decline observed in previous customized and fine-tuned disinformation detectors. Our codebase and dataset are available at https://github.com/mickeymst/F3.
+
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: Fighting Fire With Fire, F3, is a collaboration with Penn State and MIT Lincoln. Our study demonstrates the dual capacity of LLMs for offensive misuse and defense detection against disinformation without requiring additional training.
 
 tags: []
 
@@ -43,19 +48,19 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_pdf: 'https://aclanthology.org/2023.emnlp-main.883.pdf'
+url_code: 'https://github.com/mickeymst/F3'
+url_dataset: 'https://github.com/mickeymst/F3'
 url_poster: ''
 url_project: ''
-url_slides: ''
+url_slides: 'https://drive.google.com/drive/mobile/folders/1BZqJ7RHNXCVJNnZKkgbj4GZavYe2kc4r?usp=sharing'
 url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_video: 'https://youtube.com'
+url_video: 'https://underline.io/events/431/sessions/16376/lecture/88747-fighting-fire-with-fire-the-dual-role-of-llms-in-crafting-and-detecting-elusive-disinformation'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: 'Image credit: DALLE-2 [**Michiharu**](https://mickeymst.github.io/)'
   focal_point: ''
   preview_only: false
 
