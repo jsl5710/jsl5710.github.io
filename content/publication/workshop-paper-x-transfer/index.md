@@ -57,7 +57,7 @@ url_video: 'https://underline.io/lecture/51553-detecting-false-claims-in-low-res
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: 'Image credit: Jason Lucas'
   focal_point: ''
   preview_only: false
 
