@@ -6,18 +6,20 @@ title: 'An example conference paper'
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
-  - Robert Ford
+  - Limeng Cui
+  - Thai Lee
+  - Dongwon Lee
 
 # Author notes (optional)
-author_notes:
-  - 'Equal contribution'
-  - 'Equal contribution'
+# author_notes:
+#   - 'Equal contribution'
+#   - 'Equal contribution'
 
 date: '2013-07-01T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2017-01-01T00:00:00Z'
+publishDate: '2022-05-01T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -25,13 +27,13 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Hugo Blox Builder Conference*
-publication_short: In *ICW*
+publication: In *Association for Computational Linguistics* Proceedings of the Workshop on Combating Online Hostile Posts in Regional Languages during Emergency Situations, 2022 Dublin, Ireland.
+publication_short: In *ACL* 
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: The COVID-19 pandemic has created threats to global health control. Misinformation circulated on social media and news outlets has undermined public trust towards Government and health agencies. This problem is further exacerbated in developing countries or low-resource regions, where the news is not equipped with abundant English fact-checking information. In this paper, we make the first attempt to detect COVID-19 misinformation (in English, Spanish, and Haitian French) populated in the Caribbean regions, using the fact-checked claims in the US (in English). We started by collecting a dataset of Caribbean real & fake claims. Then we trained several classification and language models on COVID-19 in the high-resource language regions and transferred the knowledge to the Caribbean claim dataset. The experimental results of this paper reveal the limitations of current fake claim detection in low-resource regions and encourage further research on multi-lingual detection.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: This paper is the first attempt to detect COVID-19 misinformation (in English, Spanish, and Haitian French) populated in the Caribbean regions, using the fact-checked claims in the US (in English).
 
 tags: []
 
@@ -43,14 +45,14 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_poster: ''
+url_pdf: 'https://aclanthology.org/2022.constraint-1.11/'
+url_code: ''
+url_dataset: 'https://paperswithcode.com/dataset/coaid'
+url_poster: 'https://drive.google.com/file/d/1XpfKfGIw8NKWGSaorAWKC5Jb-asLkuH3/view?usp=sharing'
 url_project: ''
 url_slides: ''
-url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_video: 'https://youtube.com'
+url_source: 'https://pike.psu.edu/publications/acl22-w.pdf'
+url_video: 'https://underline.io/lecture/51553-detecting-false-claims-in-low-resource-regions-a-case-study-of-caribbean-islands'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
