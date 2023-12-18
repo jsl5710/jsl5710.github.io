@@ -1,5 +1,5 @@
 ---
-title: 'An example conference paper'
+title: 'Detecting False Claims in Low-Resource Regions: A Case Study of Caribbean Islands'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
