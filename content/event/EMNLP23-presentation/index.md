@@ -1,5 +1,5 @@
 ---
-title: Presented at the EMNLP '23 Main Conference
+title: Presented at the EMNLP '23 Main Conference Proceedings
 
 event: EMNLP '23 Conference
 event_url: https://2023.emnlp.org/program/accepted_main_conference/
