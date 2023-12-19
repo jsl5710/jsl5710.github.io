@@ -247,7 +247,7 @@ sections:
         postcode: '16801'
         country: United States
         country_code: US
-      directions: Enter Building and take the elevator or stairs to the 4th Floor
+      directions: Enter Building and take the elevator or stairs to the 4th Floor, locate College of IST.
       office_hours:
         - 'Monday 09:00 to 17:00'
         - 'Wednesday 09:00 to 17:00'
