@@ -235,11 +235,11 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        Please email
+        Book an appointment or contact me using the information below
       # Contact (add or remove contact options as necessary)
+      appointment_url: 'https://calendly.com/jasonsamlucas/meeting'
       email: jsl5710@psu.edu
       phone: 954 864 4494
-      appointment_url: 'https://calendly.com/jasonsamlucas/meeting'
       address:
         street: 123 S Burrowes St
         city: State College 
