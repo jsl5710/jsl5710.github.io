@@ -25,7 +25,7 @@ organizations:
     url: https://www.psu.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include low-resource multilingual NLP, linguistics, adversarial machine learning and fake news generation/detection.
+bio: 'My research interests include low-resource multilingual NLP, linguistics, adversarial machine learning and mis/disinformation generation/detection. My Ph.D. thesis is in the area of applying artificial intelligence for cybersecurity and social good, with a focus on low-resource multilingual natural language processing. More specifically, I develop NLP techniques to promote cybersecurity, combat mis/disinformation, and enable AI accessibility for non-English languages and underserved populations. This involves creating novel models and techniques for tasks like multilingual and crosslingual text classification, machine translation, text generation, and adversarial attacks in limited training data settings. My goal is to democratize state-of-the-art AI capabilities by extending them beyond high-resource languages like English into the long tail of lower-resourced languages worldwide. By innovating robust learning approaches from scarce linguistic data, this research aims to open promising directions where AI can have dual benefits strengthening security, integrity and social welfare across diverse global locales.'
 
 # Interests to show in About widget
 interests:
