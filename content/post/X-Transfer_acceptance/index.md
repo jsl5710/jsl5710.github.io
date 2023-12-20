@@ -4,7 +4,7 @@ date: '2022-05-25'
 summary: EMNLP'23 Conference Workshop Paper Accepted. [Detecting False Claims in Low-Resource Regions - A Case Study of Caribbean Islands](https://aclanthology.org/events/acl-2022/)
 ---
 
-My research was accepted in the 2022 ACL Proceedings of the Workshop on Combating Online Hostile Posts in Regional Languages during Emergency Situations. This research is titled, [Detecting False Claims in Low-Resource Regions - A Case Study of Caribbean Islands](https://aclanthology.org/events/acl-2022/). This work is a collaboration with Penn State and [KiNiT](https://kinit.sk/). Coauthor includes -  Limeng Cui, Thai Le & Dongwon Lee
+X-Transfer research paper was accepted in the 2022 ACL Proceedings of the Workshop on Combating Online Hostile Posts in Regional Languages during Emergency Situations. This research is titled, [Detecting False Claims in Low-Resource Regions - A Case Study of Caribbean Islands](https://aclanthology.org/events/acl-2022/). This work is a collaboration with Penn State and [KiNiT](https://kinit.sk/). Coauthor includes -  Limeng Cui, Thai Le & Dongwon Lee
 
 <!-- ```python
 from IPython.core.display import Image
