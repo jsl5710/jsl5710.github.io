@@ -19,12 +19,12 @@ main:
   # - name: Projects
   #   url: '#projects'
   #   weight: 30
-  - name: Gallery
-    url: '#Gallery'
-    weight: 60
-  - name: Contact
+  # - name: Gallery
+  #   url: '#Gallery'
+  #   weight: 60
+  # - name: Contact
     url: '#contact'
-    weight: 70
+    weight: 50
 
 
 
