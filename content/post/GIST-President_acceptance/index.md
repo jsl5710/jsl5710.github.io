@@ -1,7 +1,7 @@
 ---
 title: Appointed 2022-23 President of GIST
 date: '2022-08-01' 
-summary: Accepted [Graduate Student association in the College of Information Science and Technology ](https://sites.psu.edu/istgrad/) President Appointment.
+summary: Accepted [Graduate Student association in the College of Information Science and Technology's](https://sites.psu.edu/istgrad/) Presidential Appointment.
 ---
 
 The [Graduate Student association in the College of Information Science and Technology ](https://sites.psu.edu/istgrad/) (GIST) President is a prominent leadership role for a Ph.D./Masters student within Penn State's College of Information Science and Technology. The GIST serves as the official representative body for over 500 graduate students in the College, covering diverse programs.  
