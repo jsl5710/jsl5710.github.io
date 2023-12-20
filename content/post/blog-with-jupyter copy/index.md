@@ -7,9 +7,8 @@ summary: My paper was accepted in the 2023 EMNLP. This research is titled, [Figh
 
 ```python
 from IPython.core.display import Image
-Image('https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png')
+Image('https://cdn.masto.host/sigmoidsocial/accounts/avatars/109/609/147/148/496/503/original/a0fa63dce5cb1c3a.png')
 ```
 
-    
 ![png](output_1_0.png)
     
