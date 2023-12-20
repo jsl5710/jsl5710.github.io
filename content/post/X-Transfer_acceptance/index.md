@@ -1,10 +1,10 @@
 ---
-title: MULTITuDE Coauthor Paper Accepted at the 2023 EMNLP Main Conference
-date: '2023-11-16' 
-summary: EMNLP'23 Main Conference Paper Accepted. [MULTITuDE - Large-Scale Multilingual Machine-Generated Text Detection Benchmark](https://2023.emnlp.org/program/accepted_main_conference/).
+title: Workshop Paper Accepted at the 2023 ACL CONSTRAINT
+date: '2022-05-25' 
+summary: EMNLP'23 Conference Workshop Paper Accepted. [Detecting False Claims in Low-Resource Regions - A Case Study of Caribbean Islands](https://aclanthology.org/events/acl-2022/)
 ---
 
-My external collaborative research was accepted in the 2023 EMNLP. This research is titled, [MULTITuDE - Large-Scale Multilingual Machine-Generated Text Detection Benchmark](https://2023.emnlp.org/program/accepted_main_conference/). This work is a collaboration with Penn State and [KiNiT](https://kinit.sk/). Coauthor includes - Dominik Macko, Robert Moro, Adaku Uchendu, Michiharu Yamashita, Matúš Pikuliak, Ivan Srba, Thai Le, Dongwon Lee, Jakub Simko, Maria Bielikova
+My research was accepted in the 2022 ACL Proceedings of the Workshop on Combating Online Hostile Posts in Regional Languages during Emergency Situations. This research is titled, [Detecting False Claims in Low-Resource Regions - A Case Study of Caribbean Islands](https://aclanthology.org/events/acl-2022/). This work is a collaboration with Penn State and [KiNiT](https://kinit.sk/). Coauthor includes -  Limeng Cui, Thai Le & Dongwon Lee
 
 <!-- ```python
 from IPython.core.display import Image

@@ -4,7 +4,7 @@ date: '2023-11-16'
 summary: EMNLP'23 Main Conference Paper Accepted. [MULTITuDE - Large-Scale Multilingual Machine-Generated Text Detection Benchmark](https://2023.emnlp.org/program/accepted_main_conference/).
 ---
 
-My external collaborative research was accepted in the 2023 EMNLP. This research is titled, [MULTITuDE - Large-Scale Multilingual Machine-Generated Text Detection Benchmark](https://2023.emnlp.org/program/accepted_main_conference/). This work is a collaboration with Penn State and [KiNiT](https://kinit.sk/). Coauthor includes - Dominik Macko, Robert Moro, Adaku Uchendu, Michiharu Yamashita, Matúš Pikuliak, Ivan Srba, Thai Le, Dongwon Lee, Jakub Simko, Maria Bielikova
+My external collaborative research was accepted in the 2023 EMNLP. This research is titled, [MULTITuDE - Large-Scale Multilingual Machine-Generated Text Detection Benchmark](https://2023.emnlp.org/program/accepted_main_conference/). This work is a collaboration with Penn State and [KiNiT](https://kinit.sk/). Coauthor includes - Dominik Macko, Robert Moro, Adaku Uchendu, Michiharu Yamashita, Matúš Pikuliak, Ivan Srba, Thai Le, Dongwon Lee, Jakub Simko & Maria Bielikova
 
 <!-- ```python
 from IPython.core.display import Image
