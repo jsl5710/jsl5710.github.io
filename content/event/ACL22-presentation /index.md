@@ -1,38 +1,38 @@
 ---
-title: Presented at the EMNLP '23 Main Conference Proceedings
+title: Presented at the ACL '22 Workshop Conference Proceedings
 
-event: EMNLP '23 Conference
-event_url: https://2023.emnlp.org/program/accepted_main_conference/
+event: ACL '22 Conference
+event_url: https://aclanthology.org/events/acl-2022/
 
-location: Resorts World Convention Centre
+location:  The Convention Centre Dublin
 address:
   street: 8 Sentosa Gateway
-  city: Singapore 
-  region: Asia
-  postcode: '098269'
-  country: Singapore
+  city: Dublin 
+  region: Europe
+  postcode: ''
+  country: Ireland
 
-summary: Michiharu Yamashita and I co-present our latest research, Titled, Fighting Fire With Fire - The Dual Role of Large Language Models in Crafting and Detecting Elusive Disinformation.  This is a collaboration with Penn State and MIT Lincoln. Our study demonstrates the dual capacity of LLMs for offensive misuse and defense detection against disinformation without requiring additional training.
+summary: I present my latest research, Titled, Detecting False Claims in Low-Resource Regions - A Case Study of Caribbean Islands. Our study democratize the challenges in transferling and applying Anglo-centric models in low-resource settings, evening with human writen or machine translated english training data.
 
-abstract: 'Recent ubiquity and disruptive impacts of large language models (LLMs) have raised concerns about their potential to be misused (*.i.e, generating large-scale harmful and misleading content*). To combat this emerging risk of LLMs, we propose a novel “***Fighting Fire with Fire***” (F3) strategy that harnesses modern LLMs’ generative and emergent reasoning capabilities to counter human-written and LLM-generated disinformation. First, we leverage GPT-3.5-turbo to synthesize authentic and deceptive LLM-generated content through paraphrase-based and perturbation-based prefix-style prompts, respectively. Second, we apply zero-shot in-context semantic reasoning techniques with cloze-style prompts to discern genuine from deceptive posts and news articles. In our extensive experiments, we observe GPT-3.5-turbo’s zero-shot superiority for both in-distribution and out-of-distribution datasets, where GPT-3.5-turbo consistently achieved accuracy at 68-72%, unlike the decline observed in previous customized and fine-tuned disinformation detectors. Our codebase and dataset are available at https://github.com/mickeymst/F3.'
+abstract: 'The COVID-19 pandemic has created threats to global health control. Misinformation circulated on social media and news outlets has undermined public trust towards Government and health agencies. This problem is further exacerbated in developing countries or low-resource regions, where the news is not equipped with abundant English fact-checking information. In this paper, we make the first attempt to detect COVID-19 misinformation (in English, Spanish, and Haitian French) populated in the Caribbean regions, using the fact-checked claims in the US (in English). We started by collecting a dataset of Caribbean real & fake claims. Then we trained several classification and language models on COVID-19 in the high-resource language regions and transferred the knowledge to the Caribbean claim dataset. The experimental results of this paper reveal the limitations of current fake claim detection in low-resource regions and encourage further research on multi-lingual detection.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2023-12-09T09:00:00Z'
-date_end: '2023-12-09T09:20:00Z'
+date: '2022-05-29T010:00:00Z'
+date_end: '2022-05-09T29:10:30Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2023-12-05T00:00:00Z'
+publishDate: '2022-05-05T00:00:00Z'
 
-authors: [admin, Michiharu Yamashita]
+authors: [admin]
 tags: []
 
 # Is this a featured talk? (true/false)
 featured: true
 
 image:
-  caption: 'Image credit: Jason Lucas'
+  caption: 'Image credit: Limeng Cui'
   focal_point: Right
 
 links:
@@ -41,9 +41,9 @@ links:
     name: Follow
     url: https://twitter.com/jasonslucas1
 url_code: ''
-url_pdf: 'https://pike.psu.edu/publications/emnlp23-f3.pdf'
-url_slides: 'https://drive.google.com/drive/mobile/folders/1BZqJ7RHNXCVJNnZKkgbj4GZavYe2kc4r?usp=sharing'
-url_video: 'https://underline.io/events/431/sessions/16376/lecture/88747-fighting-fire-with-fire-the-dual-role-of-llms-in-crafting-and-detecting-elusive-disinformation'
+url_pdf: ''
+url_slides: ''
+url_video: ''
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
