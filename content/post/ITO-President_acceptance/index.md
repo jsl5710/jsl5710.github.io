@@ -1,6 +1,6 @@
 ---
 title: Appointed 2023-24 PAN-African Professional Alliance IT Officer 
-date: '2022-08-01' 
+date: '2023-08-01' 
 summary: Accepted [PAN-African Professional Alliances](https://panapapsu.org/executive-board/) IT Officer Executive 
  Board Appointment.
 ---
