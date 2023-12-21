@@ -18,12 +18,12 @@ abstract: 'The COVID-19 pandemic has created threats to global health control. M
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2022-05-29T010:00:00Z'
-date_end: '2022-05-09T29:10:30Z'
+date: '2022-05-09T09:00:00Z'
+date_end: '2023-05-09T09:20:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2022-05-05T00:00:00Z'
+publishDate: '2023-05-09T09:20:00Z'
 
 authors: [admin]
 tags: []
