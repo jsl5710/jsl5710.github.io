@@ -1,5 +1,5 @@
 ---
-title: Appointed 2022-23 President of GIST
+title: Appointed 2022-23 GIST President
 date: '2022-08-01' 
 summary: Accepted [Graduate Student association in the College of Information Science and Technology's](https://sites.psu.edu/istgrad/) President Executive Board Appointment.
 ---
