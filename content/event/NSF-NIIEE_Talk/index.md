@@ -4,26 +4,26 @@ title: Presented at the Penn State Research in Action
 event: 6th Pan-APA Conference '22
 event_url: https://aclanthology.org/events/acl-2022/
 
-location:  The Convention Centre Dublin
+location:  Penn State University
 address:
-  street: 8 Sentosa Gateway
-  city: Dublin 
-  region: Europe
-  postcode: ''
-  country: Ireland
+  street: 201 Old Main
+  city: University Park
+  region: North America
+  postcode: '16802'
+  country: United States
 
-summary: I present my latest research, Titled, Detecting False Claims in Low-Resource Regions - A Case Study of Caribbean Islands. Our study democratize the challenges in transferling and applying Anglo-centric models in low-resource settings, evening with human writen or machine translated english training data.
+summary: 'This presentation at the "Research in Action" alumni program was delivered alongside Dr. Carol Miller and Suhas Nagaraj and focused on leveraging AI in speech and language therapy for children. It addressed the significant challenges in providing quality speech and language (S&L) services to children with various disorders. The team discussed the potential of AI technologies, like multimodal learning and federated learning, to enhance the availability and effectiveness of these services. They also highlighted the importance of responsible data use, considering privacy and ethical concerns, especially in the context of children's speech data.'
 
-abstract: 'The COVID-19 pandemic has created threats to global health control. Misinformation circulated on social media and news outlets has undermined public trust towards Government and health agencies. This problem is further exacerbated in developing countries or low-resource regions, where the news is not equipped with abundant English fact-checking information. In this paper, we make the first attempt to detect COVID-19 misinformation (in English, Spanish, and Haitian French) populated in the Caribbean regions, using the fact-checked claims in the US (in English). We started by collecting a dataset of Caribbean real & fake claims. Then we trained several classification and language models on COVID-19 in the high-resource language regions and transferred the knowledge to the Caribbean claim dataset. The experimental results of this paper reveal the limitations of current fake claim detection in low-resource regions and encourage further research on multi-lingual detection.'
+abstract: 'Discover the groundbreaking insights from Jason Lucas, Dr. Carol Miller, and Suhas Nagaraj at the 'Research in Action' alumni program. Their presentation explored the transformative role of AI in advancing speech and language therapy for children. Delving into challenges such as data scarcity and privacy concerns, the team showcased how AI, through multimodal learning and federated learning, can significantly improve the reach and quality of therapy services. This work represents a significant stride in ethical and effective use of AI for enhancing children's lives.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2022-05-09T09:00:00Z'
-date_end: '2023-05-09T09:20:00Z'
+date: '2023-09-09T09:00:00Z'
+date_end: '2023-09-09T10:30:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2023-05-09T09:20:00Z'
+publishDate: '2023-08-09T09:00:00Z'
 
 authors: [admin]
 tags: []
