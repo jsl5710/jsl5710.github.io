@@ -9,7 +9,7 @@ address:
   street: 201 Old Main
   city: University Park
   region: North America
-  postcode: '16802'
+  postcode: ''
   country: United States
 
 summary: I present my latest research, Titled, Detecting False Claims in Low-Resource Regions - A Case Study of Caribbean Islands. Our study democratize the challenges in transferling and applying Anglo-centric models in low-resource settings, evening with human writen or machine translated english training data.
