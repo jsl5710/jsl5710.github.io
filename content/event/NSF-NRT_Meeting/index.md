@@ -18,8 +18,8 @@ abstract: Discover the groundbreaking insights from Jason Lucas, Dr. Carol Mille
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2023-09-09T09:00:00Z'
-date_end: '2023-09-09T10:00:00Z'
+date: '2023-10-30T09:00:00Z'
+date_end: '2023-10-30T10:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
