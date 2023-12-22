@@ -9,7 +9,7 @@ address:
   street: 
   city: University Park
   region: Americas
-  postcode: ''
+  postcode: '16803'
   country: United States
 
 summary: 'This presentation at the "Research in Action" alumni program was delivered alongside Dr. Carol Miller and Suhas Nagaraj and focused on leveraging AI in speech and language therapy for children. It addressed the significant challenges in providing quality speech and language (S&L) services to children with various disorders. The team discussed the potential of AI technologies, like multimodal learning and federated learning, to enhance the availability and effectiveness of these services. They also highlighted the importance of responsible data use, considering privacy and ethical concerns, especially in the context of children's speech data.'
