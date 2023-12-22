@@ -2,7 +2,7 @@
 title: F3 Project
 summary: Fighting Fire With Fire.
 tags:
-  - f3
+  - Deep Learning
 date: '2023-04-27T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
