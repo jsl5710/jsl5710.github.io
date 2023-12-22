@@ -8,7 +8,7 @@ location:  Penn State University
 address:
   street: 
   city: University Park
-  region: Americas
+  region: Pennsylvania
   postcode: ''
   country: United States
 

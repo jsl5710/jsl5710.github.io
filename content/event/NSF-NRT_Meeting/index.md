@@ -1,14 +1,14 @@
 ---
-title: Presented at the Penn State Research in Action
+title: Presented a poster at NRT Annual Meeting Arizona '23
 
-event: 6th Pan-APA Conference '22
+event: NRT Annual Meeting '23
 event_url: https://aclanthology.org/events/acl-2022/
 
-location:  Penn State University
+location:  Arizona State University
 address:
-  street: 201 Old Main
-  city: University Park
-  region: North America
+  street: 1151 S Forest Ave
+  city: Tempe
+  region: Arizona
   postcode: ''
   country: United States
 

@@ -8,7 +8,7 @@ location:  Penn State University
 address:
   street: 201 Old Main
   city: University Park
-  region: North America
+  region: Pennsylvania
   postcode: ''
   country: United States
 
