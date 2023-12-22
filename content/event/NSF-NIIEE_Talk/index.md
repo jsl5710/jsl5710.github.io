@@ -6,9 +6,9 @@ event_url: https://aclanthology.org/events/acl-2022/
 
 location:  Penn State University
 address:
-  street: 
+  street: Old Man
   city: University Park
-  region: Americas
+  region: North America
   postcode: '16803'
   country: United States
 
