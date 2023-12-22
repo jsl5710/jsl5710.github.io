@@ -1,7 +1,7 @@
 ---
-title: Presented at the ACL '22 Workshop Conference Proceedings
+title: Presented at the Penn State Research in Action
 
-event: ACL '22 Conference
+event: 6th Pan-APA Conference '22
 event_url: https://aclanthology.org/events/acl-2022/
 
 location:  The Convention Centre Dublin
