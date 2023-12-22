@@ -23,7 +23,7 @@ date_end: '2023-09-09T10:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2023-05-09T09:20:00Z'
+publishDate: '2023-09-09T09:00:00Z'
 
 authors: [admin]
 tags: []
