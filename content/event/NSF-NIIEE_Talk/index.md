@@ -1,5 +1,5 @@
 ---
-title: Presented at the 6th Pan African Proffessional Alliance Conference Proceedings
+title: Presented at the Penn State Research in Action
 
 event: 6th Pan-APA Conference '22
 event_url: https://aclanthology.org/events/acl-2022/
