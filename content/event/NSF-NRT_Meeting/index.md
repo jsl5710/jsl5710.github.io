@@ -12,9 +12,9 @@ address:
   postcode: ''
   country: United States
 
-summary: This presentation at the "Research in Action" alumni program was delivered alongside Dr. Carol Miller and Suhas Nagaraj and focused on leveraging AI in speech and language therapy for children. It addressed the significant challenges in providing quality speech and language (S&L) services to children with various disorders. The team discussed the potential of AI technologies, like multimodal learning and federated learning, to enhance the availability and effectiveness of these services. They also highlighted the importance of responsible data use, considering privacy and ethical concerns, especially in the context of children's speech data.
+summary: I co-presented with Cristal Giorio Jackson at the 2023 NSF NRT Annual Meeting in Arizona State University. This NSF-funded research examines whether mismatching native accent variants impacts language processing for native listeners. An EEG experiment found successful semantic access occurred when listeners heard matched native variants, but unsuccessful semantic mapping when hearing unfamiliar, less intelligible variants. This suggests processing costs when speech doesn't match a native variant. The project integrates psychology, linguistics and AI to explore improving automatic speech recognition and language ID for regional/non-native accents. Techniques like leveraging EEG biomarkers and combining acoustic models with character language models may enhance accent robustness.
 
-abstract: Discover the groundbreaking insights from Jason Lucas, Dr. Carol Miller, and Suhas Nagaraj at the 'Research in Action' alumni program. Their presentation explored the transformative role of AI in advancing speech and language therapy for children. Delving into challenges such as data scarcity and privacy concerns, the team showcased how AI, through multimodal learning and federated learning, can significantly improve the reach and quality of therapy services. This work represents a significant stride in ethical and effective use of AI for enhancing children's lives.
+abstract: At the 2023 NSF NRT Annual Meeting, I presented a poster on native language processing impacts on human language technology. My collaborators and I used EEG to evaluate neural processing differences when native Spanish listeners hear matched versus mismatched native accent variants. We found evidence that unfamiliar variants incur cognitive costs. As language ID and speech recognition systems currently struggle with non-native speech, I'm integrating psychological and computational linguistics techniques to explore improvements. This project synthesizes varied disciplines - from psycholinguistics to natural language processing - to address inclusion gaps in speech technology across accent variants. Enhancing system robustness to diverse forms of speech is essential as virtual assistants and other AI applications continue permeating everyday life.
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -41,7 +41,7 @@ links:
     name: Follow
     url: https://twitter.com/jasonslucas1
 url_code: ''
-url_pdf: ''
+url_pdf: 'https://drive.google.com/file/d/1Dq2tkf2MRETlPgjfAu6feHwAtZ31sS1r/view?usp=sharing'
 url_slides: ''
 url_video: ''
 
