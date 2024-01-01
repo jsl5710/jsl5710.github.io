@@ -4,8 +4,8 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Jason S. Lucas # Website name
-#baseURL: 'https://www.jasonslucas.com/' # Website URL
-URL: 'https://jsl5710.github.io/'
+baseURL: 'https://www.jasonslucas.com/' # Website URL
+#URL: 'https://jsl5710.github.io/'
 
 ############################
 ## LANGUAGE
