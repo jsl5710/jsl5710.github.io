@@ -1,16 +1,16 @@
 ---
-title: St. George's Unioversity Invited Talk on Artifical Intelligence and Latest AI Research
+title: Lightening Talk for the CRA-WP Grad Cohort Workshop for IDEALS
 
-event: St. Georg's University, Department of Computers and Technology Invited Talk
-event_url: https://2023.emnlp.org/program/accepted_main_conference/
+event: Computing Research Association (CRA) CRA-WP Grad Cohort Workshop Lightening Talk
+event_url: https://cra.org/cra-wp/grad-cohort-ideals/
 
-location: Online Presentation
+location: Minneapolis, MN
 address:
-  street: True Blue
-  city: St. George's 
-  region: Caribbean
-  postcode: 'WI'
-  country: Grenada
+  street: 1001 Marquette Avenue South
+  region: Minneapolis
+  city: Minnesota
+  postcode: 55403-2440
+  country: United States
 
 summary: This paper examines the challenge of detecting false claims related to COVID-19 circulating online in Caribbean countries. The Caribbean's linguistic diversity and scarcity of fact-checking pose difficulties for AI models trained on English data. Experiments found classical machine learning approaches struggle to identify Caribbean false claims. More sophisticated techniques like transfer learning with multilingual models showed promise. But all models suffered reduced performance on non-English content. The paper concludes AI solutions developed for high-resource settings have limited portability to low-resource regions facing endemic barriers around data, language, and misinformation ecosystems.
 
@@ -60,7 +60,7 @@ slides: ""
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects:
-  - f3
+  - x-transfer
 ---
 
 {{% callout note %}}
