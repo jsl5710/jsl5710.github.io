@@ -1,5 +1,5 @@
 ---
-title: '[MULTITuDE: Large-Scale Multilingual Machine-Generated Text Detection Benchmark](../conference-paper-MULTITUDE)'
+title: 'Authorship Obfuscation in Multilingual Machine-Generated Text Detection'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -34,7 +34,7 @@ publication_types: ["article"] # for journal article use ["article-journal"] and
 
 # Publication name and optional abbreviated publication name.
 publication: In *Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing*
-publication_short: In *EMNLP*
+publication_short: ar*Xiv*
 
 abstract:  High-quality text generation capability of latest Large Language Models (LLMs) causes concerns about their misuse (e.g., in massive generation/spread of disinformation). Machine-generated text (MGT) detection is important to cope with such threats. However, it is susceptible to authorship obfuscation (AO) methods, such as paraphrasing, which can cause MGTs to evade detection. So far, this was evaluated only in monolingual settings. Thus, the susceptibility of recently proposed multilingual detectors is still unknown. We fill this gap by comprehensively benchmarking the performance of 10 well-known AO methods, attacking 37 MGT detection methods against MGTs in 11 languages (i.e., 10 × 37 × 11 = 4,070 combinations). We also evaluate the effect of data augmentation on adversarial robustness using obfuscated texts. The results indicate that all tested AO methods can cause detection evasion in all tested languages, where homoglyph attacks are especially successful.
 
