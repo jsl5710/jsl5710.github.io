@@ -1,5 +1,5 @@
 ---
-title: St. George's Unioversity Invited Talk on Artifical Intelligence and Latest AI Research
+title: St. George's University Invited Talk on Artifical Intelligence and Latest AI Research
 
 event: St. Georg's University, Department of Computers and Technology Invited Talk
 event_url: https://2023.emnlp.org/program/accepted_main_conference/
