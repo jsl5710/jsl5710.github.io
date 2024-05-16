@@ -65,7 +65,6 @@ slides: ""
 #   Otherwise, set `projects = []`.
 projects:
   - f3
-  - x-transfer
 ---
 
 {{% callout note %}}
