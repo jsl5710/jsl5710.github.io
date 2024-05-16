@@ -1,7 +1,7 @@
 ---
 title: Cohere For AI Invited Talk
 
-event: Computing Research Association (CRA) CRA-WP Grad Cohort Workshop Lightening Talk
+event: Cohere For AI - Guest Speaker Jason S. Lucas, Ph.D Student
 event_url: https://cohere.com/events/c4ai-Lucas-Jason-2024
 
 location: Online Presentation
