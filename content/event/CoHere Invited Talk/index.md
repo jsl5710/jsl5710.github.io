@@ -1,31 +1,31 @@
 ---
 title: Cohere For AI Invited Talk
 
-event: Cohere For AI - Guest Speaker Jason S. Lucas, Ph.D Student
-event_url: https://cohere.com/events/c4ai-Lucas-Jason-2024
+event: Computing Research Association (CRA) CRA-WP Grad Cohort Workshop Lightening Talk
+event_url: https://cra.org/cra-wp/events/2024-grad-cohort-for-women-grad-cohort-for-ideals/
 
-location: Online Presentation
+location: Alohilani Resort Waikiki Beach, Honolulu, HI
 address:
   street: 
-  region: Pensylvania
-  city: University park
-  postcode: 16802-2440
+  region: Central Pacific
+  city: Honolulu
+  postcode: 96815-2440
   country: United States
 
-summary: In this talk we present research that tackles the misuse of large language models (LLMs) by introducing the Fighting Fire with Fire (F3) strategy, which uses GPT-3.5-turbo to generate and detect disinformation. By employing advanced techniques, we achieved a 68-72% accuracy in identifying deceptive content. We also address COVID-19 misinformation in low-resource regions, focusing on the Caribbean. Using US fact-checked claims, we trained models to detect misinformation in English, Spanish, and Haitian French. Our results highlight the limitations of current methods and the need for further multilingual research.
+summary: The widespread use and disruptive effects of large language models (LLMs) have led to concerns about their potential misuse, such as generating harmful and misleading content on a large scale. To address this risk, the authors propose a novel "Fighting Fire with Fire" (F3) strategy, which utilizes the generative and reasoning capabilities of modern LLMs to counter disinformation created by both humans and LLMs. 
 
 
 
-abstract: 
+abstract: 'Recent ubiquity and disruptive impacts of large language models (LLMs) have raised concerns about their potential to be misused (.i.e, generating large-scale harmful and misleading content). To combat this emerging risk of LLMs, we propose a novel “Fighting Fire with Fire” (F3) strategy that harnesses modern LLMs’ generative and emergent reasoning capabilities to counter human-written and LLM-generated disinformation. First, we leverage GPT-3.5-turbo to synthesize authentic and deceptive LLM-generated content through paraphrase-based and perturbation-based prefix-style prompts, respectively. Second, we apply zero-shot in-context semantic reasoning techniques with cloze-style prompts to discern genuine from deceptive posts and news articles. In our extensive experiments, we observe GPT-3.5-turbo’s zero-shot superiority for both in-distribution and out-of-distribution datasets, where GPT-3.5-turbo consistently achieved accuracy at 68-72%, unlike the decline observed in previous customized and fine-tuned disinformation detectors. Our codebase and dataset are available at https://github.com/mickeymst/F3.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2024-05-28T09:00:00Z'
-date_end: '2024-05-28T09:20:00Z'
+date: '2024-04-11T09:00:00Z'
+date_end: '2024-04-13T09:20:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2024-05-28T00:00:00Z'
+publishDate: '2024-04-11T00:00:00Z'
 
 authors: [admin]
 tags: []
