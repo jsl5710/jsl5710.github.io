@@ -4,7 +4,7 @@ title: Cohere For AI Invited Talk
 event: Cohere For AI - Guest Speaker Jason S. Lucas, Ph.D Student
 event_url: https://cohere.com/events/c4ai-Lucas-Jason-2024
 
-location: Online
+location: Online Presentation
 address:
   street: 
   region: Pensylvania
