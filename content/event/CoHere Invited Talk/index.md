@@ -2,17 +2,17 @@
 title: Cohere For AI Invited Talk
 
 event: Computing Research Association (CRA) CRA-WP Grad Cohort Workshop Lightening Talk
-event_url: https://cra.org/cra-wp/events/2024-grad-cohort-for-women-grad-cohort-for-ideals/
+event_url: https://cohere.com/events/c4ai-Lucas-Jason-2024
 
-location: Alohilani Resort Waikiki Beach, Honolulu, HI
+location: Online Presentation
 address:
   street: 
-  region: Central Pacific
-  city: Honolulu
-  postcode: 96815-2440
+  region: Pensylvania
+  city:  University Park
+  postcode: 16802-2440
   country: United States
 
-summary: The widespread use and disruptive effects of large language models (LLMs) have led to concerns about their potential misuse, such as generating harmful and misleading content on a large scale. To address this risk, the authors propose a novel "Fighting Fire with Fire" (F3) strategy, which utilizes the generative and reasoning capabilities of modern LLMs to counter disinformation created by both humans and LLMs. 
+summary: In this talk we present research that tackles the misuse of large language models (LLMs) by introducing the Fighting Fire with Fire (F3) strategy, which uses GPT-3.5-turbo to generate and detect disinformation. By employing advanced techniques, we achieved a 68-72% accuracy in identifying deceptive content. We also address COVID-19 misinformation in low-resource regions, focusing on the Caribbean. Using US fact-checked claims, we trained models to detect misinformation in English, Spanish, and Haitian French. Our results highlight the limitations of current methods and the need for further multilingual research. 
 
 
 
