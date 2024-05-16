@@ -12,15 +12,11 @@ address:
   postcode: 16802-2440
   country: United States
 
-summary: In this talk we present research that tackles the misuse of large language models (LLMs) by introducing the “Fighting Fire with Fire” (F3) strategy, which uses GPT-3.5-turbo to generate and detect disinformation. By employing advanced techniques, we achieved a 68-72% accuracy in identifying deceptive content. We also address COVID-19 misinformation in low-resource regions, focusing on the Caribbean. Using US fact-checked claims, we trained models to detect misinformation in English, Spanish, and Haitian French. Our results highlight the limitations of current methods and the need for further multilingual research.
+summary: In this talk we present research that tackles the misuse of large language models (LLMs) by introducing the Fighting Fire with Fire (F3) strategy, which uses GPT-3.5-turbo to generate and detect disinformation. By employing advanced techniques, we achieved a 68-72% accuracy in identifying deceptive content. We also address COVID-19 misinformation in low-resource regions, focusing on the Caribbean. Using US fact-checked claims, we trained models to detect misinformation in English, Spanish, and Haitian French. Our results highlight the limitations of current methods and the need for further multilingual research.
 
 
 
-abstract: In today's world, the rapid advancement and widespread use of large language models (LLMs) have brought about both opportunities and challenges. While these models have tremendous potential, they also pose risks, particularly in generating harmful and misleading content. Our research introduces an innovative "Fighting Fire with Fire" (F3) strategy to address this issue by leveraging the capabilities of modern LLMs.
-
-Our approach utilizes GPT-3.5-turbo to generate both authentic and deceptive content through advanced paraphrase and perturbation techniques. Furthermore, we apply zero-shot in-context semantic reasoning to differentiate genuine from deceptive posts and news articles. Our extensive experiments demonstrate that GPT-3.5-turbo achieves a superior accuracy of 68-72% in detecting disinformation, outperforming previous models. This research underscores the potential of using advanced AI to combat the very problems it may create.
-
-In another study, we address the spread of COVID-19 misinformation in low-resource regions, focusing on the Caribbean. Given the lack of abundant fact-checking resources in these areas, we transferred knowledge from fact-checked claims in the US to detect misinformation in English, Spanish, and Haitian French. Our findings highlight the challenges and limitations of current fake news detection methods in low-resource settings and emphasize the need for further research in multilingual detection.
+abstract: 
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
