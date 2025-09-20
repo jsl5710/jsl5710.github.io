@@ -135,29 +135,98 @@ skills:
         percent: 90
         icon: chart-bar
         icon_pack: fas
-  - name: Tools & Platforms
+  - name: Platforms & Tools
     items:
       - name: HuggingFace
         description: ''
         percent: 95
         icon: face-smile
         icon_pack: fas
+      - name: VSCode
+        description: ''
+        percent: 90
+        icon: code
+        icon_pack: fas
+      - name: Google Colab
+        description: ''
+        percent: 90
+        icon: google
+        icon_pack: fab
       - name: GitHub
         description: ''
         percent: 90
         icon: github
         icon_pack: fab
-      - name: Google Cloud
+      - name: Google Cloud Platform
         description: ''
         percent: 85
-        icon: google
-        icon_pack: fab
+        icon: cloud
+        icon_pack: fas
       - name: Azure
         description: ''
         percent: 80
         icon: microsoft
         icon_pack: fab
-  - name: Interests
+      - name: vLLM
+        description: ''
+        percent: 85
+        icon: server
+        icon_pack: fas
+      - name: AdapterHub
+        description: ''
+        percent: 80
+        icon: plug
+        icon_pack: fas
+  - name: Database & Analytics
+    items:
+      - name: Oracle
+        description: ''
+        percent: 85
+        icon: database
+        icon_pack: fas
+      - name: MSSQL
+        description: ''
+        percent: 85
+        icon: server
+        icon_pack: fas
+      - name: SAS
+        description: ''
+        percent: 80
+        icon: chart-simple
+        icon_pack: fas
+      - name: EpiInfo
+        description: ''
+        percent: 75
+        icon: stethoscope
+        icon_pack: fas
+      - name: GeoDa
+        description: ''
+        percent: 70
+        icon: map
+        icon_pack: fas
+  - name: Transferable Skills
+    items:
+      - name: Scientific Writing
+        description: ''
+        percent: 95
+        icon: pen-to-square
+        icon_pack: fas
+      - name: Grant Writing
+        description: ''
+        percent: 90
+        icon: file-contract
+        icon_pack: fas
+      - name: Project Management
+        description: ''
+        percent: 90
+        icon: tasks
+        icon_pack: fas
+      - name: Technical Training
+        description: ''
+        percent: 95
+        icon: chalkboard-teacher
+        icon_pack: fas
+  - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
@@ -179,7 +248,7 @@ skills:
       - name: Mentorship
         description: ''
         percent: 95
-        icon: chalkboard-teacher
+        icon: users
         icon_pack: fas
 
 # Social/Academic Networking
