@@ -58,7 +58,7 @@ sections:
         - title: Graduate Assistant
           company: Penn State University
           company_url: 'https://psu.edu'
-          company_logo: org-gc
+          company_logo: org-psu
           location: Pennsylvania, US
           date_start: '2021-08-01'
           date_end: ''
@@ -73,7 +73,7 @@ sections:
         - title: DSSI Graduate Research Intern
           company: Lawrence Livermore National Lab
           company_url: 'https://www.llnl.gov/'
-          company_logo: org-gc
+          company_logo: org-llnl
           location: Livermore, CA
           date_start: '2025-05-01'
           date_end: '2025-08-01'
@@ -87,7 +87,7 @@ sections:
         - title: NLP Research Intern
           company: Interaction LLC
           company_url: 'https://www.interactions.com/'
-          company_logo: org-gc
+          company_logo: org-interaction
           location: Remote
           date_start: '2024-05-01'
           date_end: '2024-08-01'
@@ -101,7 +101,7 @@ sections:
         - title: Cybersecurity Consultant Intern
           company: Coalfire
           company_url: 'https://coalfire.com/'
-          company_logo: org-gc
+          company_logo: org-coalfire
           location: Remote
           date_start: '2023-05-01'
           date_end: '2023-08-01'
@@ -115,7 +115,7 @@ sections:
         - title: Faculty - Instructor, Head of Division & Technical Lead
           company: St. George's University
           company_url: 'https://www.sgu.edu/'
-          company_logo: org-gc
+          company_logo: org-sgu
           location: Grenada, WI
           date_start: '2011-06-01'
           date_end: '2021-07-01'
@@ -129,7 +129,7 @@ sections:
         - title: Information Technology Instructor
           company: Government of Grenada
           company_url: ''
-          company_logo: org-gc
+          company_logo: org-grenada
           location: Grenada, WI
           date_start: '2010-08-01'
           date_end: '2011-07-01'
