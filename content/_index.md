@@ -55,27 +55,85 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
-          company_url: ''
-          company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
+        - title: Graduate Assistant
+          company: Penn State University
+          company_url: 'https://psu.edu'
+          company_logo: org-psu
+          location: Pennsylvania, US
+          date_start: '2021-08-01'
           date_end: ''
           description: |2-
               Responsibilities include:
 
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
+              * Lead ML/NLP research combating harmful content across 70+ languages
+              * Published 6 top-tier papers (180+ citations) in ACL, EMNLP, NAACL
+              * Mentor 5+ interns and manage 3 computing courses (150+ students)
+              * Develop end-to-end AI pipelines using PyTorch, HuggingFace, cloud APIs
+              * NSF Fellow: $9K funding for interdisciplinary AI research
+        - title: DSSI Graduate Research Intern
+          company: Lawrence Livermore National Lab
+          company_url: 'https://www.llnl.gov/'
+          company_logo: org-llnl
+          location: Livermore, CA
+          date_start: '2025-05-01'
+          date_end: '2025-08-01'
+          description: |2-
+              Focus Areas:
+
+              * NLP, LLM, LRM, MLLM development and optimization
+              * Safe AI and reasoning systems research
+              * Mixture-of-Agents architectures
+              * Multilingual AI system development
+        - title: NLP Research Intern
+          company: Interaction LLC
+          company_url: 'https://www.interactions.com/'
+          company_logo: org-interaction
+          location: Remote
+          date_start: '2024-05-01'
+          date_end: '2024-08-01'
+          description: |2-
+              Research & Development:
+
+              * NLP and Intelligent Virtual Assistant (IVA) development
+              * Large Language Model optimization and prompt engineering
+              * Conversational AI and dialogue summarization systems
+              * Advanced LLM integration for customer interaction platforms
+        - title: Cybersecurity Consultant Intern
+          company: Coalfire
+          company_url: 'https://coalfire.com/'
+          company_logo: org-coalfire
+          location: Remote
+          date_start: '2023-05-01'
+          date_end: '2023-08-01'
+          description: |2-
+              Security & Compliance:
+
+              * AI applications for cybersecurity threat detection
+              * Security compliance and standards implementation
+              * Security Operations Center (SOC) operations
+              * Payment Card Industry (PCI) compliance frameworks
+        - title: Faculty - Instructor, Head of Division & Technical Lead
+          company: St. George's University
+          company_url: 'https://www.sgu.edu/'
+          company_logo: org-sgu
+          location: Grenada, WI
+          date_start: '2011-06-01'
+          date_end: '2021-07-01'
+          description: |2-
+              Leadership & Education:
+
+              * Led 6-person team supporting 4000+ medical students
+              * Achieved 99% uptime on SimCapture/Examsoft platforms
+              * Pioneered virtual OSCE system during COVID-19, trained 100+ faculty
+              * Taught IT, Medical, and Public Health Informatics courses
+        - title: Information Technology Instructor
+          company: Government of Grenada
           company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+          company_logo: org-grenada
+          location: Grenada, WI
+          date_start: '2010-08-01'
+          date_end: '2011-07-01'
+          description: Managed IT infrastructure for 500+ students; achieved 95% pass rate in CSEC IT examinations; implemented digital literacy program reaching 300+ students.
     design:
       columns: '2'
 
