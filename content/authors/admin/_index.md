@@ -40,16 +40,15 @@ organizations:
 interests:
   - Low-Resource Multilingual NLP
   - Large Language Models (LLMs)
-  - Generative AI & Safe AI
-  - Adversarial Machine Learning
-  - Disinformation Detection & Generation
+  - Generative AI & Agentic AI
+  - Safe AI & Adversarial ML
+  - Classification & Generation
   - Transfer Learning & Model Adaptation
-  - RAG & Agentic AI Workflows
-  - Prompt Engineering & Jailbreaking
-  - Hallucination Detection
+  - Prompt Engineering, Context Learning & RAG 
+  - DeepFake, Jailbreaking & Hallucination 
   - Authorship Obfuscation & Attribution
   - Multilingual Scientific Reasoning
-  - Multimodal Cybersecurity
+
 
 # Education to show in About widget
 education:
