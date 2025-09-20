@@ -58,7 +58,7 @@ sections:
         - title: Graduate Assistant
           company: Penn State University
           company_url: 'https://psu.edu'
-          company_logo: org-gc
+          company_logo: org-psu
           location: Pennsylvania, US
           date_start: '2021-08-01'
           date_end: ''
