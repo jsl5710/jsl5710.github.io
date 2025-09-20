@@ -40,13 +40,13 @@ organizations:
 interests:
   - Low-Resource Multilingual NLP
   - Large Language Models (LLMs)
-  - Generative AI & Agentic AI
-  - Safe AI & Adversarial ML
+  - Safe AI & Adversarial ML 
+  - Generative AI, Agentic AI & RAG
   - Classification & Generation
   - Transfer Learning & Model Adaptation
-  - Prompt Engineering, Context Learning & RAG 
+  - Prompt Engineering & Context Learning 
   - DeepFake, Jailbreaking & Hallucination 
-  - Authorship Obfuscation & Attribution
+  - Multilingual Obfuscation & Attribution
   - Multilingual Scientific Reasoning
 
 
@@ -139,10 +139,10 @@ social:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-I am a fifth-year PhD candidate in Informatics in the [College of IST](https://ist.psu.edu/) at Penn State University, where I conduct research at the [PIKE Research Lab](https://pike.psu.edu/) under the guidance of [Dr. Dongwon Lee](https://pike.psu.edu/dongwon/). I specialize in AI/ML research focused on Information Integrity and Ethical AI, including combating harmful content across multiple languages and modalities. My research spans low-resource multilingual NLP, generative AI, adversarial machine learning, hallucination detection, authorship attribution, summarization, deepfake text detection, and scientific reasoning, with work extending across 70+ languages. I have published 6 top-tier papers with 180+ citations in premier venues including ACL, EMNLP, IEEE, and NAACL.
+I am a fifth-year PhD candidate in Informatics in the [College of IST](https://ist.psu.edu/) at Penn State University, where I conduct research at the [PIKE Research Lab](https://pike.psu.edu/) under the guidance of [Dr. Dongwon Lee](https://pike.psu.edu/dongwon/). I specialize in AI/ML research focused on Information Integrity and Ethical AI, including combating harmful content across multiple languages and modalities. My research spans low-resource multilingual NLP, generative AI, and adversarial machine learning, with work extending across 70+ languages. I have published 6 top-tier papers with 180+ citations in premier venues including ACL, EMNLP, IEEE, and NAACL.
 
-My doctoral research focuses on bridging the digital language divide through transfer learning, classification (NLU), generation (NLG), adversarial attacks, and developing end-to-end AI pipelines using RAG and Agentic AI workflows for combating multilingual threats. Drawing from my Grenadian background and knowledge of local Creole languages, I bring a global perspective to AI challenges, working to democratize state-of-the-art AI capabilities for underserved linguistic communities worldwide. My mission is to develop robust multilingual multimodal systems and mitigate evolving security vulnerabilities, threats, and risks while enhancing access to human language technology for underserved communities through cutting-edge solutions.
+My doctoral research focuses on bridging the digital language divide through transfer learning, classification (NLU), generation (NLG), adversarial attacks, and developing end-to-end AI pipelines using RAG and Agentic AI workflows for combating multilingual threats. Drawing from my Grenadian background and knowledge of local Creole languages, I bring a global perspective to AI challenges, working to democratize state-of-the-art AI capabilities for underserved linguistic communities worldwide. My mission is to develop robust multilingual multimodal systems and mitigate evolving security vulnerabilities while enhancing access to human language technology through cutting-edge solutions.
 
-As an [NSF LinDiv](https://lindiv.la.psu.edu/) Fellow, I conduct transdisciplinary research and participate in interdisciplinary projects advancing human-AI language interaction for social good. I actively mentor 5+ research interns and teach Applied Generative AI courses. Through industry experience at [Lawrence Livermore National Lab](https://www.llnl.gov/), [Interaction LLC](https://www.interactions.com/), and [Coalfire](https://coalfire.com/), I bridge academic research with practical applications in combating evolving security threats and enhancing global AI accessibility. I see multilingual advances and interdisciplinary collaboration as a competitive advantage, not a communication challenge. Beyond research aspirations, I stay active through dance, fitness, martial arts, and community service.
+As an [NSF LinDiv](https://lindiv.la.psu.edu/) Fellow, I conduct transdisciplinary research advancing human-AI language interaction for social good. I actively mentor 5+ research interns and teach Applied Generative AI courses. Through industry experience at [Lawrence Livermore National Lab](https://www.llnl.gov/), [Interaction LLC](https://www.interactions.com/), and [Coalfire](https://coalfire.com/), I bridge academic research with practical applications in combating evolving security threats and enhancing global AI accessibility. I see multilingual advances and interdisciplinary collaboration as a competitive advantage, not a communication challenge. Beyond research, I stay active through dance, fitness, martial arts, and community service.
 
  {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/jsl_resume.pdf" "newtab" >}}Resumé{{< /staticref >}}.
