@@ -70,6 +70,8 @@ education:
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 skills:
   - name: AI/ML
+    color: '#2563eb'
+    color_border: '#3b82f6'
     items:
       - name: Natural Language Processing
         description: ''
@@ -92,6 +94,8 @@ skills:
         icon: shield-halved
         icon_pack: fas
   - name: Programming
+    color: '#16a34a'
+    color_border: '#22c55e'
     items:
       - name: Python
         description: ''
@@ -114,6 +118,8 @@ skills:
         icon: r-project
         icon_pack: fab
   - name: Data Science
+    color: '#9333ea'
+    color_border: '#a855f7'
     items:
       - name: Data Visualization
         description: ''
@@ -136,6 +142,8 @@ skills:
         icon: chart-bar
         icon_pack: fas
   - name: Platforms & Tools
+    color: '#ea580c'
+    color_border: '#f97316'
     items:
       - name: HuggingFace
         description: ''
@@ -178,6 +186,8 @@ skills:
         icon: plug
         icon_pack: fas
   - name: Database & Analytics
+    color: '#0d9488'
+    color_border: '#14b8a6'
     items:
       - name: Oracle
         description: ''
@@ -205,6 +215,8 @@ skills:
         icon: map
         icon_pack: fas
   - name: Transferable Skills
+    color: '#4338ca'
+    color_border: '#6366f1'
     items:
       - name: Scientific Writing
         description: ''
@@ -250,7 +262,7 @@ skills:
         percent: 95
         icon: users
         icon_pack: fas
-
+        
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
