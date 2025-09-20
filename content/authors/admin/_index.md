@@ -25,15 +25,30 @@ organizations:
     url: https://www.psu.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: 'My research interests include low-resource multilingual NLP, linguistics, adversarial machine learning and mis/disinformation generation/detection. My Ph.D. thesis is in the area of applying artificial intelligence for cybersecurity and social good, with a focus on low-resource multilingual natural language processing. More specifically, I develop NLP techniques to promote cybersecurity, combat mis/disinformation, and enable AI accessibility for non-English languages and underserved populations. This involves creating novel models and techniques for tasks like multilingual and crosslingual text classification, machine translation, text generation, and adversarial attacks in limited training data settings. My goal is to democratize state-of-the-art AI capabilities by extending them beyond high-resource languages like English into the long tail of lower-resourced languages worldwide. By innovating robust learning approaches from scarce linguistic data, this research aims to open promising directions where AI can have dual benefits strengthening security, integrity and social welfare across diverse global locales.'
+# bio: 'My research interests include low-resource multilingual NLP, linguistics, adversarial machine learning and mis/disinformation generation/detection. My Ph.D. thesis is in the area of applying artificial intelligence for cybersecurity and social good, with a focus on low-resource multilingual natural language processing. More specifically, I develop NLP techniques to promote cybersecurity, combat mis/disinformation, and enable AI accessibility for non-English languages and underserved populations. This involves creating novel models and techniques for tasks like multilingual and crosslingual text classification, machine translation, text generation, and adversarial attacks in limited training data settings. My goal is to democratize state-of-the-art AI capabilities by extending them beyond high-resource languages like English into the long tail of lower-resourced languages worldwide. By innovating robust learning approaches from scarce linguistic data, this research aims to open promising directions where AI can have dual benefits strengthening security, integrity and social welfare across diverse global locales.'
+
+bio: 'I am a fifth-year PhD candidate in Informatics at Penn State University, specializing in AI/ML research focused on Information Integrity and Ethical AI, including combating harmful content across multiple languages and modalities. My research spans low-resource multilingual NLP, generative AI, and adversarial machine learning, with work extending across 70+ languages. I have published 6 top-tier papers with 180+ citations in premier venues including ACL, EMNLP, IEEE, and NAACL. <br> My doctoral research focuses on bridging the digital language divide through transfer learning, model adaptation, and developing end-to-end AI pipelines using RAG and Agentic AI for multilingual threat detection. Drawing from my Grenadian background and knowledge of local Creole languages, I bring a global perspective to AI challenges, working to democratize state-of-the-art AI capabilities for underserved linguistic communities worldwide. <br> As an NSF LinDiv Fellow, I conduct transdisciplinary research advancing human-AI language interaction globally. I actively mentor 5+ research interns and teach Applied Generative AI courses. My work encompasses hallucination detection, authorship attribution, summarization, deepfake text detection, scientific reasoning, and real-time intelligence delivery for cybersecurity defense. Through industry experience at Lawrence Livermore National Lab, Interaction LLC, and Coalfire, I bridge academic research with practical applications in combating evolving security threats and enhancing global AI accessibility. I see multilingual advances and interdisciplinary collaboration as a competitive advantage, not a communication challenge.'
 
 # Interests to show in About widget
+# interests:
+#   - Natural Language Processing
+#   - Low-Resource Multilingual NLP
+#   - Adversarial Machine Learning
+#   - Adaptative and Alignment Tuning
+#   - Fake News Generation/Detection
 interests:
-  - Natural Language Processing
   - Low-Resource Multilingual NLP
+  - Large Language Models (LLMs)
+  - Generative AI & Safe AI
   - Adversarial Machine Learning
-  - Adaptative and Alignment Tuning
-  - Fake News Generation/Detection
+  - Disinformation Generation/Detection
+  - Transfer Learning & Model Adaptation
+  - RAG & Agentic AI
+  - Prompt Engineering
+  - Hallucination Detection
+  - Authorship Attribution
+  - Scientific Reasoning
+  - Multilingual Cybersecurity
 
 # Education to show in About widget
 education:
