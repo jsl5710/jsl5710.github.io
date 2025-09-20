@@ -80,7 +80,7 @@ skills:
         icon_pack: fas
       - name: Large Language Models
         description: ''
-        percent: 95
+        percent: 100
         icon: robot
         icon_pack: fas
       - name: Deep Learning
@@ -90,7 +90,7 @@ skills:
         icon_pack: fas
       - name: Adversarial ML
         description: ''
-        percent: 90
+        percent: 100
         icon: shield-halved
         icon_pack: fas
   - name: Programming
@@ -104,17 +104,17 @@ skills:
         icon_pack: fab
       - name: PyTorch
         description: ''
-        percent: 95
+        percent: 100
         icon: fire
         icon_pack: fas
       - name: SQL
         description: ''
-        percent: 90
+        percent: 100
         icon: database
         icon_pack: fas
       - name: R
         description: ''
-        percent: 85
+        percent: 95
         icon: r-project
         icon_pack: fab
   - name: Data Science
@@ -123,52 +123,52 @@ skills:
     items:
       - name: Data Visualization
         description: ''
-        percent: 95
+        percent: 100
         icon: chart-line
         icon_pack: fas
       - name: Feature Engineering
         description: ''
-        percent: 90
+        percent: 100
         icon: cogs
         icon_pack: fas
       - name: Web Scraping
         description: ''
-        percent: 85
+        percent: 100
         icon: spider
         icon_pack: fas
       - name: Predictive Analytics
         description: ''
-        percent: 90
+        percent: 100
         icon: chart-bar
         icon_pack: fas
-        
+
   - name: Database & Analytics
     color: '#0d9488'
     color_border: '#14b8a6'
     items:
       - name: Oracle
         description: ''
-        percent: 85
+        percent: 90
         icon: database
         icon_pack: fas
       - name: MSSQL
         description: ''
-        percent: 85
+        percent: 100
         icon: server
         icon_pack: fas
       - name: SAS
         description: ''
-        percent: 80
+        percent: 90
         icon: chart-simple
         icon_pack: fas
       - name: EpiInfo
         description: ''
-        percent: 75
+        percent: 85
         icon: stethoscope
         icon_pack: fas
       - name: GeoDa
         description: ''
-        percent: 70
+        percent: 90
         icon: map
         icon_pack: fas
   - name: Transferable Skills
@@ -177,22 +177,22 @@ skills:
     items:
       - name: Scientific Writing
         description: ''
-        percent: 95
+        percent: 100
         icon: pen-to-square
         icon_pack: fas
       - name: Grant Writing
         description: ''
-        percent: 90
+        percent: 95
         icon: file-contract
         icon_pack: fas
       - name: Project Management
         description: ''
-        percent: 90
+        percent: 100
         icon: tasks
         icon_pack: fas
       - name: Technical Training
         description: ''
-        percent: 95
+        percent: 100
         icon: chalkboard-teacher
         icon_pack: fas
   - name: Hobbies
@@ -201,17 +201,17 @@ skills:
     items:
       - name: Dancing
         description: ''
-        percent: 90
+        percent: 100
         icon: music
         icon_pack: fas
       - name: Martial Arts
         description: ''
-        percent: 85
+        percent: 90
         icon: hand-fist
         icon_pack: fas
       - name: Fitness
         description: ''
-        percent: 85
+        percent: 90
         icon: dumbbell
         icon_pack: fas
       - name: Mentorship
@@ -225,42 +225,42 @@ skills:
     items:
       - name: HuggingFace
         description: ''
-        percent: 95
+        percent: 100
         icon: face-smile
         icon_pack: fas
       - name: VSCode
         description: ''
-        percent: 90
+        percent: 100
         icon: code
         icon_pack: fas
       - name: Google Colab
         description: ''
-        percent: 90
+        percent: 100
         icon: google
         icon_pack: fab
       - name: GitHub
         description: ''
-        percent: 90
+        percent: 95
         icon: github
         icon_pack: fab
       - name: Google Cloud Platform
         description: ''
-        percent: 85
+        percent: 95
         icon: cloud
         icon_pack: fas
       - name: Azure
         description: ''
-        percent: 80
+        percent: 95
         icon: microsoft
         icon_pack: fab
       - name: vLLM
         description: ''
-        percent: 85
+        percent: 100
         icon: server
         icon_pack: fas
       - name: AdapterHub
         description: ''
-        percent: 80
+        percent: 100
         icon: plug
         icon_pack: fas
         
