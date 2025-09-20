@@ -69,41 +69,117 @@ education:
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 skills:
-  - name: Technical
+  - name: AI/ML
     items:
-      - name: Data Science
+      - name: Natural Language Processing
         description: ''
         percent: 100
-        icon: chart-line
-        icon_pack: fab
+        icon: language
+        icon_pack: fas
+      - name: Large Language Models
+        description: ''
+        percent: 95
+        icon: robot
+        icon_pack: fas
+      - name: Deep Learning
+        description: ''
+        percent: 95
+        icon: brain
+        icon_pack: fas
+      - name: Adversarial ML
+        description: ''
+        percent: 90
+        icon: shield-halved
+        icon_pack: fas
+  - name: Programming
+    items:
       - name: Python
         description: ''
         percent: 100
         icon: python
+        icon_pack: fab
+      - name: PyTorch
+        description: ''
+        percent: 95
+        icon: fire
         icon_pack: fas
       - name: SQL
         description: ''
-        percent: 100
+        percent: 90
         icon: database
         icon_pack: fas
-  - name: Hobbies
+      - name: R
+        description: ''
+        percent: 85
+        icon: r-project
+        icon_pack: fab
+  - name: Data Science
+    items:
+      - name: Data Visualization
+        description: ''
+        percent: 95
+        icon: chart-line
+        icon_pack: fas
+      - name: Feature Engineering
+        description: ''
+        percent: 90
+        icon: cogs
+        icon_pack: fas
+      - name: Web Scraping
+        description: ''
+        percent: 85
+        icon: spider
+        icon_pack: fas
+      - name: Predictive Analytics
+        description: ''
+        percent: 90
+        icon: chart-bar
+        icon_pack: fas
+  - name: Tools & Platforms
+    items:
+      - name: HuggingFace
+        description: ''
+        percent: 95
+        icon: face-smile
+        icon_pack: fas
+      - name: GitHub
+        description: ''
+        percent: 90
+        icon: github
+        icon_pack: fab
+      - name: Google Cloud
+        description: ''
+        percent: 85
+        icon: google
+        icon_pack: fab
+      - name: Azure
+        description: ''
+        percent: 80
+        icon: microsoft
+        icon_pack: fab
+  - name: Interests
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: Dancing
         description: ''
-        percent: 60
-        icon: person-hiking
+        percent: 90
+        icon: music
         icon_pack: fas
-      - name: Cats
+      - name: Martial Arts
         description: ''
-        percent: 100
-        icon: cat
+        percent: 85
+        icon: hand-fist
         icon_pack: fas
-      - name: Photography
+      - name: Fitness
         description: ''
-        percent: 80
-        icon: camera-retro
+        percent: 85
+        icon: dumbbell
+        icon_pack: fas
+      - name: Mentorship
+        description: ''
+        percent: 95
+        icon: chalkboard-teacher
         icon_pack: fas
 
 # Social/Academic Networking
