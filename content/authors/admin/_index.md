@@ -141,50 +141,7 @@ skills:
         percent: 90
         icon: chart-bar
         icon_pack: fas
-  - name: Platforms & Tools
-    color: '#ea580c'
-    color_border: '#f97316'
-    items:
-      - name: HuggingFace
-        description: ''
-        percent: 95
-        icon: face-smile
-        icon_pack: fas
-      - name: VSCode
-        description: ''
-        percent: 90
-        icon: code
-        icon_pack: fas
-      - name: Google Colab
-        description: ''
-        percent: 90
-        icon: google
-        icon_pack: fab
-      - name: GitHub
-        description: ''
-        percent: 90
-        icon: github
-        icon_pack: fab
-      - name: Google Cloud Platform
-        description: ''
-        percent: 85
-        icon: cloud
-        icon_pack: fas
-      - name: Azure
-        description: ''
-        percent: 80
-        icon: microsoft
-        icon_pack: fab
-      - name: vLLM
-        description: ''
-        percent: 85
-        icon: server
-        icon_pack: fas
-      - name: AdapterHub
-        description: ''
-        percent: 80
-        icon: plug
-        icon_pack: fas
+        
   - name: Database & Analytics
     color: '#0d9488'
     color_border: '#14b8a6'
@@ -261,6 +218,50 @@ skills:
         description: ''
         percent: 95
         icon: users
+        icon_pack: fas
+  - name: Platforms & Tools
+    color: '#ea580c'
+    color_border: '#f97316'
+    items:
+      - name: HuggingFace
+        description: ''
+        percent: 95
+        icon: face-smile
+        icon_pack: fas
+      - name: VSCode
+        description: ''
+        percent: 90
+        icon: code
+        icon_pack: fas
+      - name: Google Colab
+        description: ''
+        percent: 90
+        icon: google
+        icon_pack: fab
+      - name: GitHub
+        description: ''
+        percent: 90
+        icon: github
+        icon_pack: fab
+      - name: Google Cloud Platform
+        description: ''
+        percent: 85
+        icon: cloud
+        icon_pack: fas
+      - name: Azure
+        description: ''
+        percent: 80
+        icon: microsoft
+        icon_pack: fab
+      - name: vLLM
+        description: ''
+        percent: 85
+        icon: server
+        icon_pack: fas
+      - name: AdapterHub
+        description: ''
+        percent: 80
+        icon: plug
         icon_pack: fas
         
 # Social/Academic Networking
