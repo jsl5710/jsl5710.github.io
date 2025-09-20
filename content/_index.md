@@ -43,35 +43,7 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
 
-  - block: experience
-    content:
-      title: Experience
-      # Date format for experience
-      #   Refer to https://docs.hugoblox.com/customization/#date-format
-      date_format: Jan 2006
-      # Experiences.
-      #   Add/remove as many `experience` items below as you like.
-      #   Required fields are `title`, `company`, and `date_start`.
-      #   Leave `date_end` empty if it's your current employer.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-      items:
-        - title: Graduate Assistant
-          company: Penn State University
-          company_url: 'https://psu.edu'
-          company_logo: org-psu
-          location: Pennsylvania, US
-          date_start: '2021-08-01'
-          date_end: ''
-          description: |2-
-              Research Assistant & Teaching Assistant:
 
-              * Lead ML/NLP research combating harmful content across 70+ languages
-              * Published 6 top-tier papers (180+ citations) in ACL, EMNLP, NAACL
-              * Mentor 5+ interns and manage 3 computing courses (150+ students)
-              * Develop end-to-end AI pipelines using PyTorch, HuggingFace, cloud APIs
-              * NSF Fellow: $9K funding for interdisciplinary AI research
-    design:
-      columns: '2'
   - block: skills
     content:
       title: Skills
