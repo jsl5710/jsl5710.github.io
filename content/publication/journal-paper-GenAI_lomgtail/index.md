@@ -1,14 +1,14 @@
 ---
-title: 'The Longtail Impact of Generative AI on Disinformation: Harmonizing Dichotomous Perspectives'
+title: 'Generative AI Disproportionately Harms Long Tail Users'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - admin
   - Barani Maung Maung
-  - Maryam Tabar
   - Keegan McBride
+  - admin
+  - Maryam Tabar
   - Dongwon Lee
 
 # Author notes (optional)
@@ -16,8 +16,8 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2024-09-01T00:00:00Z'
-doi: '10.1109/MIS.2024.3439109'
+date: '2024-11-01T00:00:00Z'
+doi: '10.1109/MC.2024.3408594'
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
@@ -28,15 +28,15 @@ doi: '10.1109/MIS.2024.3439109'
 publication_types: ['article-journal'] # for journal article use ["article-journal"] and for preprint: ["article"]
 
 # Publication name and optional abbreviated publication name.
-publication: In *IEEE Intelligent Systems*
-publication_short: In *IEEE Intelligent Systems*
+publication: In *Computer*
+publication_short: In *Computer*
 
-abstract: "Generative AI (GenAI) poses significant risks in creating convincing yet factually ungrounded content, particularly in \"longtail\" contexts of high-impact events and resource-limited settings. While some argue that current disinformation ecosystems naturally limit GenAI's impact, we contend that this perspective neglects longtail contexts where disinformation consequences are most profound. This article analyzes the potential impact of GenAI's disinformation in longtail events and settings, focusing on 1) quantity: its ability to flood information ecosystems during critical events; 2) quality: the challenge of distinguishing authentic content from high-quality GenAI content; 3) personalization: its capacity for precise microtargeting exploiting individual vulnerabilities; and 4) hallucination: the danger of unintentional false information generation, especially in high-stakes situations. We then propose strategies to combat disinformation in these contexts. Our analysis underscores the need for proactive measures to mitigate risks, safeguard social unity, and combat the erosion of trust in the GenAI era, particularly in vulnerable communities and during critical events."
+abstract: "Generative AI (GenAI) poses significant risks in creating convincing yet factually ungrounded content, particularly affecting \"longtail\" users who may have limited resources or technical expertise to identify and combat disinformation. This article examines how GenAI disproportionately impacts these vulnerable user groups, analyzing the structural inequalities that emerge when advanced AI systems are deployed without adequate consideration for diverse user populations and their varying capabilities to navigate AI-generated content."
 
 # Summary. An optional shortened abstract.
-summary: "This IEEE Intelligent Systems article examines the \"longtail\" impact of Generative AI on disinformation in high-impact events and resource-limited settings. We analyze four critical dimensions—quantity, quality, personalization, and hallucination—proposing strategies to combat disinformation risks in vulnerable communities and during critical events where consequences are most profound."
+summary: "This Computer article examines how Generative AI disproportionately harms longtail users, focusing on the structural inequalities that emerge when AI systems are deployed without adequate consideration for vulnerable user populations with limited resources to combat disinformation."
 
-tags: [Generative AI, Disinformation, Longtail Events, AI Ethics]
+tags: [Generative AI, Longtail Users, AI Ethics, Digital Inequality]
 
 # Display this page in the Featured widget?
 featured: true
@@ -46,7 +46,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://doi.ieeecomputersociety.org/10.1109/MIS.2024.3439109'
+url_pdf: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10718648'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -83,7 +83,7 @@ Click the _Cite_ button above to demo the feature to enable visitors to import p
 {{% /callout %}}
 
 {{% callout note %}}
-This work provides a comprehensive analysis of Generative AI's impact on disinformation in critical contexts where traditional mitigation strategies may be insufficient.
+This work examines how Generative AI systems disproportionately impact longtail users, highlighting critical equity concerns in AI deployment.
 {{% /callout %}}
 
 Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
