@@ -38,7 +38,7 @@ abstract:  Recent ubiquity and disruptive impacts of large language models (LLMs
 # Summary. An optional shortened abstract.
 summary: This research project is a collaboration with Penn State and MIT Lincoln Lab. Our study demonstrates the dual capacity of LLMs for offensive misuse and defense detection against disinformation without requiring additional training.
 
-tags: []
+tags: [Adversarial ML, In-Context Learning]
 
 # Display this page in the Featured widget?
 featured: true
