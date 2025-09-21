@@ -23,7 +23,7 @@ slides:
 
 ---
 
-{{< slide background-color="#ffffff" >}}
+{{< slide background-color="#f8f9fa" >}}
 
 ## Problem & Motivation
 
@@ -61,7 +61,7 @@ slides:
 
 ---
 
-{{< slide background-color="#ffffff" >}}
+{{< slide background-color="#f8f9fa" >}}
 
 ## F3 Framework
 
@@ -95,7 +95,7 @@ slides:
 
 ---
 
-{{< slide background-color="#ffffff" >}}
+{{< slide background-color="#f8f9fa" >}}
 
 ## Generation Strategies
 
@@ -134,7 +134,7 @@ slides:
 
 ---
 
-{{< slide background-color="#ffffff" >}}
+{{< slide background-color="#f8f9fa" >}}
 
 ## RQ2: Detection Results
 
@@ -168,7 +168,7 @@ slides:
 
 ---
 
-{{< slide background-color="#ffffff" >}}
+{{< slide background-color="#f8f9fa" >}}
 
 ## Technical Contributions
 
@@ -198,7 +198,7 @@ slides:
 
 ---
 
-{{< slide background-color="#ffffff" >}}
+{{< slide background-color="#f8f9fa" >}}
 
 ## Impact & Implications
 
