@@ -22,7 +22,7 @@ authors:
 #   - 'Equal contribution'
 
 date: '2024-01-05T00:00:00Z'
-doi: '10.48550/arXiv.2401.07867'
+doi: '10.18653/v1/2024.findings-emnlp.369'
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
@@ -30,11 +30,12 @@ doi: '10.48550/arXiv.2401.07867'
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ["article"] # for journal article use ["article-journal"] and for preprint: ["article"]
+publication_types: ["paper-conference"] # for journal article use ["article-journal"] and for preprint: ["article"]
 
 # Publication name and optional abbreviated publication name.
-publication: TBA
-publication_short: ar*Xiv*
+publication: In *Findings of the Association for Computational Linguistics: Empirical Methods in Natural Language Processing*
+publication_short: In *EMNLP*
+
 
 abstract:  High-quality text generation capability of latest Large Language Models (LLMs) causes concerns about their misuse (e.g., in massive generation/spread of disinformation). Machine-generated text (MGT) detection is important to cope with such threats. However, it is susceptible to authorship obfuscation (AO) methods, such as paraphrasing, which can cause MGTs to evade detection. So far, this was evaluated only in monolingual settings. Thus, the susceptibility of recently proposed multilingual detectors is still unknown. We fill this gap by comprehensively benchmarking the performance of 10 well-known AO methods, attacking 37 MGT detection methods against MGTs in 11 languages (i.e., 10 × 37 × 11 = 4,070 combinations). We also evaluate the effect of data augmentation on adversarial robustness using obfuscated texts. The results indicate that all tested AO methods can cause detection evasion in all tested languages, where homoglyph attacks are especially successful.
 
