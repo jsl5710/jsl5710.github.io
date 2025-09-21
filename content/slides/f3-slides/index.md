@@ -51,6 +51,7 @@ slides:
 **RQ2**: How proficient are LLMs at detecting disinformation?
 
 {{% fragment %}} **5 Evaluation Dimensions**:
+
 - Human vs. LLM-generated
 - Self vs. externally-generated
 - Posts vs. articles
@@ -101,11 +102,13 @@ slides:
 
 <small>
 **Perturbation-Based** (Fake):
+
 - Minor: Subtle changes
 - Major: Noticeable changes
 - Critical: Significant alterations
 
 **Paraphrase-Based** (Real):
+
 - Minor: Light summary
 - Major: Moderate rewording
 - Critical: Full rephrasing
@@ -123,6 +126,7 @@ slides:
 **Problem**: 38% hallucinated misalignments
 
 {{% fragment %}} **PURIFY** filters using 4 metrics:
+
 - Natural Language Inference
 - AlignScore
 - BERTScore
@@ -140,10 +144,12 @@ slides:
 
 <small>
 **Human vs. LLM Content**:
+
 - Human-authored: 55-66% accuracy
 - LLM-generated: 60-85% accuracy
 
 {{% fragment %}} **Self vs. External**:
+
 - GPT-3.5: Strong self-detection
 - LLaMA-GPT: Best external detector
 - Challenge: Minor disinformation detection 
