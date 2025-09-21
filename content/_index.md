@@ -101,7 +101,7 @@ sections:
         - title: Cybersecurity Consultant Intern
           company: Coalfire
           company_url: 'https://coalfire.com/'
-          company_logo: org-gc
+          company_logo: org-coalfire
           location: Remote
           date_start: '2023-05-01'
           date_end: '2023-08-01'
