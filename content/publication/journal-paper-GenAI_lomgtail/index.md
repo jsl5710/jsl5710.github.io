@@ -39,7 +39,7 @@ summary: "This Computer article examines how Generative AI disproportionately ha
 tags: [Generative AI, Longtail Users, AI Ethics, Digital Inequality]
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
