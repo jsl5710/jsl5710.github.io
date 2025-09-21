@@ -82,7 +82,7 @@ projects:
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: f3-slides
+slides: example
 ---
 
 {{% callout note %}}
