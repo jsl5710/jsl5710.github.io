@@ -33,7 +33,7 @@ doi: '10.18653/v1/2024.findings-emnlp.369'
 publication_types: ["paper-conference"] # for journal article use ["article-journal"] and for preprint: ["article"]
 
 # Publication name and optional abbreviated publication name.
-publication: In *Findings of the Association for Computational Linguistics: Empirical Methods in Natural Language Processing*
+publication: In *Findings of the Association for Computational Linguistics, Empirical Methods in Natural Language Processing*
 publication_short: In *EMNLP*
 
 
