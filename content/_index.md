@@ -115,7 +115,7 @@ sections:
         - title: Faculty - Instructor, Head of Division & Technical Lead
           company: St. George's University
           company_url: 'https://www.sgu.edu/'
-          company_logo: org-gc
+          company_logo: org-sgu
           location: Grenada, WI
           date_start: '2011-06-01'
           date_end: '2021-07-01'
@@ -129,7 +129,7 @@ sections:
         - title: Information Technology Instructor
           company: Government of Grenada
           company_url: ''
-          company_logo: org-gc
+          company_logo: org-gnd
           location: Grenada, WI
           date_start: '2010-08-01'
           date_end: '2011-07-01'
