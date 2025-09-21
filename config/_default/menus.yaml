@@ -15,7 +15,7 @@ main:
     weight: 20 
   - name: Publications
     url: '#featured'
-    weight: 20 
+    weight: 25 
   - name: Talks
     url: '#talks'
     weight: 35  
@@ -23,7 +23,7 @@ main:
     url: '#posts'
     weight: 40
   - name: Gallery
-    url: '#Gallery'
+    url: '#gallery'
     weight: 45
   - name: Contact
     url: '#contact'
