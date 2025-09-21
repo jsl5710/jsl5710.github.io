@@ -38,7 +38,7 @@ summary: This paper is the first attempt to detect COVID-19 misinformation (in E
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:

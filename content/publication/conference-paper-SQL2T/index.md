@@ -14,7 +14,7 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2025-01-01T00:00:00Z'
+date: '2025-02-01T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
@@ -37,7 +37,7 @@ summary: "This work introduces semantic captioning for SQL queries, addressing t
 tags: [Semantic Parsing, SQL, In-Context Learning, Code Understanding]
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
