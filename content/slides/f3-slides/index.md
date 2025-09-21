@@ -7,7 +7,7 @@ categories: [Research]
 date: '2023-12-06T00:00:00Z'
 slides:
   theme: white
-  highlight_style: github
+  highlight_style: dracula
 ---
 
 {{< slide background-color="#ffffff" >}}
