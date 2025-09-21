@@ -73,7 +73,7 @@ sections:
         - title: DSSI Graduate Research Intern
           company: Lawrence Livermore National Lab
           company_url: 'https://www.llnl.gov/'
-          company_logo: org-gc
+          company_logo: org-llnl
           location: Livermore, CA
           date_start: '2025-05-01'
           date_end: '2025-08-01'
