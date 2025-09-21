@@ -6,9 +6,11 @@ tags: [NLP, Disinformation, LLMs]
 categories: [Research]
 date: '2023-12-06T00:00:00Z'
 slides:
-  theme: black
-  highlight_style: dracula
+  theme: white
+  highlight_style: github
 ---
+
+{{< slide background-color="#ffffff" >}}
 
 # Fighting Fire with Fire
 **LLMs in Crafting and Detecting Disinformation**
@@ -20,6 +22,8 @@ slides:
 **EMNLP 2023 Main Conference**
 
 ---
+
+{{< slide background-color="#ffffff" >}}
 
 ## Problem & Motivation
 
@@ -34,6 +38,8 @@ slides:
 {{% fragment %}} **Core Question**: *Can LLMs detect their own disinformation?* {{% /fragment %}}
 
 ---
+
+{{< slide background-color="#ffffff" >}}
 
 ## Research Questions
 
@@ -50,6 +56,8 @@ slides:
 
 ---
 
+{{< slide background-color="#ffffff" >}}
+
 ## F3 Framework
 
 <small>
@@ -63,6 +71,8 @@ slides:
 </small>
 
 ---
+
+{{< slide background-color="#ffffff" >}}
 
 ## RQ1: Bypassing Alignment
 
@@ -78,6 +88,8 @@ slides:
 
 ---
 
+{{< slide background-color="#ffffff" >}}
+
 ## Generation Strategies
 
 <small>
@@ -92,6 +104,8 @@ slides:
 
 ---
 
+{{< slide background-color="#ffffff" >}}
+
 ## PURIFY Framework
 
 <small>
@@ -104,6 +118,8 @@ slides:
 </small>
 
 ---
+
+{{< slide background-color="#ffffff" >}}
 
 ## RQ2: Detection Results
 
@@ -120,6 +136,8 @@ slides:
 
 ---
 
+{{< slide background-color="#ffffff" >}}
+
 ## Key Findings
 
 <small>
@@ -134,6 +152,8 @@ slides:
 
 ---
 
+{{< slide background-color="#ffffff" >}}
+
 ## Technical Contributions
 
 <small>
@@ -145,6 +165,8 @@ slides:
 </small>
 
 ---
+
+{{< slide background-color="#ffffff" >}}
 
 ## Dataset & Evaluation
 
@@ -159,6 +181,8 @@ slides:
 </small>
 
 ---
+
+{{< slide background-color="#ffffff" >}}
 
 ## Impact & Implications
 
@@ -181,6 +205,8 @@ slides:
 <small>*Re-purposing LLMs as countermeasures against disinformation*</small>
 
 ---
+
+{{< slide background-color="#ffffff" >}}
 
 ## Questions & Resources
 
