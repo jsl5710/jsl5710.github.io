@@ -87,7 +87,7 @@ sections:
         - title: NLP Research Intern
           company: Interaction LLC
           company_url: 'https://www.interactions.com/'
-          company_logo: org-gc
+          company_logo: org-interaction
           location: Remote
           date_start: '2024-05-01'
           date_end: '2024-08-01'
