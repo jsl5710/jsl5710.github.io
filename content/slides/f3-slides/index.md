@@ -30,9 +30,11 @@ slides:
 **Challenge**: LLMs generate realistic but harmful disinformation
 
 <small>
-{{% fragment %}} • Persuasive texts indistinguishable from human content
-• Large-scale disinformation potential
-• Limited LLM-generated content detection {{% /fragment %}}
+{{% fragment %}} 
+- Persuasive texts indistinguishable from human content
+- Large-scale disinformation potential
+- Limited LLM-generated content detection 
+{{% /fragment %}}
 </small>
 
 {{% fragment %}} **Core Question**: *Can LLMs detect their own disinformation?* {{% /fragment %}}
@@ -49,9 +51,12 @@ slides:
 **RQ2**: How proficient are LLMs at detecting disinformation?
 
 {{% fragment %}} **5 Evaluation Dimensions**:
-• Human vs. LLM-generated • Self vs. externally-generated
-• Posts vs. articles • In vs. out-of-distribution
-• Zero-shot LLMs vs. fine-tuned detectors {{% /fragment %}}
+- Human vs. LLM-generated
+- Self vs. externally-generated
+- Posts vs. articles
+- In vs. out-of-distribution
+- Zero-shot LLMs vs. fine-tuned detectors 
+{{% /fragment %}}
 </small>
 
 ---
@@ -63,11 +68,13 @@ slides:
 <small>
 **Fighting Fire with Fire (F3)** - 5-step approach:
 
-{{% fragment %}} ① Human data collection {{% /fragment %}}
-{{% fragment %}} ② Prompt engineering generation {{% /fragment %}}
-{{% fragment %}} ③ PURIFY hallucination filtering {{% /fragment %}}
-{{% fragment %}} ④ Cloze-prompt detection {{% /fragment %}}
-{{% fragment %}} ⑤ Zero-shot evaluation {{% /fragment %}}
+{{% fragment %}} 
+1. Human data collection
+2. Prompt engineering generation
+3. PURIFY hallucination filtering
+4. Cloze-prompt detection
+5. Zero-shot evaluation
+{{% /fragment %}}
 </small>
 
 ---
@@ -94,10 +101,14 @@ slides:
 
 <small>
 **Perturbation-Based** (Fake):
-• Minor: Subtle changes • Major: Noticeable changes • Critical: Significant alterations
+- Minor: Subtle changes
+- Major: Noticeable changes
+- Critical: Significant alterations
 
 **Paraphrase-Based** (Real):
-• Minor: Light summary • Major: Moderate rewording • Critical: Full rephrasing
+- Minor: Light summary
+- Major: Moderate rewording
+- Critical: Full rephrasing
 
 {{% fragment %}} **Output**: 43K+ synthetic samples {{% /fragment %}}
 </small>
@@ -112,7 +123,11 @@ slides:
 **Problem**: 38% hallucinated misalignments
 
 {{% fragment %}} **PURIFY** filters using 4 metrics:
-• Natural Language Inference • AlignScore • BERTScore • Semantic Distance {{% /fragment %}}
+- Natural Language Inference
+- AlignScore
+- BERTScore
+- Semantic Distance 
+{{% /fragment %}}
 
 {{% fragment %}} **Result**: 43,272 → 27,667 quality samples {{% /fragment %}}
 </small>
@@ -125,13 +140,14 @@ slides:
 
 <small>
 **Human vs. LLM Content**:
-• Human-authored: 55-66% accuracy
-• LLM-generated: 60-85% accuracy
+- Human-authored: 55-66% accuracy
+- LLM-generated: 60-85% accuracy
 
 {{% fragment %}} **Self vs. External**:
-• GPT-3.5: Strong self-detection
-• LLaMA-GPT: Best external detector
-• Challenge: Minor disinformation detection {{% /fragment %}}
+- GPT-3.5: Strong self-detection
+- LLaMA-GPT: Best external detector
+- Challenge: Minor disinformation detection 
+{{% /fragment %}}
 </small>
 
 ---
@@ -157,11 +173,11 @@ slides:
 ## Technical Contributions
 
 <small>
-① Novel prompting for disinformation generation
-② PURIFY hallucination filtering framework  
-③ Cloze-prompt detection strategies
-④ Comprehensive SOTA benchmark
-⑤ F3 dataset for research community
+1. Novel prompting for disinformation generation
+2. PURIFY hallucination filtering framework
+3. Cloze-prompt detection strategies
+4. Comprehensive SOTA benchmark
+5. F3 dataset for research community
 </small>
 
 ---
