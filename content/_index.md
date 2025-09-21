@@ -44,6 +44,7 @@ sections:
       username: admin
 
   - block: experience
+    id: experience
     content:
       title: Experience
       # Date format for experience
