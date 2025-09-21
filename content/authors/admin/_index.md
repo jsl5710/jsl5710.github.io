@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Ph.D. Student in Informatics
+role: Ph.D. Candidate in Informatics
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -28,6 +28,23 @@ organizations:
 # bio: 'My research interests include low-resource multilingual NLP, linguistics, adversarial machine learning and mis/disinformation generation/detection. My Ph.D. thesis is in the area of applying artificial intelligence for cybersecurity and social good, with a focus on low-resource multilingual natural language processing. More specifically, I develop NLP techniques to promote cybersecurity, combat mis/disinformation, and enable AI accessibility for non-English languages and underserved populations. This involves creating novel models and techniques for tasks like multilingual and crosslingual text classification, machine translation, text generation, and adversarial attacks in limited training data settings. My goal is to democratize state-of-the-art AI capabilities by extending them beyond high-resource languages like English into the long tail of lower-resourced languages worldwide. By innovating robust learning approaches from scarce linguistic data, this research aims to open promising directions where AI can have dual benefits strengthening security, integrity and social welfare across diverse global locales.'
 
 # Unleashing the power of NLP, I am a Ph.D. student at Penn State, delving into interdisciplinary research in Data Science and AI. As part of the [College of IST](https://ist.psu.edu/), I conduct research at the PIKE Research Lab under the guidance of [Dr. Dongwon Lee](https://pike.psu.edu/dongwon/). I focus on applying NLP and machine learning techniques to combat dis/misinformation across languages, contexts, and distribution gaps. At Penn State, I serve as an [NSF LinDiv](https://lindiv.la.psu.edu/) Fellow, conducting transdisciplinary research to advance human-AI languague interaction globally. My mission is to mitigate evolving security threats, risks and enhance access to human language technology for all with cutting-edge solutions. Beyond research aspirations, I stay active through dance, fitness, martial arts, and community service. 
+
+
+# Education to show in About widget
+education:
+  courses:
+    - course: Ph.D. in Informatics
+      institution: The Pennslyvania State University
+      year: 2025 (Expected)
+    - course: MPH con. in Epidemiology
+      institution: St. George's University
+      year: 2020
+    - course: M.Sc in Computer Information Systems con. Health Informatics
+      institution: Boston University
+      year: 2014
+    - course: B.Sc in Information Technology
+      institution: St. George's University 
+      year: 2010
 
 
 # Interests to show in About widget
@@ -50,21 +67,6 @@ interests:
   - Multilingual Scientific Reasoning
 
 
-# Education to show in About widget
-education:
-  courses:
-    - course: Ph.D. in Informatics
-      institution: The Pennslyvania State University
-      year: 2025 (Expected)
-    - course: MPH con. in Epidemiology
-      institution: St. George's University
-      year: 2020
-    - course: M.Sc in Computer Information Systems con. Health Informatics
-      institution: Boston University
-      year: 2014
-    - course: B.Sc in Information Technology
-      institution: St. George's University 
-      year: 2010
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
