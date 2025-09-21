@@ -25,7 +25,7 @@ doi: ''
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ["article"] # for journal article use ["article-journal"] and for preprint: ["article"]
+publication_types: ['paper-conference'] # for journal article use ["article-journal"] and for preprint: ["article"]
 
 # Publication name and optional abbreviated publication name.
 publication: In *Findings of the Association for Computational Linguistics, Empirical Methods in Natural Language Processing*
@@ -46,7 +46,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
+url_pdf: 'https://arxiv.org/pdf/2502.05414'
 url_code: 'https://github.com/aliwister/mol-icl'
 url_dataset: ''
 url_poster: ''
