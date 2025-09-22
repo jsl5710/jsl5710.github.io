@@ -2,7 +2,7 @@
 title: "Penn State connections lead doctoral student to interdisciplinary College of IST"
 
 article: Informatics graduate student Jason Lucas credits his mentors for helping him define his interdisciplinary research path
-article_url: https://www.psu.edu/news/information-sciences-and-technology/story/penn-state-connections-lead-doctoral-student-interdisciplinary-college-ist/
+article_url: https://www.psu.edu/news/information-sciences-and-technology/story/penn-state-connections-lead-doctoral-student
 
 publication: Penn State News
 author: Mary Fetzer
@@ -35,7 +35,7 @@ links:
   - icon: external-link-alt
     icon_pack: fas
     name: Read Full Article
-    url: https://www.psu.edu/news/information-sciences-and-technology/story/penn-state-connections-lead-doctoral-student-interdisciplinary-college-ist/
+    url: https://www.psu.edu/news/information-sciences-and-technology/story/penn-state-connections-lead-doctoral-student
   - icon: university
     icon_pack: fas
     name: College of IST
