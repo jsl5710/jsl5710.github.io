@@ -48,7 +48,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://aclanthology.org/2023.emnlp-main.883.pdf'
+url_pdf: 'https://aclanthology.org/2023.emnlp-main.883/'
 url_code: 'https://github.com/mickeymst/F3'
 url_dataset: 'https://github.com/mickeymst/F3'
 url_poster: ''
