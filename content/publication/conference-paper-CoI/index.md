@@ -46,7 +46,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
+url_pdf: 'https://aclanthology.org/2025.findings-emnlp.191/'
 url_code: 'https://github.com/jsl5710/CoI'
 url_dataset: 'https://github.com/jsl5710/CoI'
 url_poster: ''

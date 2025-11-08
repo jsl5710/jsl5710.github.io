@@ -46,7 +46,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/pdf/2502.05414'
+url_pdf: 'https://aclanthology.org/2025.findings-emnlp.996/'
 url_code: 'https://github.com/aliwister/mol-icl'
 url_dataset: ''
 url_poster: ''
