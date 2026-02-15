@@ -1,0 +1,223 @@
+schema: hugoblox/author/v1
+slug: admin
+is_owner: true
+
+name:
+  display: Jason Lucas
+  given: Jason
+  family: Lucas
+
+status:
+  icon: "☕️"
+
+role: Ph.D. Candidate in Informatics
+
+bio: |
+  I am a PhD candidate in Informatics in the [College of IST](https://ist.psu.edu/) at Penn State University, where I conduct research at the [PIKE Research Lab](https://pike.psu.edu/) under the guidance of [Dr. Dongwon Lee](https://pike.psu.edu/dongwon/). I specialize in AI/ML research focused on Information Integrity, Safe and Ethical AI, including combating harmful content across multiple languages and modalities. My research spans low-resource multilingual NLP, generative AI, and adversarial machine learning, with work extending across 79 languages. I have published 12 papers with 260+ citations in premier venues including ACL, EMNLP, IEEE, and NAACL.
+
+  My doctoral research focuses on bridging the digital language divide through transfer learning, classification (NLU), generation (NLG), adversarial attacks, and developing end-to-end AI pipelines using RAG and Agentic AI workflows for combating multilingual threats. Drawing from my Grenadian background and knowledge of local Creole languages, I bring a global perspective to AI challenges, working to democratize state-of-the-art AI capabilities for underserved linguistic communities worldwide. My mission is to develop robust multilingual multimodal systems and mitigate evolving security vulnerabilities while enhancing access to human language technology through cutting-edge solutions.
+
+  As an [NSF LinDiv](https://lindiv.la.psu.edu/) Fellow, I conduct transdisciplinary research advancing human-AI language interaction for social good. I actively mentor 5+ research interns and teach Applied Generative AI courses. Through industry experience at [Lawrence Livermore National Lab](https://www.llnl.gov/), [Interaction LLC](https://www.interactions.com/), and [Coalfire](https://coalfire.com/), I bridge academic research with practical applications in combating evolving security threats and enhancing global AI accessibility. I see multilingual advances and interdisciplinary collaboration as a competitive advantage, not a communication challenge. Beyond research, I stay active through dance, fitness, martial arts, and community service.
+
+superuser: true
+highlight_name: true
+
+affiliations:
+  - name: Penn State University
+    url: https://www.psu.edu/
+
+interests:
+  - Low-Resource Multilingual NLP
+  - Large Language Models (LLMs)
+  - Safe AI & Adversarial ML
+  - Generative AI, Agentic AI & RAG
+  - Classification & Generation
+  - Transfer Learning & Model Adaptation
+  - Prompt Engineering & Context Learning
+  - DeepFake, Jailbreaking & Hallucination
+  - Multilingual Obfuscation & Attribution
+  - Multilingual Scientific Reasoning
+
+education:
+  - degree: Ph.D. in Informatics
+    institution: The Pennsylvania State University
+    year: 2026 (Expected)
+  - degree: MPH con. in Epidemiology
+    institution: St. George's University
+    year: 2020
+  - degree: M.Sc in Computer Information Systems con. Health Informatics
+    institution: Boston University
+    year: 2014
+  - degree: B.Sc in Information Technology
+    institution: St. George's University
+    year: 2010
+
+experience:
+  - role: Graduate Assistant
+    org: Penn State University
+    start: '2021-08-01'
+    summary: |
+      Responsibilities include:
+      - Lead ML/NLP research combating harmful content across 79 languages
+      - Published 12 papers (260+ citations) in ACL, EMNLP, NAACL, IEEE
+      - Mentor 5+ interns and manage 3 computing courses (150+ students)
+      - Develop end-to-end AI pipelines using PyTorch, HuggingFace, cloud APIs
+      - NSF Fellow: $9K funding for interdisciplinary AI research
+  - role: DSSI Graduate Research Intern
+    org: Lawrence Livermore National Lab
+    start: '2025-05-01'
+    end: '2025-08-01'
+    summary: |
+      Focus Areas:
+      - NLP, LLM, LRM, MLLM development and optimization
+      - Safe AI and reasoning systems research
+      - Mixture-of-Agents architectures
+      - Multilingual AI system development
+  - role: NLP Research Intern
+    org: Interaction LLC
+    start: '2024-05-01'
+    end: '2024-08-01'
+    summary: |
+      Research & Development:
+      - NLP and Intelligent Virtual Assistant (IVA) development
+      - Large Language Model optimization and prompt engineering
+      - Conversational AI and dialogue summarization systems
+      - Advanced LLM integration for customer interaction platforms
+  - role: Cybersecurity Consultant Intern
+    org: Coalfire
+    start: '2023-05-01'
+    end: '2023-08-01'
+    summary: |
+      Security & Compliance:
+      - AI applications for cybersecurity threat detection
+      - Security compliance and standards implementation
+      - Security Operations Center (SOC) operations
+      - Payment Card Industry (PCI) compliance frameworks
+  - role: Faculty - Instructor, Head of Division & Technical Lead
+    org: St. George's University
+    start: '2011-06-01'
+    end: '2021-07-01'
+    summary: |
+      Leadership & Education:
+      - Led 6-person team supporting 4000+ medical students
+      - Achieved 99% uptime on SimCapture/Examsoft platforms
+      - Pioneered virtual OSCE system during COVID-19, trained 100+ faculty
+      - Taught IT, Medical, and Public Health Informatics courses
+  - role: Information Technology Instructor
+    org: Government of Grenada
+    start: '2010-08-01'
+    end: '2011-07-01'
+    summary: Managed IT infrastructure for 500+ students; achieved 95% pass rate in CSEC IT examinations; implemented digital literacy program reaching 300+ students.
+
+skills:
+  - name: AI/ML
+    color: '#2563eb'
+    color_border: '#3b82f6'
+    items:
+      - label: Natural Language Processing
+        level: 5
+      - label: Large Language Models
+        level: 5
+      - label: Deep Learning
+        level: 5
+      - label: Adversarial ML
+        level: 5
+  - name: Programming
+    color: '#16a34a'
+    color_border: '#22c55e'
+    items:
+      - label: Python
+        level: 5
+      - label: PyTorch
+        level: 5
+      - label: SQL
+        level: 5
+      - label: R
+        level: 5
+  - name: Data Science
+    color: '#9333ea'
+    color_border: '#a855f7'
+    items:
+      - label: Data Visualization
+        level: 5
+      - label: Feature Engineering
+        level: 5
+      - label: Web Scraping
+        level: 5
+      - label: Predictive Analytics
+        level: 5
+  - name: Database & Analytics
+    color: '#0d9488'
+    color_border: '#14b8a6'
+    items:
+      - label: Oracle
+        level: 4
+      - label: MSSQL
+        level: 5
+      - label: SAS
+        level: 4
+      - label: EpiInfo
+        level: 4
+      - label: GeoDa
+        level: 4
+  - name: Transferable Skills
+    color: '#4338ca'
+    color_border: '#6366f1'
+    items:
+      - label: Scientific Writing
+        level: 5
+      - label: Grant Writing
+        level: 5
+      - label: Project Management
+        level: 5
+      - label: Technical Training
+        level: 5
+  - name: Hobbies
+    color: '#eeac02'
+    color_border: '#f0bf23'
+    items:
+      - label: Dancing
+        level: 5
+      - label: Martial Arts
+        level: 4
+      - label: Fitness
+        level: 4
+      - label: Mentorship
+        level: 5
+  - name: Platforms & Tools
+    color: '#ea580c'
+    color_border: '#f97316'
+    items:
+      - label: HuggingFace
+        level: 5
+      - label: VSCode
+        level: 5
+      - label: Google Colab
+        level: 5
+      - label: GitHub
+        level: 5
+      - label: Google Cloud Platform
+        level: 5
+      - label: Azure
+        level: 5
+      - label: vLLM
+        level: 5
+      - label: AdapterHub
+        level: 5
+
+links:
+  - icon: at-symbol
+    url: '/#contact'
+    label: E-mail Me
+  - icon: brands/x
+    url: https://twitter.com/jasonslucas1
+    label: Follow me on Twitter
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?hl=en&user=XU1WN6YAAAAJ
+    label: Google Scholar
+  - icon: brands/github
+    url: https://github.com/jsl5710
+    label: GitHub
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/jslu
+    label: LinkedIn
