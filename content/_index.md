@@ -5,13 +5,13 @@ date: 2023-12-15
 type: landing
 
 sections:
-  - block: resume-biography-3
+  - block: about.biography
     id: about
     content:
       title: About Me
       username: admin
 
-  - block: resume-experience
+  - block: experience
     id: experience
     content:
       title: Experience
@@ -99,7 +99,7 @@ sections:
     design:
       columns: '2'
 
-  - block: resume-skills
+  - block: skills
     id: skills
     content:
       title: Skills
