@@ -1,116 +1,160 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# ══════════════════════════════════════════════════════════════════════════════
+# HUGO BLOX CONFIGURATION
+# Schema: hugoblox.com/schema/v2
+# ══════════════════════════════════════════════════════════════════════════════
+hugoblox:
+  schema: "2.0"
 
-# Appearance
+  # IDENTITY
+  identity:
+    name: "Jason S. Lucas"
+    organization: "Penn State University"
+    type: person
+    tagline: "PhD Candidate in Informatics"
+    description: "Jason S. Lucas — PhD Candidate at Penn State specializing in multilingual NLP, information integrity, and safe AI research across 79 languages."
+    social:
+      twitter: "jasonslucas1"
 
-appearance:
-  theme_day: minimal
-  theme_night: minimal
-  font: minimal
-  font_size: m
+  # THEME
+  theme:
+    mode: system
+    pack: "default"
+    colors:
+      primary: ""
+      secondary: ""
+      neutral: ""
+    colors_light: {}
+    colors_dark: {}
+    surfaces:
+      background: ""
+      foreground: ""
+      header:
+        background: ""
+        foreground: ""
+      footer:
+        background: ""
+        foreground: ""
 
-# SEO
+  # TYPOGRAPHY
+  typography:
+    font: "sans"
+    size: "md"
 
-marketing:
-  seo:
-    site_type: Person
-    local_business_type: ''
-    org_name: ''
-    description: 'Jason S. Lucas — PhD Candidate at Penn State specializing in multilingual NLP, information integrity, and safe AI research across 79 languages.'
-    twitter: 'jasonslucas1'
-  analytics:
-    google_analytics: ''
-    baidu_tongji: ''
-    google_tag_manager: ''
-    microsoft_clarity: ''
-  verification:
-    google: ''
-    baidu: ''
+  # LAYOUT
+  layout:
+    radius: "md"
+    spacing: "comfortable"
+    avatar_shape: circle
 
-# Site header
-
-header:
-  navbar:
+  # HEADER
+  header:
     enable: true
-    align: l
-    show_logo: true
-    show_language: false
-    show_day_night: true
-    show_search: true
-    highlight_active_link: true
+    style: navbar
+    sticky: true
+    align: left
+    search: true
+    theme_toggle: true
+    theme_picker: true
+    language_switcher: false
+    cta:
+      enable: false
+      text: ""
+      url: ""
 
-# Site footer
+  # FOOTER
+  footer:
+    style: minimal
+    language_switcher: false
+    text: ""
 
-footer:
+  # COPYRIGHT
   copyright:
-    notice: '© {year} Jason S. Lucas. This work is licensed under {license}'
+    notice: "© {year} {name}. This work is licensed under {license}"
     license:
-      enable: true
+      type: cc
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
 
-# Localization
+  # SEO
+  seo:
+    title: ""
+    location:
+      address:
+        street: "123 S Burrowes St"
+        city: "State College"
+        region: "PA"
+        postal_code: "16801"
+        country: "US"
+      coordinates:
+        latitude: 40.792263
+        longitude: -77.863333
+      phone: "954 864 4494"
+    ai:
+      allow:
+        - /
+      disallow: []
+      note: ""
+      contact: "jsl5710@psu.edu"
 
-locale:
-  date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
-  address_format: en-us
+  # CONTENT
+  content:
+    math:
+      enable: false
+    toc:
+      enable: true
+    reading_time:
+      enable: true
+    citations:
+      style: apa
 
-# Site features
-
-features:
-  syntax_highlighter:
-    theme_light: github-light
-    theme_dark: dracula
-  math:
-    enable: false
-  privacy_pack:
-    enable: false
-  repository:
-    url: 'https://github.com/jsl5710/jsl5710.github.io'
-    content_dir: content
-    branch: main
-  avatar:
-    gravatar: false
-    shape: circle
-  comment:
-    provider: ''
-    disqus:
-      shortname: ''
-      show_count: true
-    commento:
-      url: ''
-    giscus:
-      repo: ''
-      repo_id: ''
-      category: ''
-      category_id: ''
+  # SEARCH
   search:
-    provider: wowchemy
-    algolia:
-      app_id: ''
-      api_key: ''
-      index_name: ''
-      show_logo: false
-  map:
-    provider: 'mapnik'
-    api_key: ''
-    zoom: 15
-
-# Extensions
-
-extensions:
-  cms:
-    branch: main
-    local_backend: false
-  academicons:
     enable: true
+    suggestions: []
+    quick_actions: []
 
-# Security
+  # COMMENTS
+  comments:
+    enable: false
+    provider: ""
 
-security:
-  # Allow frame for embedding speaker notes in slides
-  allow_frame: true
+  # ANALYTICS
+  analytics:
+    google:
+      measurement_id: ""
+
+  # VERIFICATION
+  verification:
+    google: ""
+
+  # REPOSITORY
+  repository:
+    enable: false
+    url: "https://github.com/jsl5710/jsl5710.github.io"
+    branch: main
+    content_dir: content
+
+  # LOCALE
+  locale:
+    date_format: "Jan 2, 2006"
+    time_format: "3:04 PM"
+    address_format: en-us
+
+  # SECURITY
+  security:
+    csp:
+      policy: ""
+      report_only: false
+    frame_options: allow
+    permissions_policy: ""
+
+  # PRIVACY
+  privacy:
+    enable: false
+    anonymize_analytics: true
+
+  # PREMIUM
+  pro:
+    hide_attribution: false
+    affiliate_code: ""

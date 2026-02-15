@@ -305,4 +305,4 @@ My doctoral research focuses on bridging the digital language divide through tra
 
 As an [NSF LinDiv](https://lindiv.la.psu.edu/) Fellow, I conduct transdisciplinary research advancing human-AI language interaction for social good. I actively mentor 5+ research interns and teach Applied Generative AI courses. Through industry experience at [Lawrence Livermore National Lab](https://www.llnl.gov/), [Interaction LLC](https://www.interactions.com/), and [Coalfire](https://coalfire.com/), I bridge academic research with practical applications in combating evolving security threats and enhancing global AI accessibility. I see multilingual advances and interdisciplinary collaboration as a competitive advantage, not a communication challenge. Beyond research, I stay active through dance, fitness, martial arts, and community service.
 
- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/jsl_resume.pdf" "newtab" >}}Resumé{{< /staticref >}}.
+Download my [Resumé](uploads/jsl_resume.pdf).
