@@ -212,40 +212,27 @@ sections:
     design:
       columns: '1'
 
-  - block: contact
+  - block: markdown
     id: contact
     content:
       title: Contact
-      subtitle:
+      subtitle: ''
       text: |-
-        Book an appointment or contact me using the information below
-      appointment_url: 'https://calendly.com/jasonsamlucas/meeting'
-      email: jsl5710@psu.edu
-      phone: 954 864 4494
-      address:
-        street: 123 S Burrowes St
-        city: State College
-        region: PA
-        postcode: '16801'
-        country: United States
-        country_code: US
-      directions: Enter Building and take the elevator or stairs to the 4th Floor, locate College of IST.
-      office_hours:
-        - 'Monday 09:00 to 17:00'
-        - 'Wednesday 09:00 to 17:00'
-      coordinates:
-        latitude: '40.792263'
-        longitude: '-77.863333'
-      contact_links:
-        - icon: twitter
-          icon_pack: fab
-          name: DM Me
-          link: 'https://twitter.com/jasonslucas1'
-        - icon: video
-          icon_pack: fas
-          name: Zoom Me
-          link: 'https://psu.zoom.us/my/jasonslu'
-      autolink: true
+        Book an appointment or contact me using the information below.
+
+        **Email:** [jsl5710@psu.edu](mailto:jsl5710@psu.edu)
+
+        **Phone:** [954 864 4494](tel:9548644494)
+
+        **Address:** 123 S Burrowes St, State College, PA 16801, United States
+
+        **Directions:** Enter Building and take the elevator or stairs to the 4th Floor, locate College of IST.
+
+        **Office Hours:** Monday & Wednesday, 09:00–17:00
+
+        ---
+
+        [Book a Meeting](https://calendly.com/jasonsamlucas/meeting) | [DM on Twitter](https://twitter.com/jasonslucas1) | [Zoom Me](https://psu.zoom.us/my/jasonslu)
     design:
       columns: '2'
 ---

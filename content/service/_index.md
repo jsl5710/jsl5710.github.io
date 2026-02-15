@@ -14,6 +14,6 @@ sections:
           - service
       order: desc
     design:
-      view: compact
+      view: card
       columns: '2'
 ---
