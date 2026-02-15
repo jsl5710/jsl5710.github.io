@@ -1,0 +1,5 @@
+# HugoBlox site configuration
+hugo_version: "0.154.5"
+
+deploy:
+  host: github-pages
