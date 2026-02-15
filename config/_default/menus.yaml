@@ -15,10 +15,13 @@ main:
     weight: 20 
   - name: Publications
     url: '#featured'
-    weight: 25 
+    weight: 25
+  - name: Projects
+    url: '#projects'
+    weight: 30
   - name: Talks
     url: '#talks'
-    weight: 35  
+    weight: 35
   - name: News
     url: '#posts'
     weight: 40
