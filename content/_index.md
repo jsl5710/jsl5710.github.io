@@ -120,7 +120,7 @@ sections:
           - service
       order: desc
     design:
-      view: compact
+      view: card
       columns: '2'
 
   - block: collection
@@ -139,9 +139,8 @@ sections:
     content:
       title: All Publications
       text: |-
-        {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
-        {{% /callout %}}
+        > [!NOTE]
+        > Quickly discover relevant content by [filtering publications](./publication/).
       filters:
         folders:
           - publication
@@ -158,7 +157,7 @@ sections:
         folders:
           - event
     design:
-      view: compact
+      view: card
       columns: '2'
 
   - block: collection
@@ -181,7 +180,7 @@ sections:
       offset: 0
       order: desc
     design:
-      view: compact
+      view: card
       columns: '2'
 
   - block: collection
@@ -200,7 +199,7 @@ sections:
         - name: Deep Learning
           tag: Deep Learning
     design:
-      view: masonry
+      view: card
       columns: '1'
 
   - block: markdown
@@ -209,7 +208,7 @@ sections:
       title: Gallery
       subtitle: ''
       text: |-
-        {{< gallery album="demo" >}}
+        Browse photos from conferences, presentations, and campus life.
     design:
       columns: '1'
 
