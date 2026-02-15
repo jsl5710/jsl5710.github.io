@@ -66,8 +66,8 @@ sections:
           description: |2-
               Responsibilities include:
 
-              * Lead ML/NLP research combating harmful content across 70+ languages
-              * Published 6 top-tier papers (180+ citations) in ACL, EMNLP, NAACL
+              * Lead ML/NLP research combating harmful content across 79 languages
+              * Published 12 papers (260+ citations) in ACL, EMNLP, NAACL, IEEE
               * Mentor 5+ interns and manage 3 computing courses (150+ students)
               * Develop end-to-end AI pipelines using PyTorch, HuggingFace, cloud APIs
               * NSF Fellow: $9K funding for interdisciplinary AI research
