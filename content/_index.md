@@ -109,6 +109,21 @@ sections:
       columns: '2'
 
   - block: collection
+    id: service
+    content:
+      title: Service & Leadership
+      subtitle: ''
+      text: '[View all service roles →](./service/)'
+      count: 4
+      filters:
+        folders:
+          - service
+      order: desc
+    design:
+      view: compact
+      columns: '2'
+
+  - block: collection
     id: featured
     content:
       title: Featured Publications

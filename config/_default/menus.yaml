@@ -13,6 +13,9 @@ main:
   - name: Skills
     url: '#skills'
     weight: 20
+  - name: Service
+    url: '#service'
+    weight: 22
   - name: Publications
     url: '#featured'
     weight: 25
