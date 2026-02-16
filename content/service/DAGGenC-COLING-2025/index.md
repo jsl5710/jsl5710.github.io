@@ -4,9 +4,10 @@ date: '2024-10-01'
 summary: Program Committee Member for the Workshop on Detecting AI Generated Content, co-located with COLING 2025 in Abu Dhabi, UAE.
 tags: [Academic Service, Program Committee, AI]
 authors: [admin]
+external_link: https://genai-content-detection.gitlab.io/
 ---
 
-Served as **Program Committee Member** for the **Workshop on Detecting AI Generated Content**, co-located with COLING 2025 in Abu Dhabi, UAE.
+Served as **Program Committee Member** for the [Workshop on Detecting AI Generated Content](https://genai-content-detection.gitlab.io/), co-located with COLING 2025 in Abu Dhabi, UAE. ([Organizers](https://genai-content-detection.gitlab.io/organizers/))
 
 - Reviewed submitted papers and provided constructive feedback to ensure high-quality contributions
 - Helped shape the workshop program by evaluating research on advancements and challenges in AI-generated content detection
