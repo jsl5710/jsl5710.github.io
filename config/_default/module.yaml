@@ -11,6 +11,22 @@ imports:
 
 # Install any Hugo Blox within the `hugo-blox/blox/` folder
 mounts:
+  # Re-add ALL default mounts (required when defining custom mounts)
+  - source: content
+    target: content
+  - source: data
+    target: data
+  - source: layouts
+    target: layouts
+  - source: assets
+    target: assets
+  - source: static
+    target: static
+  - source: i18n
+    target: i18n
+  - source: archetypes
+    target: archetypes
+  # Custom blox community/all-access mounts
   - source: hugo-blox/blox/community
     target: layouts/_partials/blox/community/
     includeFiles: '**.html'
@@ -20,7 +36,3 @@ mounts:
   - source: hugo-blox/blox
     target: assets/dist/community/blox/
     includeFiles: '**.css'
-  - source: layouts
-    target: layouts
-  - source: assets
-    target: assets
