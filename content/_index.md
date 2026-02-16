@@ -129,6 +129,8 @@ sections:
       subtitle: ''
       text: |-
         Browse photos from conferences, presentations, and campus life.
+
+        {{< gallery album="demo" >}}
     design:
       columns: '1'
 
