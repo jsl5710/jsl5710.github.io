@@ -75,7 +75,7 @@ image:
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-  - f3
+  - ai-robustness
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.

@@ -50,7 +50,8 @@ image:
 
 # Associated Projects
 projects:
-  - bluff
+  - multilingual-nlp
+  - equity-inclusion
 
 slides: ""
 ---

@@ -46,7 +46,8 @@ image:
   preview_only: false
 
 # Associated Projects
-projects: []
+projects:
+  - ai-robustness
 
 slides: ""
 ---
