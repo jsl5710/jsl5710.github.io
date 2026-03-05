@@ -33,7 +33,7 @@ tags: [Multilingual NLP, Fake News Detection, Benchmark, Adversarial ML, Low-Res
 # Display this page in the Featured widget?
 featured: true
 
-url_pdf: ''
+url_pdf: 'https://arxiv.org/pdf/2603.00634'
 url_code: 'https://github.com/jsl5710/BLUFF'
 url_dataset: 'https://huggingface.co/datasets/jsl5710/BLUFF'
 url_poster: ''
@@ -65,6 +65,7 @@ Key contributions include:
 - **Comprehensive evaluation**: State-of-the-art detectors suffer up to 25.3% Macro-F1 degradation on low-resource versus high-resource languages
 
 Resources:
+- [arXiv Paper](https://arxiv.org/abs/2603.00634)
 - [Project Page](https://jsl5710.github.io/BLUFF)
 - [GitHub Repository](https://github.com/jsl5710/BLUFF)
 - [HuggingFace Dataset](https://huggingface.co/datasets/jsl5710/BLUFF)
