@@ -19,7 +19,7 @@ authors:
 #   - 'Equal contribution'
 
 date: '2026-01-01T00:00:00Z'
-doi: '' # To be updated when available
+doi: '10.1109/TIFS.2025.3569189'
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
@@ -48,7 +48,7 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: '' # To be updated when published
+url_pdf: 'https://ieeexplore.ieee.org/document/11371014'
 url_code: ''
 url_dataset: ''
 url_poster: ''
