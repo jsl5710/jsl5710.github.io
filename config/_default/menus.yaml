@@ -5,34 +5,34 @@
 
 main:
   - name: Home
-    url: '#about'
+    url: '/#about'
     weight: 10
   - name: Experience
-    url: '#experience'
+    url: '/#experience'
     weight: 15
   - name: Skills
-    url: '#skills'
+    url: '/#skills'
     weight: 20
   - name: Service
-    url: '#service'
+    url: '/#service'
     weight: 22
   - name: Publications
-    url: '#featured'
+    url: '/#featured'
     weight: 25
   - name: Projects
-    url: '#projects'
+    url: '/#projects'
     weight: 30
   - name: Talks
-    url: '#talks'
+    url: '/#talks'
     weight: 35
   - name: News
-    url: '#posts'
+    url: '/#posts'
     weight: 40
   - name: Gallery
-    url: '#gallery'
+    url: '/#gallery'
     weight: 45
   - name: Contact
-    url: '#contact'
+    url: '/#contact'
     weight: 50
   - name: CV
     url: uploads/jsl_cv.pdf
