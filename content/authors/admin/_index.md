@@ -35,7 +35,7 @@ education:
   courses:
     - course: Ph.D. in Informatics
       institution: The Pennsylvania State University
-      year: 2026 (Expected)
+      year: 2026
     - course: MPH con. in Epidemiology
       institution: St. George's University
       year: 2020
