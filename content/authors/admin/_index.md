@@ -30,23 +30,6 @@ organizations:
 # Unleashing the power of NLP, I am a Ph.D. student at Penn State, delving into interdisciplinary research in Data Science and AI. As part of the [College of IST](https://ist.psu.edu/), I conduct research at the PIKE Research Lab under the guidance of [Dr. Dongwon Lee](https://pike.psu.edu/dongwon/). I focus on applying NLP and machine learning techniques to combat dis/misinformation across languages, contexts, and distribution gaps. At Penn State, I serve as an [NSF LinDiv](https://lindiv.la.psu.edu/) Fellow, conducting transdisciplinary research to advance human-AI languague interaction globally. My mission is to mitigate evolving security threats, risks and enhance access to human language technology for all with cutting-edge solutions. Beyond research aspirations, I stay active through dance, fitness, martial arts, and community service. 
 
 
-# Education to show in About widget
-education:
-  courses:
-    - course: Ph.D. in Informatics
-      institution: The Pennsylvania State University
-      year: 2026
-    - course: MPH con. in Epidemiology
-      institution: St. George's University
-      year: 2020
-    - course: M.Sc in Computer Information Systems con. Health Informatics
-      institution: Boston University
-      year: 2014
-    - course: B.Sc in Information Technology
-      institution: St. George's University 
-      year: 2010
-
-
 # Interests to show in About widget
 # interests:
 #   - Natural Language Processing
