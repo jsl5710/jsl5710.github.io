@@ -51,7 +51,7 @@ hugoblox:
     enable: true
     style: navbar
     sticky: true
-    align: left
+    align: center
     search: true
     theme_toggle: true
     theme_picker: true
