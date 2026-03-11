@@ -8,7 +8,7 @@ image:
 
 Excited to share that our BLUFF benchmark is getting some attention!
 
-[Slator](https://lnkd.in/eaRK-9-Q) just covered our work: **"New Benchmark Tests AI Detection Across Languages and Translation"** — and it captures exactly why this research matters.
+[Slator](https://slator.com/ai-detection-across-languages/) just covered our work: **"New Benchmark Tests AI Detection Across Languages and Translation"** — and it captures exactly why this research matters.
 
 **BLUFF** (Benchmarking in LowresoUrce Languages for detecting Falsehoods and Fake news) is a multilingual benchmark spanning **79 languages** (20 high-resource, 59 low-resource) and **200K+ samples**, built to stress-test AI detection systems in the places they're most likely to fail.
 
@@ -24,4 +24,4 @@ The benchmark is publicly available. If you're working on multilingual NLP, info
 
 - [Paper](https://www.jasonslucas.com/publication/conference-paper-bluff/)
 - [Project page](https://jsl5710.github.io/BLUFF/)
-- [Slator coverage](https://lnkd.in/eaRK-9-Q)
+- [Slator coverage](https://slator.com/ai-detection-across-languages/)
