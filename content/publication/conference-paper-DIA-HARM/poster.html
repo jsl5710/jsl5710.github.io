@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIA-HARM Poster</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #ffffff;
+    --navy-mid: #f8fafc;
+    --navy-light: #e2e8f0;
+    --teal: #0d9488;
+    --teal-light: #0f766e;
+    --amber: #d97706;
+    --amber-light: #b45309;
+    --coral: #dc2626;
+    --coral-light: #b91c1c;
+    --text: #0f172a;
+    --text-dim: #475569;
+    --border: rgba(0,0,0,0.1);
+    --card-bg: rgba(0,0,0,0.03);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #ffffff;
+    color: var(--text);
+    width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* Background texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 10% 0%, rgba(13,148,136,0.04) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 90% 100%, rgba(217,119,6,0.03) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .poster { position: relative; z-index: 1; }
+
+  /* HEADER */
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: start;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 24px;
+    margin-bottom: 28px;
+  }
+
+  .title-block {}
+
+  .venue-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(13,148,136,0.08);
+    border: 1px solid rgba(13,148,136,0.3);
+    color: var(--teal-light);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 2px;
+    margin-bottom: 14px;
+  }
+
+  .venue-tag::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--teal-light);
+  }
+
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 34px;
+    line-height: 1.15;
+    color: #0f172a;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+  }
+
+  h1 span.accent { color: var(--coral); }
+
+  .authors {
+    font-size: 12.5px;
+    color: var(--text-dim);
+    line-height: 1.7;
+  }
+
+  .authors strong { color: #0f172a; }
+
+  .header-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    align-items: start;
+  }
+
+  .stat-pill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 10px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .stat-pill .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--amber);
+  }
+
+  .stat-pill .label { color: var(--text-dim); font-size: 10px; margin-top: 2px; }
+
+  /* GRID LAYOUT */
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .grid-2-eq {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  /* CARDS */
+  .card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 18px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card.teal-accent { border-top: 2px solid var(--teal); }
+  .card.amber-accent { border-top: 2px solid var(--amber); }
+  .card.coral-accent { border-top: 2px solid var(--coral); }
+  .card.white-accent { border-top: 2px solid #94a3b8; }
+
+  .card-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card-title .dot {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+  }
+
+  .teal-accent .dot { background: var(--teal); }
+  .amber-accent .dot { background: var(--amber); }
+  .coral-accent .dot { background: var(--coral); }
+  .white-accent .dot { background: #94a3b8; }
+
+  /* ABSTRACT */
+  .abstract-text {
+    font-size: 12.5px;
+    line-height: 1.75;
+    color: #475569;
+  }
+
+  .abstract-text strong { color: #0f172a; }
+
+  /* FINDINGS */
+  .finding {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    align-items: flex-start;
+  }
+
+  .finding:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+  .finding-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--teal);
+    background: rgba(13,148,136,0.08);
+    border: 1px solid rgba(13,148,136,0.2);
+    width: 26px; height: 26px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .finding-text {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #475569;
+  }
+
+  .finding-text strong { color: #0f172a; }
+
+  /* PIPELINE */
+  .pipeline {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin: 8px 0;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .pipe-step {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-size: 10.5px;
+    font-weight: 600;
+    text-align: center;
+    flex: 1;
+    position: relative;
+    color: #0f172a;
+  }
+
+  .pipe-step .ps-label {
+    font-size: 9px;
+    color: #64748b;
+    font-weight: 400;
+    display: block;
+    margin-top: 2px;
+  }
+
+  .pipe-arrow {
+    color: #94a3b8;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  /* RESULT BARS */
+  .result-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+
+  .result-label {
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    color: #475569;
+    width: 110px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .result-bar-wrap {
+    flex: 1;
+    height: 18px;
+    background: #f1f5f9;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .result-bar {
+    height: 100%;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 6px;
+    transition: width 0.3s;
+  }
+
+  .result-bar .bv {
+    font-size: 9px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    color: rgba(0,0,0,0.7);
+    white-space: nowrap;
+  }
+
+  .bar-good { background: linear-gradient(90deg, var(--teal), var(--teal-light)); }
+  .bar-mid  { background: linear-gradient(90deg, #6366f1, #818cf8); }
+  .bar-warn { background: linear-gradient(90deg, var(--amber), var(--amber-light)); }
+  .bar-bad  { background: linear-gradient(90deg, var(--coral), var(--coral-light)); }
+
+  /* DIALECT MAP GRID */
+  .dialect-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4px;
+  }
+
+  .dialect-cell {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 3px;
+    padding: 5px 6px;
+    font-size: 9px;
+    color: #475569;
+    line-height: 1.4;
+  }
+
+  .dialect-cell.region-us    { border-left: 2px solid #6366f1; }
+  .dialect-cell.region-uk    { border-left: 2px solid #8b5cf6; }
+  .dialect-cell.region-afr   { border-left: 2px solid var(--teal); }
+  .dialect-cell.region-asia  { border-left: 2px solid var(--amber); }
+  .dialect-cell.region-carib { border-left: 2px solid var(--coral); }
+
+  .dialect-cell strong { color: #0f172a; font-size: 8.5px; display: block; }
+
+  /* SQ CARDS */
+  .sq-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .sq-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+
+  .sq-badge.teal { background: rgba(13,148,136,0.1); color: var(--teal); border: 1px solid rgba(13,148,136,0.25); }
+  .sq-badge.amber { background: rgba(217,119,6,0.1); color: var(--amber); border: 1px solid rgba(217,119,6,0.25); }
+  .sq-badge.purple { background: rgba(99,102,241,0.1); color: #4f46e5; border: 1px solid rgba(99,102,241,0.25); }
+  .sq-badge.coral { background: rgba(220,38,38,0.1); color: var(--coral); border: 1px solid rgba(220,38,38,0.25); }
+
+  .sq-q { font-size: 11px; color: #475569; line-height: 1.4; }
+
+  .delta-badge {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 8px 0 4px;
+  }
+
+  .delta-down { background: rgba(220,38,38,0.08); color: var(--coral); }
+  .delta-up   { background: rgba(13,148,136,0.08); color: var(--teal); }
+  .delta-big  { background: rgba(217,119,6,0.08); color: var(--amber); }
+
+  .delta-desc { font-size: 10.5px; color: #475569; line-height: 1.5; }
+
+  /* RECS */
+  .rec {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: flex-start;
+  }
+
+  .rec:last-child { margin-bottom: 0; }
+
+  .rec-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    font-weight: 700;
+    color: var(--amber);
+    background: rgba(217,119,6,0.08);
+    border: 1px solid rgba(217,119,6,0.2);
+    padding: 3px 7px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .rec-text { font-size: 11.5px; color: #475569; line-height: 1.55; }
+  .rec-text strong { color: #0f172a; }
+
+  /* Section divider */
+  .section-label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin: 20px 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #e2e8f0;
+  }
+
+  /* METRIC TABLE */
+  .mtable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5px;
+  }
+
+  .mtable th {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #64748b;
+    padding: 6px 8px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .mtable td {
+    padding: 6px 8px;
+    color: #475569;
+    border-bottom: 1px solid #f1f5f9;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+  }
+
+  .mtable td:first-child {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    color: #0f172a;
+  }
+
+  .mtable tr:last-child td { border-bottom: none; }
+  .mtable .best { color: var(--teal); font-weight: 700; }
+  .mtable .worst { color: var(--coral); }
+  .mtable .warn { color: var(--amber); }
+
+  /* FOOTER */
+  .footer {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+  }
+
+  .footer-logo span { color: var(--coral); }
+
+  .footer-links {
+    display: flex;
+    gap: 16px;
+    font-size: 10.5px;
+    color: var(--text-dim);
+  }
+
+  .footer-links a {
+    color: var(--teal);
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+  }
+
+  .institutions {
+    font-size: 10.5px;
+    color: var(--text-dim);
+    text-align: right;
+  }
+
+  /* Inline highlight */
+  .hi-teal { color: var(--teal); font-weight: 600; }
+  .hi-amber { color: var(--amber); font-weight: 600; }
+  .hi-coral { color: var(--coral); font-weight: 600; }
+
+  .small-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    background: #f1f5f9;
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: #0f172a;
+  }
+
+  /* Harm flow */
+  .harm-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    padding: 8px 10px;
+    background: #f8fafc;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+  }
+
+  .harm-icon {
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .harm-content { flex: 1; }
+  .harm-title { font-size: 10.5px; font-weight: 600; color: #0f172a; margin-bottom: 2px; }
+  .harm-desc  { font-size: 9.5px; color: #475569; line-height: 1.4; }
+
+  .harm-pct {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  /* Comparison */
+  .compare-row {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 6px;
+  }
+
+  .cmp-label {
+    font-size: 10px;
+    color: #475569;
+    width: 80px;
+    flex-shrink: 0;
+  }
+
+  .cmp-val1 {
+    background: rgba(13,148,136,0.12);
+    color: var(--teal);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 3px 0 0 3px;
+    flex: 1;
+    text-align: center;
+  }
+
+  .cmp-vs {
+    background: #f1f5f9;
+    color: #94a3b8;
+    font-size: 9px;
+    padding: 3px 6px;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .cmp-val2 {
+    background: rgba(220,38,38,0.1);
+    color: var(--coral);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 0 3px 3px 0;
+    flex: 1;
+    text-align: center;
+  }
+
+  /* Inline highlights */
+  .hi-teal { color: var(--teal); font-weight: 600; }
+  .hi-amber { color: var(--amber); font-weight: 600; }
+  .hi-coral { color: var(--coral); font-weight: 600; }
+
+  .small-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    background: #f1f5f9;
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: #0f172a;
+    border: 1px solid #e2e8f0;
+  }
+
+  /* FOOTER */
+  .footer {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+  }
+
+  .footer-logo span { color: var(--coral); }
+
+  .footer-links {
+    display: flex;
+    gap: 16px;
+    font-size: 10.5px;
+    color: #475569;
+  }
+
+  .footer-links a {
+    color: var(--teal);
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+  }
+
+  .institutions {
+    font-size: 10.5px;
+    color: #475569;
+    text-align: right;
+  }</style>
+</head>
+<body>
+<div class="poster">
+
+  <!-- ═══ HEADER ═══ -->
+  <div class="header">
+    <div class="title-block">
+      <div style="margin-bottom:14px;">
+        <img src="data:image/png;base64,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" alt="Penn State College of Information Sciences and Technology" style="height:52px; display:block;">
+      </div>
+      <h1>DIA-<span class="accent">HARM</span>: Dialectal Disparities in<br>Harmful Content Detection Across 50 English Dialects</h1>
+      <div class="authors">
+        <strong>Jason Lucas<sup>1</sup></strong>, Matt Murtagh<sup>*2</sup>, Ali Al-Lawati<sup>*1</sup>, Uchendu Uchendu<sup>1</sup>, Adaku Uchendu<sup>3</sup>, Dongwon Lee<sup>1</sup><br>
+        <sup>1</sup> Pennsylvania State University, PIKE Research Lab &nbsp;·&nbsp; <sup>2</sup> Trinity College Dublin &nbsp;·&nbsp; <sup>3</sup> MIT Lincoln Laboratory &nbsp;·&nbsp; <em>*Equal contribution</em>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="stat-pill"><div class="num">195K+</div><div class="label">Dialectal Samples</div></div>
+      <div class="stat-pill"><div class="num">50</div><div class="label">English Dialects</div></div>
+      <div class="stat-pill"><div class="num">16</div><div class="label">Detection Models</div></div>
+      <div class="stat-pill"><div class="num">9</div><div class="label">Source Benchmarks</div></div>
+    </div>
+  </div>
+
+  <!-- ═══ ROW 1: Abstract ═══ -->
+  <div style="margin-bottom:16px;">
+    <div class="card white-accent">
+      <div class="card-title"><span class="dot"></span> Overview</div>
+      <p class="abstract-text">
+        Harmful content detectors are predominantly developed and evaluated on <strong>Standard American English (SAE)</strong>, leaving their robustness to dialectal variation unexplored.
+        We present <strong>DIA-HARM</strong>, the first benchmark for evaluating disinformation detection robustness across <strong>50 English dialects</strong> spanning U.S., British, African, Caribbean, and Asia-Pacific varieties.
+        Using Multi-VALUE's linguistically-grounded transformations, we introduce <strong>D³</strong> (Dialectal Disinformation Detection), a corpus of <strong>195K+ samples</strong> from 9 established benchmarks.
+        Our evaluation of 16 detection models reveals systematic vulnerabilities: human-written dialectal content degrades detection by <strong class="hi-coral">1.4–3.6% F1</strong>, while AI-generated content remains stable. Models with multilingual pre-training substantially outperform monolingual encoders and zero-shot LLMs fail catastrophically. These findings demonstrate that current detectors may <strong>systematically disadvantage hundreds of millions of non-SAE speakers</strong>.
+      </p>
+    </div>
+  </div>
+
+  <!-- ═══ PIPELINE ROW: Full-width ═══ -->
+  <div style="margin-bottom:16px;">
+    <div class="card teal-accent">
+      <div class="card-title"><span class="dot"></span> Evaluation Pipeline</div>
+      <!-- Full pipeline: 5 equal boxes in one row -->
+      <div style="display:grid; grid-template-columns: 1fr 28px 1fr 28px 1fr 28px 1fr 28px 1fr; align-items:center; gap:0;">
+
+        <!-- BOX 1: SAE Datasets -->
+        <div style="border:2px solid #cbd5e1; border-radius:8px; background:#f8fafc; padding:12px 10px; height:200px; display:flex; flex-direction:column;">
+          <div style="font-size:11px; font-weight:700; color:#0f172a; text-align:center; padding-bottom:7px; border-bottom:1px solid #e2e8f0; margin-bottom:7px;">SAE Dataset</div>
+          <div style="display:flex; flex-direction:column; gap:3px; flex:1; overflow:hidden;">
+            <div style="font-size:9.5px; color:#475569; display:flex; align-items:center; gap:5px;"><span style="background:#0f172a; color:#fff; font-size:8px; font-weight:700; padding:1px 4px; border-radius:2px;">1</span>F3</div>
+            <div style="font-size:9.5px; color:#475569; display:flex; align-items:center; gap:5px;"><span style="background:#0f172a; color:#fff; font-size:8px; font-weight:700; padding:1px 4px; border-radius:2px;">2</span>LIAR</div>
+            <div style="font-size:9.5px; color:#475569; display:flex; align-items:center; gap:5px;"><span style="background:#0f172a; color:#fff; font-size:8px; font-weight:700; padding:1px 4px; border-radius:2px;">3</span>CoAID</div>
+            <div style="font-size:9.5px; color:#475569; display:flex; align-items:center; gap:5px;"><span style="background:#0f172a; color:#fff; font-size:8px; font-weight:700; padding:1px 4px; border-radius:2px;">4</span>MM-COVID</div>
+            <div style="font-size:9.5px; color:#475569; display:flex; align-items:center; gap:5px;"><span style="background:#0f172a; color:#fff; font-size:8px; font-weight:700; padding:1px 4px; border-radius:2px;">5</span>FakeNewsNet</div>
+            <div style="font-size:9.5px; color:#475569; display:flex; align-items:center; gap:5px;"><span style="background:#0f172a; color:#fff; font-size:8px; font-weight:700; padding:1px 4px; border-radius:2px;">6</span>MeDi</div>
+            <div style="font-size:9.5px; color:#475569; display:flex; align-items:center; gap:5px;"><span style="background:#0f172a; color:#fff; font-size:8px; font-weight:700; padding:1px 4px; border-radius:2px;">7</span>MultiClaim</div>
+            <div style="font-size:9.5px; color:#475569; display:flex; align-items:center; gap:5px;"><span style="background:#0f172a; color:#fff; font-size:8px; font-weight:700; padding:1px 4px; border-radius:2px;">8</span>Twitter15</div>
+            <div style="font-size:9.5px; color:#475569; display:flex; align-items:center; gap:5px;"><span style="background:#0f172a; color:#fff; font-size:8px; font-weight:700; padding:1px 4px; border-radius:2px;">9</span>Twitter16</div>
+          </div>
+        </div>
+
+        <!-- Arrow -->
+        <div style="text-align:center; color:#0d9488; font-size:18px; font-weight:700;">→</div>
+
+        <!-- BOX 2: Multi-VALUE -->
+        <div style="border:2px solid #cbd5e1; border-radius:8px; background:#f8fafc; padding:12px 10px; height:200px; display:flex; flex-direction:column;">
+          <div style="font-size:11px; font-weight:700; color:#0f172a; text-align:center; padding-bottom:7px; border-bottom:1px solid #e2e8f0; margin-bottom:7px;">Multi-VALUE</div>
+          <div style="font-size:9px; color:#0d9488; font-weight:600; margin-bottom:5px; text-align:center;">189 Morphosyntactic Rules</div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:2px 6px; flex:1;">
+            <div style="font-size:8.5px; color:#475569;">· Pronouns</div>
+            <div style="font-size:8.5px; color:#475569;">· Noun Phrase</div>
+            <div style="font-size:8.5px; color:#475569;">· Tense &amp; Aspect</div>
+            <div style="font-size:8.5px; color:#475569;">· Modal Verbs</div>
+            <div style="font-size:8.5px; color:#475569;">· Verb Morph.</div>
+            <div style="font-size:8.5px; color:#475569;">· Negation</div>
+            <div style="font-size:8.5px; color:#475569;">· Agreement</div>
+            <div style="font-size:8.5px; color:#475569;">· Relativization</div>
+            <div style="font-size:8.5px; color:#475569;">· Complement.</div>
+            <div style="font-size:8.5px; color:#475569;">· Adverbials</div>
+            <div style="font-size:8.5px; color:#475569;">· Word Order</div>
+            <div style="font-size:8.5px; color:#475569;">· Discourse</div>
+          </div>
+          <div style="font-size:8px; color:#94a3b8; text-align:center; margin-top:4px;">12 Grammatical Categories · eWAVE</div>
+        </div>
+
+        <!-- Arrow -->
+        <div style="text-align:center; color:#0d9488; font-size:18px; font-weight:700;">→</div>
+
+        <!-- BOX 3: D-PURIFY -->
+        <div style="border:2px solid #cbd5e1; border-radius:8px; background:#f8fafc; padding:12px 10px; height:200px; display:flex; flex-direction:column;">
+          <div style="font-size:11px; font-weight:700; color:#0f172a; text-align:center; padding-bottom:7px; border-bottom:1px solid #e2e8f0; margin-bottom:7px;">D-PURIFY</div>
+          <div style="font-size:9px; color:#0d9488; font-weight:600; margin-bottom:6px; text-align:center;">Quality Validation</div>
+          <div style="display:flex; flex-direction:column; gap:4px; flex:1;">
+            <div style="display:flex; justify-content:space-between; align-items:center;"><span style="font-size:8.5px; color:#0f172a; font-weight:600;">BERTScore</span><span style="font-size:8px; color:#475569;">&gt;0.50</span></div>
+            <div style="display:flex; justify-content:space-between; align-items:center;"><span style="font-size:8.5px; color:#0f172a; font-weight:600;">BARTScore</span><span style="font-size:8px; color:#475569;">≥−7.5</span></div>
+            <div style="display:flex; justify-content:space-between; align-items:center;"><span style="font-size:8.5px; color:#0f172a; font-weight:600;">AlignScore</span><span style="font-size:8px; color:#475569;">logical</span></div>
+            <div style="display:flex; justify-content:space-between; align-items:center;"><span style="font-size:8.5px; color:#0f172a; font-weight:600;">METEOR</span><span style="font-size:8px; color:#475569;">≥0.40</span></div>
+            <div style="display:flex; justify-content:space-between; align-items:center;"><span style="font-size:8.5px; color:#0f172a; font-weight:600;">ROUGE-L</span><span style="font-size:8px; color:#475569;">(0.01,1.0)</span></div>
+            <div style="display:flex; justify-content:space-between; align-items:center;"><span style="font-size:8.5px; color:#0f172a; font-weight:600;">DiffLib</span><span style="font-size:8px; color:#475569;">[0.01,0.99]</span></div>
+            <div style="display:flex; justify-content:space-between; align-items:center;"><span style="font-size:8.5px; color:#0f172a; font-weight:600;">Feat. Accuracy</span><span style="font-size:8px; color:#475569;">eWAVE</span></div>
+          </div>
+          <div style="font-size:8px; color:#94a3b8; text-align:center; margin-top:4px;">93.7% retention · 194,960 samples</div>
+        </div>
+
+        <!-- Arrow -->
+        <div style="text-align:center; color:#0d9488; font-size:18px; font-weight:700;">→</div>
+
+        <!-- BOX 4: D³ Corpus -->
+        <div style="border:2px solid #cbd5e1; border-radius:8px; background:#f8fafc; padding:12px 10px; height:200px; display:flex; flex-direction:column;">
+          <div style="font-size:11px; font-weight:700; color:#0f172a; text-align:center; padding-bottom:7px; border-bottom:1px solid #e2e8f0; margin-bottom:7px;">D³ Corpus</div>
+          <div style="font-size:9px; color:#0d9488; font-weight:600; margin-bottom:6px; text-align:center;">195K+ Dialectal Samples</div>
+          <div style="display:flex; flex-direction:column; gap:4px; flex:1;">
+            <div style="font-size:8.5px; color:#4f46e5; font-weight:600;">🇺🇸 U.S. Varieties (9)</div>
+            <div style="font-size:8.5px; color:#8b5cf6; font-weight:600;">🇬🇧 British/UK (11)</div>
+            <div style="font-size:8.5px; color:#0d9488; font-weight:600;">🌍 Africa (11)</div>
+            <div style="font-size:8.5px; color:#d97706; font-weight:600;">🌏 Asia-Pacific (12)</div>
+            <div style="font-size:8.5px; color:#dc2626; font-weight:600;">🌊 Caribbean/Atlantic (5)</div>
+            <div style="font-size:8.5px; color:#64748b; font-weight:600;">🌐 Other (2)</div>
+          </div>
+          <div style="background:#e0f2fe; border-radius:4px; padding:4px 6px; text-align:center; margin-top:4px;">
+            <span style="font-size:9px; font-weight:700; color:#0369a1;">50 Dialects Total</span>
+          </div>
+        </div>
+
+        <!-- Arrow -->
+        <div style="text-align:center; color:#0d9488; font-size:18px; font-weight:700;">→</div>
+
+        <!-- BOX 5: Evaluation -->
+        <div style="border:2px solid #cbd5e1; border-radius:8px; background:#f8fafc; padding:12px 10px; height:200px; display:flex; flex-direction:column;">
+          <div style="font-size:11px; font-weight:700; color:#0f172a; text-align:center; padding-bottom:7px; border-bottom:1px solid #e2e8f0; margin-bottom:7px;">Evaluation</div>
+          <div style="font-size:9px; color:#0d9488; font-weight:600; margin-bottom:5px; text-align:center;">16 Detection Models</div>
+          <div style="display:flex; flex-direction:column; gap:5px; flex:1;">
+            <div>
+              <div style="font-size:8.5px; font-weight:700; color:#0f172a; margin-bottom:2px;">Fine-Tuned (10)</div>
+              <div style="font-size:8px; color:#475569; line-height:1.4;">mDeBERTa · mBERT · BERT · RoBERTa · DeBERTa · XLM-R · CT-BERT · BiGRU · TextCNN · dEFEND</div>
+            </div>
+            <div>
+              <div style="font-size:8.5px; font-weight:700; color:#0f172a; margin-bottom:2px;">Zero-Shot (6)</div>
+              <div style="font-size:8px; color:#475569; line-height:1.4;">Mistral-7B · Llama-3.1-8B · Llama-3.2-1B · Gemma-3-1B · Qwen3-8B · Qwen3-4B</div>
+            </div>
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px; margin-top:4px;">
+            <div style="font-size:7.5px; text-align:center; background:#f0fdf4; color:#166534; border-radius:3px; padding:2px 3px; font-weight:600;">SQ1 Unseen</div>
+            <div style="font-size:7.5px; text-align:center; background:#fef9c3; color:#713f12; border-radius:3px; padding:2px 3px; font-weight:600;">SQ2 Seen</div>
+            <div style="font-size:7.5px; text-align:center; background:#eff6ff; color:#1e40af; border-radius:3px; padding:2px 3px; font-weight:600;">SQ3 Transfer</div>
+            <div style="font-size:7.5px; text-align:center; background:#fdf4ff; color:#6b21a8; border-radius:3px; padding:2px 3px; font-weight:600;">SQ4 Arch.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ ROW 2: Dialect Coverage ═══ -->
+  <div class="card white-accent" style="margin-bottom:16px;">
+    <div class="card-title"><span class="dot"></span> Dialect Coverage — 50 English Varieties Across 5 Geographic Regions</div>
+    <div class="dialect-grid">
+      <div class="dialect-cell region-us"><strong>U.S. (9)</strong>AAVE · Appalachian · Chicano · Ozark · Newfoundland · Colloquial · SE Enclave</div>
+      <div class="dialect-cell region-uk"><strong>British/UK (11)</strong>Scottish · Irish · Welsh · Manx · Channel Islands · N/SE/SW/EA · Orkney &amp; Shetland</div>
+      <div class="dialect-cell region-afr"><strong>Africa (11)</strong>Nigerian · Ghanaian · Cameroon · Kenyan · Ugandan · Tanzanian · S. African (3) · Liberian</div>
+      <div class="dialect-cell region-asia"><strong>Asia-Pacific (12)</strong>Indian · Pakistani · Sri Lankan · Singlish · Malaysian · Philippine · HK · Australian (2) · NZ · Fiji (2)</div>
+      <div class="dialect-cell region-carib"><strong>Caribbean/Atlantic (5)</strong>Jamaican · Bahamian · Tristan da Cunha · Falkland Islands · St. Helena</div>
+    </div>
+  </div>
+
+  <!-- ═══ ROW 3: 4 Key Findings ═══ -->
+  <div class="section-label">Key Findings</div>
+  <div class="grid-4" style="margin-bottom:16px;">
+
+    <!-- SQ1: CT-BERT + DeBERTa · Human / AI / Both (fixed spacing) -->
+    <div class="card teal-accent" style="display:flex; flex-direction:column;">
+      <div class="sq-header">
+        <div class="sq-badge teal">SQ1</div>
+        <div class="sq-q">SAE &rarr; Unseen Dialects</div>
+      </div>
+
+      <div style="font-size:8px; font-weight:700; color:#64748b; text-transform:uppercase; letter-spacing:.06em; margin-bottom:4px;">
+        &Delta;F1 vs SAE baseline &middot; CT-BERT vs DeBERTa
+      </div>
+
+      <!--
+        Fixed layout: group label sits ABOVE its pair of bars.
+        Bar height=13. Gap between bars in group=5. Gap between groups=14.
+        Zero at x=100. Scale 1%=14px.
+        ViewBox 310x168. Grid to y=142. Axis labels y=152. Legend y=161.
+        Human: label y=12, DeBERTa bar y=15-28 (label y=24), CT-BERT bar y=31-44 (label y=40), sep y=50
+        AI:    label y=60, DeBERTa bar y=63-76 (label y=72), CT-BERT bar y=79-92 (label y=88), sep y=98
+        Both:  label y=108, DeBERTa bar y=111-124 (label y=120), CT-BERT bar y=127-140 (label y=136)
+      -->
+      <svg viewBox="0 0 310 168" xmlns="http://www.w3.org/2000/svg" style="width:100%; display:block; flex-shrink:0;">
+
+        <!-- Chart background -->
+        <rect x="58" y="0" width="248" height="143" fill="#f8fafc" rx="3"/>
+
+        <!-- Vertical grid lines -->
+        <line x1="72"  y1="0" x2="72"  y2="143" stroke="#fca5a5" stroke-width="0.5" stroke-dasharray="2,3"/>
+        <line x1="100" y1="0" x2="100" y2="143" stroke="#94a3b8" stroke-width="1"   stroke-dasharray="3,2"/>
+        <line x1="170" y1="0" x2="170" y2="143" stroke="#e2e8f0" stroke-width="0.6" stroke-dasharray="2,3"/>
+        <line x1="240" y1="0" x2="240" y2="143" stroke="#e2e8f0" stroke-width="0.6" stroke-dasharray="2,3"/>
+
+        <!-- Axis tick labels -->
+        <text x="72"  y="152" text-anchor="middle" font-size="6.5" fill="#fca5a5">&#x2212;2%</text>
+        <text x="100" y="152" text-anchor="middle" font-size="6.5" fill="#64748b">0</text>
+        <text x="170" y="152" text-anchor="middle" font-size="6.5" fill="#94a3b8">+5%</text>
+        <text x="240" y="152" text-anchor="middle" font-size="6.5" fill="#94a3b8">+10%</text>
+
+        <!-- GROUP: HUMAN -->
+        <text x="56" y="12" text-anchor="end" font-size="8.5" font-weight="700" fill="#0f172a">Human</text>
+
+        <!-- DeBERTa Human &#x2212;1.5%: bar right-anchored at x=100, width=21 -->
+        <rect x="79" y="15" width="21" height="13" fill="#ef4444" rx="2"/>
+        <text x="76"  y="25" text-anchor="end" font-size="7" font-weight="700" fill="#ef4444">&#x2212;1.5%</text>
+        <text x="56"  y="25" text-anchor="end" font-size="6.5" fill="#64748b">DeBERTa</text>
+
+        <!-- CT-BERT Human +11.4%: bar from x=100, width=160 -->
+        <rect x="100" y="31" width="160" height="13" fill="#0d9488" rx="2"/>
+        <text x="183" y="41" text-anchor="middle" font-size="7.5" font-weight="700" fill="#fff">+11.4%</text>
+        <text x="56"  y="41" text-anchor="end" font-size="6.5" fill="#64748b">CT-BERT</text>
+
+        <line x1="60" y1="51" x2="304" y2="51" stroke="#e2e8f0" stroke-width="0.8"/>
+
+        <!-- GROUP: AI -->
+        <text x="56" y="61" text-anchor="end" font-size="8.5" font-weight="700" fill="#0f172a">AI</text>
+
+        <!-- DeBERTa AI +0.9%: bar from x=100, width=13 -->
+        <rect x="100" y="64" width="13" height="13" fill="#6366f1" rx="2" opacity="0.85"/>
+        <text x="116" y="74" font-size="7" font-weight="700" fill="#6366f1">+0.9%</text>
+        <text x="56"  y="74" text-anchor="end" font-size="6.5" fill="#64748b">DeBERTa</text>
+
+        <!-- CT-BERT AI +1.1%: bar from x=100, width=15 -->
+        <rect x="100" y="80" width="15" height="13" fill="#0d9488" rx="2" opacity="0.8"/>
+        <text x="118" y="90" font-size="7" font-weight="700" fill="#0d9488">+1.1%</text>
+        <text x="56"  y="90" text-anchor="end" font-size="6.5" fill="#64748b">CT-BERT</text>
+
+        <line x1="60" y1="99" x2="304" y2="99" stroke="#e2e8f0" stroke-width="0.8"/>
+
+        <!-- GROUP: BOTH -->
+        <text x="56" y="109" text-anchor="end" font-size="8.5" font-weight="700" fill="#0f172a">Both</text>
+
+        <!-- DeBERTa Both &#x2212;0.5%: bar right-anchored at x=100, width=7 -->
+        <rect x="93" y="112" width="7" height="13" fill="#ef4444" rx="2"/>
+        <text x="90"  y="122" text-anchor="end" font-size="7" font-weight="700" fill="#ef4444">&#x2212;0.5%</text>
+        <text x="56"  y="122" text-anchor="end" font-size="6.5" fill="#64748b">DeBERTa</text>
+
+        <!-- CT-BERT Both +2.9%: bar from x=100, width=41 -->
+        <rect x="100" y="128" width="41" height="13" fill="#d97706" rx="2" opacity="0.85"/>
+        <text x="121" y="138" text-anchor="middle" font-size="7.5" font-weight="700" fill="#fff">+2.9%</text>
+        <text x="56"  y="138" text-anchor="end" font-size="6.5" fill="#64748b">CT-BERT</text>
+
+        <!-- Legend -->
+        <rect x="62"  y="157" width="9" height="6" fill="#0d9488" rx="1"/>
+        <text x="74"  y="163" font-size="6.5" fill="#475569">CT-BERT</text>
+        <rect x="118" y="157" width="9" height="6" fill="#6366f1" rx="1" opacity="0.85"/>
+        <rect x="118" y="160" width="9" height="3" fill="#ef4444" rx="1"/>
+        <text x="130" y="163" font-size="6.5" fill="#475569">DeBERTa (pos / neg)</text>
+
+      </svg>
+
+      <!-- Spacer -->
+      <div style="flex:1; min-height:4px;"></div>
+
+      <!-- Callout pills -->
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:4px; margin-top:4px;">
+        <div style="background:#fff1f2; border:1px solid #fecdd3; border-radius:4px; padding:4px 5px; text-align:center;">
+          <div style="font-size:11px; font-weight:800; color:#dc2626; font-family:'JetBrains Mono',monospace;">&#x2212;1.5%</div>
+          <div style="font-size:7px; color:#9f1239; margin-top:1px;">DeBERTa Human</div>
+        </div>
+        <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:4px; padding:4px 5px; text-align:center;">
+          <div style="font-size:11px; font-weight:800; color:#16a34a; font-family:'JetBrains Mono',monospace;">+11.4%</div>
+          <div style="font-size:7px; color:#166534; margin-top:1px;">CT-BERT Human</div>
+        </div>
+        <div style="background:#fff7ed; border:1px solid #fed7aa; border-radius:4px; padding:4px 5px; text-align:center;">
+          <div style="font-size:11px; font-weight:800; color:#d97706; font-family:'JetBrains Mono',monospace;">+2.9%</div>
+          <div style="font-size:7px; color:#92400e; margin-top:1px;">CT-BERT Both</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SQ2: training regime comparison table -->
+    <div class="card amber-accent">
+      <div class="sq-header">
+        <div class="sq-badge amber">SQ2</div>
+        <div class="sq-q">Dialect-Aware Training</div>
+      </div>
+
+      <table style="width:100%; border-collapse:collapse; font-size:9px; margin-bottom:8px;">
+        <thead>
+          <tr style="background:#fef9c3; border-bottom:2px solid #fde047;">
+            <th style="padding:4px 5px; text-align:left; color:#713f12; font-size:8.5px; font-weight:700;">Model</th>
+            <th style="padding:4px 5px; text-align:center; color:#713f12; font-size:8.5px; font-weight:700;">SAE-only</th>
+            <th style="padding:4px 5px; text-align:center; color:#713f12; font-size:8.5px; font-weight:700;">Dia-only</th>
+            <th style="padding:4px 5px; text-align:center; color:#713f12; font-size:8.5px; font-weight:700;">SAE+Dia</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #fef3c7;">
+            <td style="padding:4px 5px; color:#0f172a; font-weight:600; font-family:'JetBrains Mono',monospace; font-size:8.5px;">RoBERTa</td>
+            <td style="padding:4px 5px; text-align:center; color:#dc2626; font-weight:700; font-family:'JetBrains Mono',monospace;">87.3%§</td>
+            <td style="padding:4px 5px; text-align:center; color:#16a34a; font-weight:700; font-family:'JetBrains Mono',monospace; background:#f0fdf4;">97.1%▲</td>
+            <td style="padding:4px 5px; text-align:center; color:#475569; font-family:'JetBrains Mono',monospace;">96.9%</td>
+          </tr>
+          <tr style="border-bottom:1px solid #fef3c7;">
+            <td style="padding:4px 5px; color:#0f172a; font-weight:600; font-family:'JetBrains Mono',monospace; font-size:8.5px;">mDeBERTa†</td>
+            <td style="padding:4px 5px; text-align:center; color:#475569; font-family:'JetBrains Mono',monospace;">97.0%</td>
+            <td style="padding:4px 5px; text-align:center; color:#475569; font-family:'JetBrains Mono',monospace; background:#f0fdf4;">97.0%</td>
+            <td style="padding:4px 5px; text-align:center; color:#475569; font-family:'JetBrains Mono',monospace;">96.8%</td>
+          </tr>
+          <tr style="border-bottom:1px solid #fef3c7;">
+            <td style="padding:4px 5px; color:#0f172a; font-weight:600; font-family:'JetBrains Mono',monospace; font-size:8.5px;">BERT-Large</td>
+            <td style="padding:4px 5px; text-align:center; color:#475569; font-family:'JetBrains Mono',monospace;">97.2%</td>
+            <td style="padding:4px 5px; text-align:center; color:#475569; font-family:'JetBrains Mono',monospace; background:#f0fdf4;">96.9%</td>
+            <td style="padding:4px 5px; text-align:center; color:#dc2626; font-family:'JetBrains Mono',monospace;">95.8%▼</td>
+          </tr>
+          <tr style="border-bottom:1px solid #fef3c7;">
+            <td style="padding:4px 5px; color:#0f172a; font-weight:600; font-family:'JetBrains Mono',monospace; font-size:8.5px;">dEFEND</td>
+            <td style="padding:4px 5px; text-align:center; color:#475569; font-family:'JetBrains Mono',monospace;">94.8%</td>
+            <td style="padding:4px 5px; text-align:center; color:#dc2626; font-weight:700; font-family:'JetBrains Mono',monospace;">88.6%▼</td>
+            <td style="padding:4px 5px; text-align:center; color:#dc2626; font-weight:700; font-family:'JetBrains Mono',monospace; background:#fff1f2;">87.5%▼</td>
+          </tr>
+          <tr>
+            <td style="padding:4px 5px; color:#0f172a; font-weight:600; font-family:'JetBrains Mono',monospace; font-size:8.5px;">XLM-R†</td>
+            <td style="padding:4px 5px; text-align:center; color:#dc2626; font-weight:700; font-family:'JetBrains Mono',monospace;">83.3%§</td>
+            <td style="padding:4px 5px; text-align:center; color:#dc2626; font-weight:700; font-family:'JetBrains Mono',monospace;">85.4%§</td>
+            <td style="padding:4px 5px; text-align:center; color:#dc2626; font-weight:700; font-family:'JetBrains Mono',monospace; background:#fff1f2;">79.7%§</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="font-size:8px; color:#64748b; line-height:1.5;">
+        † Multilingual &nbsp;·&nbsp; §Failure (&lt;90%) &nbsp;·&nbsp; ▲Best &nbsp;·&nbsp; ▼Worst &nbsp;·&nbsp; <span style="color:#dc2626; font-weight:700;">SAE anchoring paradox:</span> including SAE data harms traditional models
+      </div>
+    </div>
+
+    <div class="card" style="border-top: 2px solid #8b5cf6;">
+      <div class="sq-header">
+        <div class="sq-badge purple">SQ3</div>
+        <div class="sq-q">Cross-Dialectal Transfer</div>
+      </div>
+      <div style="margin-bottom:10px;">
+        <div style="font-size:10px; color:var(--text-dim); margin-bottom:6px;">2,450 dialect pairs evaluated</div>
+        <div class="compare-row">
+          <div class="cmp-label" style="font-size:9px;">mDeBERTa</div>
+          <div class="cmp-val1">97.2% avg</div>
+          <div class="cmp-vs">vs</div>
+          <div class="cmp-val2 " style="background:rgba(239,68,68,0.2);">39.8%</div>
+        </div>
+        <div style="font-size:9px; color:var(--text-dim); text-align:center; margin-bottom:8px;">mDeBERTa &nbsp;↔&nbsp; XLM-R</div>
+      </div>
+      <div style="font-size:10.5px; color:var(--text-dim); line-height:1.55;">
+        <strong style="color:var(--teal)">Best sources:</strong> Ghanaian (92.5%), Manx (91.6%), Tristan da Cunha (91.0%)<br>
+        <strong style="color:var(--coral)">Hardest targets:</strong> Maltese (80.0%), Australian Vernacular (80.1%), SE England (80.1%)<br><br>
+        Transfer is <strong style="color:var(--text)">asymmetric</strong>: Scottish &amp; Welsh are poor sources but easy targets.
+      </div>
+    </div>
+
+    <div class="card coral-accent">
+      <div class="sq-header">
+        <div class="sq-badge coral">SQ4</div>
+        <div class="sq-q">Fine-Tuned vs Zero-Shot</div>
+      </div>
+      <div style="margin-bottom:10px;">
+        <div class="result-row">
+          <div class="result-label">mDeBERTa</div>
+          <div class="result-bar-wrap"><div class="result-bar bar-good" style="width:97%"><span class="bv">96.7%</span></div></div>
+        </div>
+        <div class="result-row">
+          <div class="result-label">BERT-Large</div>
+          <div class="result-bar-wrap"><div class="result-bar bar-good" style="width:97%"><span class="bv">96.6%</span></div></div>
+        </div>
+        <div class="result-row">
+          <div class="result-label">Mistral-7B</div>
+          <div class="result-bar-wrap"><div class="result-bar bar-warn" style="width:78%"><span class="bv">78.3%</span></div></div>
+        </div>
+        <div class="result-row">
+          <div class="result-label">Gemma-3-1B</div>
+          <div class="result-bar-wrap"><div class="result-bar bar-bad" style="width:48%"><span class="bv">48.4%</span></div></div>
+        </div>
+        <div class="result-row">
+          <div class="result-label">Llama-3.2-1B</div>
+          <div class="result-bar-wrap"><div class="result-bar bar-bad" style="width:1%"></div></div>
+          <div style="font-size:9px; color:var(--coral); font-family: 'JetBrains Mono', monospace;">0.2%</div>
+        </div>
+      </div>
+      <div style="font-size:10.5px; color:var(--text-dim);">
+        <span class="hi-coral">18–96 F1-pt gap</span> between fine-tuned and zero-shot. Up to <strong style="color:var(--text)">98% abstention</strong> in smaller LLMs on dialectal inputs.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ═══ ROW 4: Model Comparison + Asymmetric Harm + Recs ═══ -->
+  <div class="grid-3">
+
+    <div class="card teal-accent">
+      <div class="card-title"><span class="dot"></span> Model Architecture Performance</div>
+      <table class="mtable">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Model</th>
+            <th>Human F1</th>
+            <th>AI F1</th>
+            <th>ΔSAE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:#eff6ff;">
+            <td style="text-align:center;"><span style="display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px; background:#dbeafe; border-radius:3px; font-size:8px; font-weight:700; color:#1d4ed8;">E</span></td>
+            <td>mDeBERTa†</td><td class="best">96.7%</td><td class="best">99.4%</td><td>−1.5</td>
+          </tr>
+          <tr style="background:#eff6ff;">
+            <td style="text-align:center;"><span style="display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px; background:#dbeafe; border-radius:3px; font-size:8px; font-weight:700; color:#1d4ed8;">E</span></td>
+            <td>CT-BERT</td><td>97.2%</td><td>99.4%</td><td class="warn">+11.4</td>
+          </tr>
+          <tr style="background:#eff6ff;">
+            <td style="text-align:center;"><span style="display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px; background:#dbeafe; border-radius:3px; font-size:8px; font-weight:700; color:#1d4ed8;">E</span></td>
+            <td>BERT-Large</td><td>96.6%</td><td>99.2%</td><td>−1.5</td>
+          </tr>
+          <tr style="background:#eff6ff;">
+            <td style="text-align:center;"><span style="display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px; background:#dbeafe; border-radius:3px; font-size:8px; font-weight:700; color:#1d4ed8;">E</span></td>
+            <td>mBERT†</td><td>96.6%</td><td>99.4%</td><td>−1.4</td>
+          </tr>
+          <tr style="background:#eff6ff;">
+            <td style="text-align:center;"><span style="display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px; background:#dbeafe; border-radius:3px; font-size:8px; font-weight:700; color:#1d4ed8;">E</span></td>
+            <td>RoBERTa</td><td>96.3%</td><td class="best">99.5%</td><td>−1.5</td>
+          </tr>
+          <tr style="background:#eff6ff;">
+            <td style="text-align:center;"><span style="display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px; background:#dbeafe; border-radius:3px; font-size:8px; font-weight:700; color:#1d4ed8;">E</span></td>
+            <td>DeBERTa</td><td class="worst">94.7%</td><td>97.4%</td><td>−1.5</td>
+          </tr>
+          <tr style="background:#eff6ff;">
+            <td style="text-align:center;"><span style="display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px; background:#dbeafe; border-radius:3px; font-size:8px; font-weight:700; color:#1d4ed8;">E</span></td>
+            <td>dEFEND</td><td class="worst">93.9%</td><td>98.3%</td><td class="worst">−3.6</td>
+          </tr>
+          <tr style="background:#fdf2f8; border-top: 2px solid #f9a8d4;">
+            <td style="text-align:center;"><span style="display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px; background:#fce7f3; border-radius:3px; font-size:8px; font-weight:700; color:#9d174d;">D</span></td>
+            <td>Mistral-7B</td><td class="warn">78.3%</td><td class="warn">78.3%</td><td class="worst">−11.0</td>
+          </tr>
+          <tr style="background:#fdf2f8;">
+            <td style="text-align:center;"><span style="display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px; background:#fce7f3; border-radius:3px; font-size:8px; font-weight:700; color:#9d174d;">D</span></td>
+            <td>Llama-3.1-8B</td><td class="worst">67.2%</td><td class="worst">67.2%</td><td class="worst">−20.1</td>
+          </tr>
+          <tr style="background:#fdf2f8;">
+            <td style="text-align:center;"><span style="display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px; background:#fce7f3; border-radius:3px; font-size:8px; font-weight:700; color:#9d174d;">D</span></td>
+            <td>Gemma-3-1B</td><td class="worst">48.4%</td><td class="worst">48.4%</td><td class="worst">−27.4</td>
+          </tr>
+          <tr style="background:#fdf2f8;">
+            <td style="text-align:center;"><span style="display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px; background:#fce7f3; border-radius:3px; font-size:8px; font-weight:700; color:#9d174d;">D</span></td>
+            <td>Qwen3-8B</td><td class="worst">26.6%</td><td class="worst">26.6%</td><td class="worst">−11.4</td>
+          </tr>
+          <tr style="background:#fdf2f8;">
+            <td style="text-align:center;"><span style="display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px; background:#fce7f3; border-radius:3px; font-size:8px; font-weight:700; color:#9d174d;">D</span></td>
+            <td>Llama-3.2-1B</td><td class="worst">0.2%</td><td class="worst">0.2%</td><td>−1.9</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="display:flex; gap:16px; margin-top:8px; margin-bottom:4px;">
+        <div style="display:flex; align-items:center; gap:5px; font-size:9.5px; color:#475569;">
+          <span style="display:inline-flex; align-items:center; justify-content:center; width:16px; height:16px; background:#dbeafe; border-radius:3px; font-size:9px; font-weight:700; color:#1d4ed8;">E</span>
+          Encoder (Fine-Tuned)
+        </div>
+        <div style="display:flex; align-items:center; gap:5px; font-size:9.5px; color:#475569;">
+          <span style="display:inline-flex; align-items:center; justify-content:center; width:16px; height:16px; background:#fce7f3; border-radius:3px; font-size:9px; font-weight:700; color:#9d174d;">D</span>
+          Decoder (Zero-Shot)
+        </div>
+      </div>
+      <div style="font-size:9.5px; color:var(--text-dim);">† Multilingual pre-training. Human F1 = dialect avg on human content.</div>
+    </div>
+
+    <div class="card coral-accent">
+      <div class="card-title"><span class="dot"></span> Asymmetric Harm Analysis</div>
+
+      <div class="harm-row">
+        <div class="harm-icon">⚠️</div>
+        <div class="harm-content">
+          <div class="harm-title">Over-Flagging (False Positives)</div>
+          <div class="harm-desc">Authentic dialectal speech silenced as disinformation. Dominates 6.5:1 over under-protection (27,020 FPs vs 4,169 FNs).</div>
+        </div>
+        <div class="harm-pct" style="color:var(--coral)">+8.3%</div>
+      </div>
+
+      <div class="harm-row">
+        <div class="harm-icon">🛡️</div>
+        <div class="harm-content">
+          <div class="harm-title">Under-Protection (False Negatives)</div>
+          <div class="harm-desc">Disinformation evades detection in dialectal form. 33/50 dialects under-protected under unseen conditions.</div>
+        </div>
+        <div class="harm-pct" style="color:var(--amber)">+1.4%</div>
+      </div>
+
+      <div class="harm-row">
+        <div class="harm-icon">🔄</div>
+        <div class="harm-content">
+          <div class="harm-title">Training Composition Reversal</div>
+          <div class="harm-desc">RoBERTa flips from over-flagging (dialect-only) to under-protection (SAE-anchored). <em>Who is harmed depends on training choices.</em></div>
+        </div>
+        <div class="harm-pct" style="color:#a5b4fc">Δ flip</div>
+      </div>
+
+      <div style="margin-top:10px; padding:10px; background:rgba(220,38,38,0.05); border:1px solid rgba(220,38,38,0.15); border-radius:4px;">
+        <div style="font-size:10px; font-weight:700; color:var(--coral); margin-bottom:4px;">81.4% of FPs &amp; 75.5% of FNs made at &gt;95% confidence</div>
+        <div style="font-size:10px; color:var(--text-dim);">RoBERTa: 99.5% mean FP confidence — rules out calibration fixes. Dialectal features are <em>encoded as class-discriminative signals</em>.</div>
+      </div>
+    </div>
+
+    <div class="card amber-accent">
+      <div class="card-title"><span class="dot"></span> Recommendations for Practitioners</div>
+
+      <div class="rec">
+        <div class="rec-badge">R1</div>
+        <div class="rec-text"><strong>Prefer multilingual encoders.</strong> mDeBERTa and mBERT consistently achieve superior dialectal robustness — 97.2% avg F1 across 2,450 transfer pairs. Cross-lingual pre-training induces dialect-robust representations.</div>
+      </div>
+      <div class="rec">
+        <div class="rec-badge">R2</div>
+        <div class="rec-text"><strong>Adopt dialect-diverse fine-tuning without SAE anchoring.</strong> Dialect-only training recovers failures (RoBERTa: 87.3%→97.1%) and avoids feature collapse toward standard patterns.</div>
+      </div>
+      <div class="rec">
+        <div class="rec-badge">R3</div>
+        <div class="rec-text"><strong>Conduct pre-deployment dialectal auditing.</strong> Use D³ benchmark across dialect families with minimum thresholds per region — not just aggregate metrics.</div>
+      </div>
+      <div class="rec">
+        <div class="rec-badge">R4</div>
+        <div class="rec-text"><strong>Avoid zero-shot LLMs for content moderation.</strong> 18–97 F1-pt gaps and abstention rates up to 98% render zero-shot approaches unsuitable for diverse communities.</div>
+      </div>
+      <div class="rec">
+        <div class="rec-badge">R5</div>
+        <div class="rec-text"><strong>Monitor dialectal performance longitudinally.</strong> Retraining on SAE-dominant data may reintroduce bias — integrate continuous dialectal benchmarking into update pipelines.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ═══ FOOTER ═══ -->
+  <div class="footer">
+    <div>
+      <div class="footer-logo">DIA-<span>HARM</span></div>
+      <div style="font-size:10px; color:var(--text-dim); margin-top:4px;">
+        D³ corpus · Evaluation scripts · Model checkpoints
+      </div>
+    </div>
+    <div class="footer-links">
+      <span>🌐</span>
+      <a href="https://www.jasonslucas.com/">jasonslucas.com</a>
+      <span style="color:#cbd5e1">|</span>
+      <span>📎 GitHub:</span>
+      <a href="https://github.com/jsl5710/dia-harm">github.com/jsl5710/dia-harm</a>
+      <span style="color:#cbd5e1">|</span>
+      <span>📧</span>
+      <a href="mailto:jsl5710@psu.edu">jsl5710@psu.edu</a>
+    </div>
+    <div class="institutions">
+      Pennsylvania State University · PIKE Research Lab<br>
+      Trinity College Dublin · MIT Lincoln Laboratory
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
