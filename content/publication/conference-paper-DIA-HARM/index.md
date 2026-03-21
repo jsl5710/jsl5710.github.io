@@ -33,7 +33,7 @@ featured: true
 url_pdf: ''
 url_code: 'https://github.com/jsl5710/dia-harm/tree/main'
 url_dataset: ''
-url_poster: 'poster.html'
+url_poster: 'poster.pdf'
 url_project: 'https://jsl5710.github.io/dia-harm'
 url_slides: ''
 url_source: ''
