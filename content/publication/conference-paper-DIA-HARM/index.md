@@ -1,5 +1,5 @@
 ---
-title: 'DIA-HARM: Harmful Content Detection Robustness Across 50 English Dialects'
+title: 'DIA-HARM: Dialectal Disparities in Harmful Content Detection Across 50 English Dialects'
 
 # Authors
 authors:
@@ -10,17 +10,17 @@ authors:
   - Adaku Uchendu
   - Dongwon Lee
 
-date: '2026-02-01T00:00:00Z'
+date: '2026-04-08T00:00:00Z'
 # doi: ''
 
 # Publication type.
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: Under Review 2026
-publication_short: Under Review
+publication: In *Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026), Main Conference*
+publication_short: ACL 2026
 
-abstract: As social media platforms expand globally, automated harmful content detection systems must effectively handle the linguistic diversity of their users. While these systems achieve strong performance on standardized text, their robustness across dialectal variations of English remains poorly understood. We investigate how 16 harmful content detection models perform across 50 English dialects using morphosyntactic transformations grounded in linguistic typology. Our work produces the Dialect-Diverse Detection (D3) corpus, comprising over 195K samples derived from benchmark harmful content datasets. Through systematic evaluation, we find that fine-tuned models experience 1.4–3.6% F1 degradation when processing dialectal text, while zero-shot and in-context learning approaches show up to 27% performance drops. Even the most robust fine-tuned model, mDeBERTa (average F1 of 97.2%), shows statistically significant performance disparities across dialect groups. Our analysis reveals that detection degradation correlates with the density of applied morphosyntactic transformations rather than specific dialect features, suggesting that model robustness may be more sensitive to cumulative surface-level variation than to particular linguistic phenomena. These findings highlight important equity considerations for content moderation systems serving linguistically diverse communities.
+abstract: Harmful content detectors—particularly disinformation classifiers—are predominantly developed and evaluated on Standard American English (SAE), leaving their robustness to dialectal variation unexplored. We present DIA-HARM, the first benchmark for evaluating disinformation detection robustness across 50 English dialects spanning U.S., British, African, Caribbean, and Asia-Pacific varieties. Using Multi-VALUE's linguistically grounded transformations, we introduce D3 (Dialectal Disinformation Detection), a corpus of 195K samples derived from established disinformation benchmarks. Our evaluation of 16 detection models reveals systematic vulnerabilities&#58; human-written dialectal content degrades detection by 1.4–3.6% F1, while AI-generated content remains stable. Fine-tuned transformers substantially outperform zero-shot LLMs (96.6% vs. 78.3% best-case F1), with some models exhibiting catastrophic failures exceeding 33% degradation on mixed content. Cross-dialectal transfer analysis across 2,450 dialect pairs shows that multilingual models (mDeBERTa&#58; 97.2% average F1) generalize effectively, while monolingual models like RoBERTa and XLM-RoBERTa fail on dialectal inputs. These findings demonstrate that current disinformation detectors may systematically disadvantage hundreds of millions of non-SAE speakers worldwide. We release the DIA-HARM framework, D3 corpus, and evaluation tools.
 
 # Summary
 summary: DIA-HARM evaluates 16 harmful content detection models across 50 English dialects using 195K+ samples, revealing 1.4–3.6% F1 drops for fine-tuned models and up to 27% for zero-shot approaches, highlighting equity gaps in content moderation.
@@ -30,7 +30,7 @@ tags: [Harmful Content Detection, Dialect Robustness, NLP, Content Moderation, L
 # Display this page in the Featured widget?
 featured: true
 
-url_pdf: ''
+url_pdf: 'https://arxiv.org/pdf/2604.05318'
 url_code: 'https://github.com/jsl5710/dia-harm/tree/main'
 url_dataset: ''
 url_poster: 'poster.pdf'
@@ -61,5 +61,6 @@ Key contributions include:
 - **Key Finding**: Detection degradation correlates with density of morphosyntactic transformations rather than specific dialect features, with 2,450 dialect pairs analyzed
 
 Resources:
+- [arXiv Paper](https://arxiv.org/abs/2604.05318)
 - [Project Page](https://jsl5710.github.io/dia-harm)
 - [GitHub Repository](https://github.com/jsl5710/dia-harm/tree/main)
