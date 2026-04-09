@@ -4,7 +4,7 @@ title: 'DIA-HARM: Dialectal Disparities in Harmful Content Detection Across 50 E
 # Authors
 authors:
   - admin
-  - Matt Murtagh
+  - Matt Murtagh-White
   - Ali Al-Lawati
   - Uchendu Uchendu
   - Adaku Uchendu

@@ -33,13 +33,13 @@ organizations:
 # Education to show in About widget
 education:
   courses:
-    - course: Ph.D. in Informatics
+    - course: Ph.D. in Informatics (defending May 2026; conferral August 2026)
       institution: The Pennsylvania State University
       year: 2026
-    - course: MPH con. in Epidemiology
+    - course: M.P.H., Concentration in Epidemiology
       institution: St. George's University
       year: 2020
-    - course: M.Sc in Computer Information Systems con. Health Informatics
+    - course: M.Sc. in Computer Information Systems, Concentration in Health Informatics
       institution: Boston University
       year: 2014
     - course: B.Sc in Information Technology
