@@ -5,6 +5,10 @@ summary: Area Chair (OpenReview) for the 64th Annual Meeting of the Association 
 tags: [Academic Service, Area Chair, NLP]
 authors: [admin]
 external_link: https://2026.aclweb.org/
+image:
+  caption: 'San Diego, California — host city of ACL 2026'
+  focal_point: Smart
+  preview_only: false
 ---
 
 Serving as **Area Chair** (OpenReview) for **ACL 2026** — the 64th Annual Meeting of the Association for Computational Linguistics, taking place **July 7–12, 2026** in San Diego, California.
