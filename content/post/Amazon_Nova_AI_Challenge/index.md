@@ -2,6 +2,9 @@
 title: Penn State Team Lion-0xA Selected as Global Finalist in 2026 Amazon Nova AI Challenge
 date: '2026-02-19'
 summary: Representing Penn State as one of 10 global finalists in the 2026 Amazon Nova AI Challenge, competing as a Red Team to probe AI coding agents for vulnerabilities and security risks.
+image:
+  focal_point: Smart
+  preview_only: false
 ---
 
 Thrilled to be part of **Team Lion-0xA**, representing Penn State as one of **10 global finalists** in the **2026 Amazon Nova AI Challenge**!

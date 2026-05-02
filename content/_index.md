@@ -55,19 +55,16 @@ sections:
       view: article-grid
       columns: 2
 
-  - block: collection
+  - block: markdown
     content:
-      title: All Publications
       text: |-
-        > [!NOTE]
-        > Quickly discover relevant content by [filtering publications](./publication/).
-      filters:
-        folders:
-          - publication
-        exclude_featured: false
-    design:
-      view: citation
-      columns: '2'
+        <div style="text-align:center; margin: 2rem 0;">
+
+        ### Looking for more?
+
+        [**View all publications →**](./publication/)
+
+        </div>
 
   - block: collection
     id: talks
@@ -120,18 +117,6 @@ sections:
           tag: Deep Learning
     design:
       view: card
-      columns: '1'
-
-  - block: markdown
-    id: gallery
-    content:
-      title: Gallery
-      subtitle: ''
-      text: |-
-        Browse photos from conferences, presentations, and campus life.
-
-        {{< gallery album="demo" >}}
-    design:
       columns: '1'
 
   - block: markdown

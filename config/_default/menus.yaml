@@ -12,18 +12,22 @@ main:
   - name: Research
     weight: 20
     identifier: research
+  - name: Research Overview
+    url: '/research/'
+    parent: research
+    weight: 1
   - name: Publications
     url: '/#featured'
     parent: research
-    weight: 1
+    weight: 2
   - name: Projects
     url: '/#projects'
     parent: research
-    weight: 2
+    weight: 3
   - name: Talks
     url: '/#talks'
     parent: research
-    weight: 3
+    weight: 4
 
   # Activities dropdown --------------------------------------------------
   - name: Activities
@@ -45,10 +49,6 @@ main:
     url: '/#posts'
     parent: activities
     weight: 4
-  - name: Gallery
-    url: '/#gallery'
-    parent: activities
-    weight: 5
 
   - name: Contact
     url: '/#contact'

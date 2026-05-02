@@ -10,10 +10,10 @@ name:
 status:
   icon: "☕️"
 
-role: Ph.D. Candidate in Informatics
+role: Ph.D. Candidate in Informatics · Incoming Tenure-Track Assistant Professor at CU Boulder (Aug 2026)
 
 bio: |
-  I am a PhD candidate in Informatics in the [College of IST](https://ist.psu.edu/) at Penn State University, where I conduct research at the [PIKE Research Lab](https://pike.psu.edu/) under the guidance of [Dr. Dongwon Lee](https://pike.psu.edu/dongwon/). I specialize in AI/ML research focused on Information Integrity, Safe and Ethical AI, including combating harmful content across multiple languages and modalities. My research spans low-resource multilingual NLP, generative AI, and adversarial machine learning, with work extending across 79 languages. I have published 13 papers with 260+ citations in premier venues including ACL, EMNLP, IEEE, and NAACL.
+  I am a PhD candidate in Informatics in the [College of IST](https://ist.psu.edu/) at Penn State University, where I conduct research at the [PIKE Research Lab](https://pike.psu.edu/) under the guidance of [Dr. Dongwon Lee](https://pike.psu.edu/dongwon/). Starting **August 2026**, I will join the [Department of Information Science](https://www.colorado.edu/cmci/academics/information-science) at the [College of Media, Communication and Information (CMCI)](https://www.colorado.edu/cmci/), [University of Colorado Boulder](https://www.colorado.edu/), as a **Tenure-Track Assistant Professor**. I specialize in AI/ML research focused on Information Integrity, Safe and Ethical AI, including combating harmful content across multiple languages and modalities. My research spans low-resource multilingual NLP, generative AI, and adversarial machine learning, with work extending across 79 languages. I have published 13 papers with 315+ citations in premier venues including ACL, EMNLP, IEEE, and NAACL.
 
   My doctoral research focuses on bridging the digital language divide through transfer learning, classification (NLU), generation (NLG), adversarial attacks, and developing end-to-end AI pipelines using RAG and Agentic AI workflows for combating multilingual threats. Drawing from my Grenadian background and knowledge of local Creole languages, I bring a global perspective to AI challenges, working to democratize state-of-the-art AI capabilities for underserved linguistic communities worldwide. My mission is to develop robust multilingual multimodal systems and mitigate evolving security vulnerabilities while enhancing access to human language technology through cutting-edge solutions.
 
@@ -25,6 +25,8 @@ highlight_name: true
 affiliations:
   - name: Penn State University
     url: https://www.psu.edu/
+  - name: Incoming — CU Boulder (Aug 2026)
+    url: https://www.colorado.edu/cmci/academics/information-science
 
 interests:
   - Low-Resource Multilingual NLP
@@ -63,7 +65,7 @@ experience:
     summary: |
       Responsibilities include:
       - Lead ML/NLP research combating harmful content across 79 languages
-      - Published 13 papers (260+ citations) in ACL, EMNLP, NAACL, IEEE
+      - Published 13 papers (315+ citations) in ACL, EMNLP, NAACL, IEEE
       - Mentor 5+ interns and manage 3 computing courses (150+ students)
       - Develop end-to-end AI pipelines using PyTorch, HuggingFace, cloud APIs
       - NSF Fellow: $9K funding for interdisciplinary AI research
@@ -219,6 +221,12 @@ links:
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?hl=en&user=XU1WN6YAAAAJ
     label: Google Scholar
+  - icon: academicons/orcid
+    url: https://orcid.org/0009-0000-3494-6935
+    label: ORCID
+  - icon: academicons/semantic-scholar
+    url: https://www.semanticscholar.org/author/Jason-Samuel-Lucas/2260072705
+    label: Semantic Scholar
   - icon: brands/github
     url: https://github.com/jsl5710
     label: GitHub
