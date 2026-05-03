@@ -61,6 +61,10 @@ main:
     url: '/#posts'
     parent: activities
     weight: 4
+  - name: Gallery
+    url: '/gallery/'
+    parent: activities
+    weight: 5
 
   - name: Contact
     url: '/#contact'
