@@ -1,64 +1,64 @@
 ---
 title: Research
-date: 2026-05-02
+date: 2026-05-03
 type: landing
 
 sections:
   - block: markdown
     content:
-      title: Research Overview
+      title: Research Vision
       text: |-
-        My research sits at the intersection of **natural language processing**, **information integrity**, and **AI safety**, with a focus on the systems and populations that current AI tooling has historically left behind. I build models, datasets, and evaluation frameworks that:
+        ## Trustworthy AI Through Multilingual NLP and Security
 
-        - extend state-of-the-art NLP capabilities into **low-resource and dialectal varieties of language**,
-        - probe the **robustness and fairness** of harmful content detectors under realistic adversarial pressure,
-        - and develop **equitable**, **transparent**, and **safe** AI pipelines for combating mis/disinformation across linguistic communities.
+        The world is multilingual; its digital infrastructure is not. Of the roughly seven thousand languages spoken today, fewer than twenty account for the overwhelming majority of digital content, and English alone accounts for over half. This asymmetry — the **digital language divide** — shapes who AI systems protect, who they fail, and who they leave exploitable.
 
-        Below is a high-level summary of my research themes. Detailed papers, datasets, and code are linked from each.
+        My research, anchored at the [**Secure and Ethical AI Lab (SEAL)**](https://www.colorado.edu/cmdi/) at CU Boulder, addresses these challenges at the intersection of AI, NLP, and security — building trustworthy systems that protect both technology and the communities that use it, regardless of language or resources.
     design:
       columns: '1'
 
   - block: markdown
     content:
-      title: Research Themes
+      title: Statements
       text: |-
-        ### 1. Multilingual & Low-Resource NLP
+        Detailed statements describing my research vision, teaching philosophy, and approach to mentorship are available below:
 
-        Extending modern NLP techniques — fine-tuning, prompt-based learning, retrieval, and adversarial training — beyond English into the **long tail of low-resource languages** and dialects. My BLUFF benchmark spans **79 languages** (20 high-resource + 59 low-resource) with 200K+ samples, and DIA-HARM evaluates robustness across **50 English dialects**.
+        - 📄 [**Research Statement**](./research-statement/) — Vision, research questions, and the SEAL research program
+        - 📄 [**Teaching Statement**](./teaching-statement/) — Pedagogy, the T·I·C framework, and course portfolio
+        - 📄 [**Mentorship Statement**](./mentorship-statement/) — Mentoring philosophy and SEAL's lab culture
 
-        - **BLUFF** — multilingual fake news detection benchmark
-        - **DIA-HARM** — dialectal robustness for harmful content detection (ACL 2026)
-
-        ### 2. Harmful Content Detection & Information Integrity
-
-        Building **robust, equitable detection systems** for mis/disinformation, harmful content, and AI-generated text — and rigorously characterizing where and why they fail. My work consistently shows that detector performance gaps along language, dialect, and resource axes are **systematic, not marginal**.
-
-        - **F3** — LLMs as both generators and detectors of elusive disinformation (EMNLP 2023)
-        - **MULTITuDe** — multilingual machine-generated text detection (EMNLP 2023)
-        - **X-Transfer** — cross-lingual transfer for misinformation detection
-
-        ### 3. Adversarial ML & AI Safety
-
-        Understanding the **threat surface** of modern language systems — jailbreaking, hallucination, dialectal evasion, agentic adversaries — and designing defenses that hold up under realistic, non-Standard-American-English inputs.
-
-        ### 4. Equity & Accessibility in AI
-
-        Drawing on my **Grenadian background** and knowledge of Caribbean Creole varieties, I bring a global perspective to AI fairness, focused on ensuring that the next generation of AI systems serves the linguistic communities most often left out of training data.
-
+        For the most up-to-date overview, please see my [CV](/uploads/jsl_cv.pdf) or [contact me directly](/#contact).
     design:
       columns: '1'
 
   - block: markdown
     content:
-      title: Research Statements
+      title: SEAL — Four Research Directions
       text: |-
-        Detailed statements describing my research vision, teaching philosophy, and commitment to diversity, equity, and inclusion are available below.
+        ### 1. Multilingual NLP and Low-Resource AI
+        Extending model capabilities to underserved languages, dialects, and creoles, with particular emphasis on **Caribbean and African diaspora varieties** historically absent from benchmark resources.
 
-        - **Research Statement** — *coming soon*
-        - **Teaching Statement** — *coming soon*
-        - **Diversity, Equity & Inclusion Statement** — *coming soon*
+        ### 2. Trustworthy AI and Information Integrity
+        Investigating how foundation models generate, propagate, and detect harmful content. Builds on my **F3 framework** (EMNLP 2023) for understanding the dual role of LLMs as both source and shield.
 
-        For the most up-to-date overview, please see my [CV](/uploads/jsl_cv.pdf) or contact me directly.
+        ### 3. Ethical, Equitable, and Human-Centered AI
+        Developing socio-technical frameworks for responsible model development, articulated through my ***Dual Curse* theory** connecting colonial epistemology to multilingual AI safety failures.
+
+        ### 4. AI Safety and Robustness
+        Building **dialect-aware safety guardrails** (DIA-Guard), **contamination-resistant benchmarks** (BLUFF), and **adversarial evaluations** that surface where models break before deployment does.
+    design:
+      columns: '1'
+
+  - block: markdown
+    content:
+      title: Recruiting at SEAL
+      text: |-
+        I am recruiting **PhD students, postdocs, MS researchers, and undergraduates** for SEAL — beginning Fall 2026 and Spring 2027.
+
+        Strong candidates need not arrive with all the technical pieces in place. They need curiosity, rigor, and a willingness to engage with both the technical and social dimensions of the work. The technical pieces, we build together.
+
+        I am especially committed to mentoring students from **Caribbean and African diaspora communities**, **first-generation graduate students**, and others underrepresented in AI research.
+
+        → [Get in touch](/#contact) or apply to the **PhD program in Information Science** at CU Boulder.
     design:
       columns: '1'
 ---

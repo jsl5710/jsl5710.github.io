@@ -8,14 +8,14 @@ image:
   preview_only: false
 ---
 
-I am thrilled to share that I will be joining the [Department of Information Science](https://www.colorado.edu/cmci/academics/information-science) at the [College of Media, Communication and Information (CMCI)](https://www.colorado.edu/cmci/), [University of Colorado Boulder](https://www.colorado.edu/), as a **Tenure-Track Assistant Professor** starting **August 2026**.
+I am thrilled to share that I will be joining the [Department of Information Science](https://www.colorado.edu/cmdi/) at the [College of Media, Communication and Information (CMDI)](https://www.colorado.edu/cmdi/), [University of Colorado Boulder](https://www.colorado.edu/), as a **Tenure-Track Assistant Professor** and founding **Director of the Secure and Ethical AI Lab (SEAL)** starting **August 2026**.
 
-At CU Boulder, I plan to build a research group at the intersection of natural language processing, information integrity, and AI safety — with a particular focus on:
+At CU Boulder, **SEAL** will pursue four interconnected research directions:
 
-- **Multilingual & low-resource NLP** — extending state-of-the-art systems beyond English into the long tail of underrepresented languages
-- **Harmful content detection & mis/disinformation** — building robust, equitable detection systems that work across dialects, languages, and modalities
-- **Adversarial ML & AI safety** — understanding and mitigating evolving threats to language and content systems
-- **Equity in AI** — ensuring that AI capabilities reach communities historically underserved by language technology
+- **Multilingual NLP & Low-Resource AI** — extending model capabilities to underserved languages, dialects, and creoles, with particular emphasis on Caribbean and African diaspora varieties
+- **Trustworthy AI & Information Integrity** — investigating how foundation models generate, propagate, and detect harmful content
+- **Ethical, Equitable & Human-Centered AI** — developing socio-technical frameworks for responsible model development
+- **AI Safety & Robustness** — building dialect-aware safety guardrails, contamination-resistant benchmarks, and adversarial evaluations
 
 I am deeply grateful to my advisor [Dr. Dongwon Lee](https://pike.psu.edu/dongwon/), the [PIKE Research Lab](https://pike.psu.edu/), the [College of IST](https://ist.psu.edu/), the [NSF LinDiv](https://lindiv.la.psu.edu/) program, my collaborators at [MIT Lincoln Laboratory](https://www.ll.mit.edu/) and [Lawrence Livermore National Laboratory](https://www.llnl.gov/), and my family, mentors, and friends for their support throughout my doctoral journey.
 

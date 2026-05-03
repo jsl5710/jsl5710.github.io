@@ -1,6 +1,10 @@
 {{/* Plausible Analytics — privacy-friendly, cookie-free traffic analytics. */}}
 {{/* Activates only on production builds (hugo --environment production). */}}
-{{/* Set up: register your domain at https://plausible.io and confirm tracking. */}}
 {{ if hugo.IsProduction }}
-<script defer data-domain="jasonslucas.com" src="https://plausible.io/js/script.js"></script>
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-eutxIhKRcYp0XStqtbEL3.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
 {{ end }}

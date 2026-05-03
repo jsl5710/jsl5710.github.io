@@ -10,10 +10,10 @@ name:
 status:
   icon: "☕️"
 
-role: Ph.D. Candidate in Informatics · Incoming Tenure-Track Assistant Professor at CU Boulder (Aug 2026)
+role: Ph.D. Candidate · Incoming Assistant Professor & Director, Secure and Ethical AI Lab (SEAL) — CU Boulder (Aug 2026)
 
 bio: |
-  I am a PhD candidate in Informatics in the [College of IST](https://ist.psu.edu/) at Penn State University, where I conduct research at the [PIKE Research Lab](https://pike.psu.edu/) under the guidance of [Dr. Dongwon Lee](https://pike.psu.edu/dongwon/). Starting **August 2026**, I will join the [Department of Information Science](https://www.colorado.edu/cmci/academics/information-science) at the [College of Media, Communication and Information (CMCI)](https://www.colorado.edu/cmci/), [University of Colorado Boulder](https://www.colorado.edu/), as a **Tenure-Track Assistant Professor**. I specialize in AI/ML research focused on Information Integrity, Safe and Ethical AI, including combating harmful content across multiple languages and modalities. My research spans low-resource multilingual NLP, generative AI, and adversarial machine learning, with work extending across 79 languages. I have published 13 papers with 315+ citations in premier venues including ACL, EMNLP, IEEE, and NAACL.
+  I am a PhD candidate in Informatics in the [College of IST](https://ist.psu.edu/) at Penn State University, where I conduct research at the [PIKE Research Lab](https://pike.psu.edu/) under the guidance of [Dr. Dongwon Lee](https://pike.psu.edu/dongwon/). Starting **August 2026**, I will join the [Department of Information Science](https://www.colorado.edu/cmdi/) at the [College of Media, Communication and Information (CMDI)](https://www.colorado.edu/cmdi/), [University of Colorado Boulder](https://www.colorado.edu/), as a **Tenure-Track Assistant Professor** and founding **Director of the Secure and Ethical AI Lab (SEAL)**. My research advances trustworthy and equitable AI for the world's languages and communities — spanning multilingual NLP, low-resource and dialectal language technology, AI safety, and information integrity, with work extending across 70+ languages. I have authored 14+ peer-reviewed papers with 315+ citations in premier venues including ACL, EMNLP, NAACL, ICML, and IEEE.
 
   My doctoral research focuses on bridging the digital language divide through transfer learning, classification (NLU), generation (NLG), adversarial attacks, and developing end-to-end AI pipelines using RAG and Agentic AI workflows for combating multilingual threats. Drawing from my Grenadian background and knowledge of local Creole languages, I bring a global perspective to AI challenges, working to democratize state-of-the-art AI capabilities for underserved linguistic communities worldwide. My mission is to develop robust multilingual multimodal systems and mitigate evolving security vulnerabilities while enhancing access to human language technology through cutting-edge solutions.
 
@@ -25,20 +25,20 @@ highlight_name: true
 affiliations:
   - name: Penn State University
     url: https://www.psu.edu/
-  - name: Incoming — CU Boulder (Aug 2026)
-    url: https://www.colorado.edu/cmci/academics/information-science
+  - name: Incoming — CU Boulder · Information Science · CMDI (Aug 2026)
+    url: https://www.colorado.edu/cmdi/
 
 interests:
-  - Low-Resource Multilingual NLP
+  - Multilingual NLP & Low-Resource AI
+  - Trustworthy AI & Information Integrity
+  - AI Safety & Robustness
+  - Ethical, Equitable & Human-Centered AI
+  - Dialect-Aware Safety Guardrails
+  - Adversarial ML & Jailbreaking
   - Large Language Models (LLMs)
-  - Safe AI & Adversarial ML
   - Generative AI, Agentic AI & RAG
-  - Classification & Generation
-  - Transfer Learning & Model Adaptation
-  - Prompt Engineering & Context Learning
-  - DeepFake, Jailbreaking & Hallucination
-  - Multilingual Obfuscation & Attribution
-  - Multilingual Scientific Reasoning
+  - Caribbean & Diaspora Language Technologies
+  - Disinformation Detection
 
 education:
   - degree: Ph.D. in Informatics
@@ -59,16 +59,27 @@ education:
     year: 2010
 
 experience:
-  - role: Graduate Assistant
-    org: Penn State University
+  - role: Senior Researcher, JSALT 2026 Workshop
+    org: Johns Hopkins University · Center for Language and Speech Processing
+    start: '2026-06-01'
+    end: '2026-08-01'
+    summary: |
+      Selected for the invitation-only 12th Frederick Jelinek Memorial Workshop. Leading research on **uncertainty-aware LLM-based health coaching agents** with human oversight for sustainable behavior change.
+  - role: Doctoral Researcher · Amazon Nova AI Challenge (Team Lion-0xA)
+    org: Penn State × Amazon
+    start: '2026-02-01'
+    summary: |
+      One of **10 global finalist teams** from hundreds of applicants worldwide ($250K team sponsorship). Red-team researcher probing agentic AI systems for adversarial vulnerabilities in multi-step software-engineering tasks.
+  - role: Graduate Research Assistant · PIKE Lab
+    org: Penn State University · College of IST
     start: '2021-08-01'
     summary: |
       Responsibilities include:
-      - Lead ML/NLP research combating harmful content across 79 languages
-      - Published 13 papers (315+ citations) in ACL, EMNLP, NAACL, IEEE
-      - Mentor 5+ interns and manage 3 computing courses (150+ students)
-      - Develop end-to-end AI pipelines using PyTorch, HuggingFace, cloud APIs
-      - NSF Fellow: $9K funding for interdisciplinary AI research
+      - Lead multilingual NLP research spanning 70+ languages on disinformation detection, harmful-content classification, and AI safety guardrails
+      - Authored 14+ peer-reviewed papers (315+ citations) in ACL, EMNLP, NAACL, ICML, IEEE
+      - Built methods for dialectal evasion attacks and defenses against safety-aligned LLMs (DIA-HARM, DIA-Guard, SHIELD, BLUFF benchmarks)
+      - Co-authored 3 NSF and NIH grant proposals; mentored 8+ research mentees
+      - NSF NRT LinDiv Fellow (2022–2024)
   - role: DSSI Graduate Research Intern
     org: Lawrence Livermore National Lab
     start: '2025-05-01'
