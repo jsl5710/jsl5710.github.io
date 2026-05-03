@@ -429,67 +429,89 @@
             {{ end }}
             <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">{{ $education_heading | markdownify }}</h3>
           </div>
-          {{/* LOCAL OVERRIDE: tighter education cards (smaller padding, icon, text) */}}
-          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
-            {{ range $education }}
-            {{ if reflect.IsMap . }}
-            {{ $degree := "" }}
-            {{ $degreeRaw := index . "degree" | default (index . "area") }}
-            {{ if ne $degreeRaw nil }}{{ $degree = printf "%v" $degreeRaw }}{{ end }}
-            {{ $year := "" }}
-            {{ with index . "year" }}{{ $year = printf "%v" . }}{{ end }}
-            {{ $start := "" }}
-            {{ with index . "start" }}{{ $start = printf "%v" . }}{{ end }}
-            {{ $end := "" }}
-            {{ with index . "end" }}{{ $end = printf "%v" . }}{{ end }}
-            {{ $institution := "" }}
-            {{ with index . "institution" }}{{ $institution = printf "%v" . }}{{ end }}
-            {{/* LOCAL OVERRIDE: support optional `url` field on education entries */}}
-            {{ $institution_url := "" }}
-            {{ with index . "url" }}{{ $institution_url = printf "%v" . }}{{ end }}
-            {{ $icon := "" }}
-            {{ $iconRaw := index . "icon" }}
-            {{ if eq (printf "%T" $iconRaw) "string" }}
-              {{ $icon = $iconRaw }}
-            {{ end }}
-            <div class="group h-full flex flex-col bg-gradient-to-br from-white/90 to-primary-50/30 dark:from-gray-800/90 dark:to-primary-900/20 rounded-lg p-3 shadow-sm hover:shadow-md transition-all duration-300 border border-transparent hover:border-primary-200 dark:hover:border-primary-800 backdrop-blur-md">
-              <div class="flex gap-2.5">
-                <div class="flex-shrink-0 w-8 h-8 bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700 rounded-full flex items-center justify-center shadow-sm">
-                  {{ if $icon }}
-                    {{ partial "functions/get_icon" (dict "name" $icon "attributes" "class='w-4 h-4 text-primary-600 dark:text-primary-400'") }}
-                  {{ else }}
-                    {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "class='w-4 h-4 text-primary-600 dark:text-primary-400'") }}
-                  {{ end }}
+          {{/* LOCAL OVERRIDE: vertical timeline matching resume-experience style */}}
+          <div class="relative">
+            {{/* Gradient timeline line */}}
+            <div class="absolute left-4 sm:left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-secondary-500 via-secondary-400 to-secondary-600/50"></div>
+
+            <div class="space-y-6">
+              {{ range $education }}
+              {{ if reflect.IsMap . }}
+              {{ $degree := "" }}
+              {{ $degreeRaw := index . "degree" | default (index . "area") }}
+              {{ if ne $degreeRaw nil }}{{ $degree = printf "%v" $degreeRaw }}{{ end }}
+              {{ $year := "" }}
+              {{ with index . "year" }}{{ $year = printf "%v" . }}{{ end }}
+              {{ $start := "" }}
+              {{ with index . "start" }}{{ $start = printf "%v" . }}{{ end }}
+              {{ $end := "" }}
+              {{ with index . "end" }}{{ $end = printf "%v" . }}{{ end }}
+              {{ $institution := "" }}
+              {{ with index . "institution" }}{{ $institution = printf "%v" . }}{{ end }}
+              {{/* LOCAL OVERRIDE: support optional `url` field on education entries */}}
+              {{ $institution_url := "" }}
+              {{ with index . "url" }}{{ $institution_url = printf "%v" . }}{{ end }}
+              {{ $icon := "" }}
+              {{ $iconRaw := index . "icon" }}
+              {{ if eq (printf "%T" $iconRaw) "string" }}
+                {{ $icon = $iconRaw }}
+              {{ end }}
+
+              {{/* Card wrapper with timeline marker */}}
+              <div class="group relative pl-12 sm:pl-16">
+                {{/* Timeline marker (glowing dot) */}}
+                <div class="absolute left-0 sm:left-2 top-5 flex items-center justify-center">
+                  <div class="relative">
+                    <div class="absolute inset-0 w-8 h-8 bg-secondary-500/30 rounded-full blur-md group-hover:bg-secondary-500/50 transition-all duration-300"></div>
+                    <div class="relative w-8 h-8 bg-white dark:bg-gray-900 border-2 border-secondary-500 rounded-full flex items-center justify-center group-hover:border-secondary-400 group-hover:scale-110 transition-all duration-300">
+                      {{ if $icon }}
+                        {{ partial "functions/get_icon" (dict "name" $icon "attributes" "class='w-4 h-4 text-secondary-600 dark:text-secondary-400'") }}
+                      {{ else }}
+                        {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "class='w-4 h-4 text-secondary-600 dark:text-secondary-400'") }}
+                      {{ end }}
+                    </div>
+                  </div>
                 </div>
-                <div class="flex-1 flex-grow min-w-0">
-                  {{ if $degree }}
-                  <p class="text-sm font-semibold leading-snug text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-                    {{ $degree }}
-                  </p>
-                  {{ end }}
-                  {{ if $year }}
-                    <p class="text-gray-500 dark:text-gray-400 text-xs mt-0.5">{{ $year }}</p>
-                  {{ else if $start }}
-                    <p class="text-gray-500 dark:text-gray-400 text-xs mt-0.5">
-                      {{ $start }}
-                      {{ if $end }}<br>{{ $end }}{{ end }}
-                    </p>
-                  {{ end }}
-                  {{ if $institution }}
-                    {{/* LOCAL OVERRIDE: wrap institution in <a> when url is provided */}}
-                    {{ if $institution_url }}
-                      <p class="text-gray-700 dark:text-gray-300 text-xs mt-0.5">
-                        <a href="{{ $institution_url | safeURL }}" target="_blank" rel="noopener" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors underline-offset-2 hover:underline">{{ $institution }}</a>
-                      </p>
-                    {{ else }}
-                      <p class="text-gray-700 dark:text-gray-300 text-xs mt-0.5">{{ $institution }}</p>
+
+                {{/* Content card */}}
+                <div class="relative bg-white dark:bg-white/[0.02] backdrop-blur-sm rounded-xl border border-gray-200 dark:border-white/[0.06] p-4 sm:p-5 hover:bg-gray-50 dark:hover:bg-white/[0.04] hover:border-secondary-300 dark:hover:border-secondary-500/30 transition-all duration-300 group-hover:translate-x-1 shadow-sm dark:shadow-none">
+                  <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+                    <div class="min-w-0 flex-1">
+                      {{ if $degree }}
+                        <h4 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white group-hover:text-secondary-600 dark:group-hover:text-secondary-400 transition-colors leading-snug">{{ $degree }}</h4>
+                      {{ end }}
+                      {{ if $institution }}
+                        {{ if $institution_url }}
+                          <p class="text-secondary-600 dark:text-secondary-400 font-medium mt-1 text-sm sm:text-base">
+                            <a href="{{ $institution_url | safeURL }}" target="_blank" rel="noopener" class="hover:underline underline-offset-2">{{ $institution }}</a>
+                          </p>
+                        {{ else }}
+                          <p class="text-secondary-600 dark:text-secondary-400 font-medium mt-1 text-sm sm:text-base">{{ $institution }}</p>
+                        {{ end }}
+                      {{ end }}
+                    </div>
+
+                    {{/* Date badge */}}
+                    {{ if or $year $start }}
+                    <div class="flex items-center gap-2 text-xs sm:text-sm text-gray-500 dark:text-gray-400 shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                      <time>
+                        {{ if $year }}
+                          {{ $year }}
+                        {{ else if $start }}
+                          {{ $start }}{{ if $end }} – {{ $end }}{{ end }}
+                        {{ end }}
+                      </time>
+                    </div>
                     {{ end }}
-                  {{ end }}
+                  </div>
                 </div>
               </div>
+              {{ end }}
+              {{ end }}
             </div>
-            {{ end }}
-            {{ end }}
           </div>
         </div>
         {{ end }}
