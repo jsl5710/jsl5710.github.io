@@ -3,17 +3,17 @@ slug: admin
 is_owner: true
 
 name:
-  display: Jason Lucas
+  display: Jason S. Lucas, Ph.D.
   given: Jason
   family: Lucas
 
 status:
   icon: "☕️"
 
-role: Ph.D. Candidate · Incoming Assistant Professor & Director, Secure and Ethical AI Lab (SEAL) — CU Boulder (Aug 2026)
+role: Incoming Tenure-Track Assistant Professor & Director, Secure and Ethical AI Lab (SEAL) — CU Boulder (Aug 2026)
 
 bio: |
-  I am a PhD candidate in Informatics in the [College of IST](https://ist.psu.edu/) at Penn State University, where I conduct research at the [PIKE Research Lab](https://pike.psu.edu/) under the guidance of [Dr. Dongwon Lee](https://pike.psu.edu/dongwon/). Starting **August 2026**, I will join the [Department of Information Science](https://www.colorado.edu/cmdi/) at the [College of Media, Communication and Information (CMDI)](https://www.colorado.edu/cmdi/), [University of Colorado Boulder](https://www.colorado.edu/), as a **Tenure-Track Assistant Professor** and founding **Director of the Secure and Ethical AI Lab (SEAL)**. My research advances trustworthy and equitable AI for the world's languages and communities — spanning multilingual NLP, low-resource and dialectal language technology, AI safety, and information integrity, with work extending across 70+ languages. I have authored 14+ peer-reviewed papers with 315+ citations in premier venues including ACL, EMNLP, NAACL, ICML, and IEEE.
+  I recently completed my Ph.D. in Informatics at Penn State University (defended May 2026; formal conferral August 2026), where I conducted research at the [PIKE Research Lab](https://pike.psu.edu/) under [Dr. Dongwon Lee](https://pike.psu.edu/dongwon/) and the [College of IST](https://ist.psu.edu/). Starting **August 2026**, I will join the [Department of Information Science](https://www.colorado.edu/cmdi/) at the [College of Media, Communication and Information (CMDI)](https://www.colorado.edu/cmdi/), [University of Colorado Boulder](https://www.colorado.edu/), as a **Tenure-Track Assistant Professor** and founding **Director of the Secure and Ethical AI Lab (SEAL)**. My research advances trustworthy and equitable AI for the world's languages and communities — spanning multilingual NLP, low-resource and dialectal language technology, AI safety, and information integrity, with work extending across 70+ languages. I have authored 14+ peer-reviewed papers with 315+ citations in premier venues including ACL, EMNLP, NAACL, ICML, KDD, and IEEE.
 
   My doctoral research focuses on bridging the digital language divide through transfer learning, classification (NLU), generation (NLG), adversarial attacks, and developing end-to-end AI pipelines using RAG and Agentic AI workflows for combating multilingual threats. Drawing from my Grenadian background and knowledge of local Creole languages, I bring a global perspective to AI challenges, working to democratize state-of-the-art AI capabilities for underserved linguistic communities worldwide. My mission is to develop robust multilingual multimodal systems and mitigate evolving security vulnerabilities while enhancing access to human language technology through cutting-edge solutions.
 
@@ -44,7 +44,7 @@ education:
   - degree: Ph.D. in Informatics
     institution: The Pennsylvania State University
     url: https://www.psu.edu/
-    year: 2026 (defending May; conferral August)
+    year: 2026 (defended May; conferral August)
   - degree: M.P.H., Concentration in Epidemiology
     institution: St. George's University
     url: https://www.sgu.edu/
