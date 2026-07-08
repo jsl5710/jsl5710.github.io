@@ -52,6 +52,11 @@ projects:
 slides: ""
 ---
 
+> 🏆 **Social Impact Paper Award — ACL 2026**, San Diego, July 2–7, 2026.
+
+![Award ceremony at ACL 2026](award.png)
+![Award recipients slide showing DIA-HARM](award-slide.png)
+
 **DIA-HARM** investigates the robustness of harmful content detection systems across **50 English dialects**, addressing critical equity gaps in automated content moderation.
 
 Key contributions include:
