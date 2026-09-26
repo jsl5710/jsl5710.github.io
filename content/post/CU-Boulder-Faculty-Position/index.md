@@ -8,7 +8,7 @@ image:
   preview_only: false
 ---
 
-I am thrilled to share that I will be joining the [Department of Information Science](https://www.colorado.edu/cmdi/) at the [College of Media, Communication and Information (CMDI)](https://www.colorado.edu/cmdi/), [University of Colorado Boulder](https://www.colorado.edu/), as a **Tenure-Track Assistant Professor** and founding **Director of the Secure and Ethical AI Lab (SEAL)** starting **August 2026**.
+I am thrilled to share that I will be joining the [Department of Information Science](https://www.colorado.edu/cmdi/) at the [College of Communication, Media, Design, and Information (CMDI)](https://www.colorado.edu/cmdi/), [University of Colorado Boulder](https://www.colorado.edu/), as a **Tenure-Track Assistant Professor** and founding **Director of the Secure and Ethical AI Lab (SEAL)** starting **August 2026**.
 
 At CU Boulder, **SEAL** will pursue four interconnected research directions:
 
