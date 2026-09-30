@@ -12,7 +12,7 @@ sections:
 
         The world is multilingual; its digital infrastructure is not. Of the roughly seven thousand languages spoken today, fewer than twenty account for the overwhelming majority of digital content, and English alone accounts for over half. This asymmetry — the **digital language divide** — shapes who AI systems protect, who they fail, and who they leave exploitable.
 
-        My research, anchored at the [**Secure and Ethical AI Lab (SEAL)**](https://www.colorado.edu/cmdi/) at CU Boulder, addresses these challenges at the intersection of AI, NLP, and security — building trustworthy systems that protect both technology and the communities that use it, regardless of language or resources.
+        My research, anchored at the [**Secure and Ethical AI Lab (SEAL)**](https://sealresearchlab.com/) at CU Boulder, addresses these challenges at the intersection of AI, NLP, and security — building trustworthy systems that protect both technology and the communities that use it, regardless of language or resources.
     design:
       columns: '1'
 

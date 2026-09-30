@@ -1,0 +1,77 @@
+{{/*
+  Render a `type: landing` page's blocks in the site's own visual language.
+
+  The block content lives in front matter, not the page body, so this walks
+  .Params.sections rather than using .Content. Only the block types these
+  pages actually use are handled -- markdown, and collection, which falls
+  back to listing the section's child pages.
+
+  Doing it this way means /research/ and /service/ keep their curated block
+  content exactly as written; only the presentation changes.
+*/}}
+{{- $page := . -}}
+
+<div class="mx-auto max-w-4xl px-6 lg:px-8 py-16 lg:py-24">
+
+  <header class="mb-14">
+    <h1 class="text-3xl lg:text-4xl font-semibold tracking-tight">{{ $page.Title }}</h1>
+  </header>
+
+  {{ range $page.Params.sections }}
+    {{ $c := .content | default dict }}
+
+    {{ if eq .block "markdown" }}
+      <section {{ with .id }}id="{{ . }}"{{ end }} class="mb-14">
+        {{ with $c.title }}
+          {{ partial "home_rule.html" (dict "title" .) }}
+        {{ end }}
+        {{ with $c.text }}
+          <div class="prose dark:prose-invert max-w-prose
+                      prose-headings:font-semibold prose-headings:tracking-tight
+                      prose-a:underline prose-a:decoration-1 prose-a:underline-offset-4">
+            {{ . | markdownify }}
+          </div>
+        {{ end }}
+      </section>
+
+    {{ else if eq .block "collection" }}
+      <section {{ with .id }}id="{{ . }}"{{ end }} class="mb-14">
+        {{ with $c.title }}
+          {{ partial "home_rule.html" (dict "title" .) }}
+        {{ end }}
+        <ul class="divide-y divide-current/10 border-t border-current/10">
+          {{ range $page.RegularPages.ByDate.Reverse }}
+            <li class="py-6 sm:flex sm:gap-8">
+              <p class="sm:w-28 shrink-0 text-sm opacity-50 tabular-nums">{{ .Date.Format "Jan 2006" }}</p>
+              <div class="mt-1 sm:mt-0 min-w-0">
+                <h2 class="text-lg font-medium leading-snug">
+                  <a href="{{ .RelPermalink }}" class="hover:underline decoration-1 underline-offset-4">{{ .Title }}</a>
+                </h2>
+                {{ with .Params.summary }}
+                  <p class="mt-2 text-sm leading-relaxed opacity-70 max-w-prose">{{ . }}</p>
+                {{ end }}
+              </div>
+            </li>
+          {{ end }}
+        </ul>
+      </section>
+    {{ end }}
+  {{ end }}
+
+  {{/* Child pages that no collection block already listed (e.g. the statements). */}}
+  {{ $hasCollection := false }}
+  {{ range $page.Params.sections }}{{ if eq .block "collection" }}{{ $hasCollection = true }}{{ end }}{{ end }}
+  {{ if and (not $hasCollection) $page.RegularPages }}
+    <section class="mb-6">
+      {{ partial "home_rule.html" (dict "title" "Pages") }}
+      <ul class="divide-y divide-current/10 border-t border-current/10">
+        {{ range $page.RegularPages.ByTitle }}
+          <li class="py-5">
+            <a href="{{ .RelPermalink }}" class="text-lg font-medium hover:underline decoration-1 underline-offset-4">{{ .Title }}</a>
+            {{ with .Params.summary }}<p class="mt-1 text-sm opacity-70 max-w-prose">{{ . }}</p>{{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+</div>

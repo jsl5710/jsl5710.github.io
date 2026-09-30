@@ -1,16 +1,35 @@
 # Navigation Links
 #   To link a homepage section, specify the URL as a hash `#` followed by the
-#   section id from content/_index.md (e.g. '/#about').
+#   section id from layouts/landing/list.html (e.g. '/#about').
 #   `weight` controls the order. Use `parent:` to create a dropdown.
+#
+# Structure: the scholarly record — publications, projects, talks — sits at the
+# top level. Burying them in a dropdown made the things people actually come
+# for take two clicks and a guess. Dropdowns now hold only the supporting
+# material: written statements, and secondary activity pages.
 
 main:
   - name: About
     url: '/#about'
     weight: 10
 
-  # Research dropdown ----------------------------------------------------
-  - name: Research
+  # Primary outputs — top level, and pointing at the full listings rather than
+  # a homepage excerpt, since those pages carry every entry.
+  - name: Publications
+    url: '/publication/'
     weight: 20
+
+  - name: Projects
+    url: '/project/'
+    weight: 30
+
+  - name: Talks
+    url: '/event/'
+    weight: 40
+
+  # Research dropdown — the written statements only
+  - name: Research
+    weight: 50
     identifier: research
   - name: Research Overview
     url: '/research/'
@@ -28,48 +47,32 @@ main:
     url: '/research/mentorship-statement/'
     parent: research
     weight: 4
-  - name: Publications
-    url: '/#featured'
-    parent: research
-    weight: 5
-  - name: Projects
-    url: '/#projects'
-    parent: research
-    weight: 6
-  - name: Talks
-    url: '/#talks'
-    parent: research
-    weight: 7
 
-  # Activities dropdown --------------------------------------------------
+  # Activities dropdown — secondary material
   - name: Activities
-    weight: 30
+    weight: 60
     identifier: activities
   - name: Experience
     url: '/#experience'
     parent: activities
     weight: 1
-  - name: Skills
-    url: '/#skills'
+  - name: News
+    url: '/post/'
     parent: activities
     weight: 2
   - name: Service
-    url: '/#service'
+    url: '/service/'
     parent: activities
     weight: 3
-  - name: News
-    url: '/#posts'
-    parent: activities
-    weight: 4
   - name: Gallery
     url: '/gallery/'
     parent: activities
-    weight: 5
+    weight: 4
 
   - name: Contact
     url: '/#contact'
-    weight: 40
+    weight: 70
 
   - name: CV
     url: uploads/jsl_cv.pdf
-    weight: 50
+    weight: 80

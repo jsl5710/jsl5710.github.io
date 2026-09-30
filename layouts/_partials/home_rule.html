@@ -1,0 +1,10 @@
+{{/* Section heading: small caps label, hairline rule, optional "more" link. */}}
+<div class="mb-5 flex items-baseline gap-4">
+  <h2 class="text-xs font-semibold uppercase tracking-[0.18em] opacity-60">{{ .title }}</h2>
+  <span class="h-px flex-1 bg-current/15"></span>
+  {{ with .href }}
+    <a href="{{ . }}" class="text-xs opacity-50 hover:opacity-100 transition-opacity whitespace-nowrap">
+      {{ $.more }} →
+    </a>
+  {{ end }}
+</div>

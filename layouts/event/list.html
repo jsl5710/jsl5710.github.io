@@ -1,0 +1,3 @@
+{{- define "main" -}}
+  {{ partial "section_list.html" (dict "page" . "pages" .RegularPages.ByDate.Reverse) }}
+{{- end -}}

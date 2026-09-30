@@ -1,0 +1,61 @@
+{{/*
+  Section listing in the homepage's visual language: a small-caps label over
+  a hairline rule, then rows separated by hairlines rather than cards.
+
+  Shared by project / event / post / publication listings so they read as one
+  site. Each section supplies only its own thin list.html wrapper.
+*/}}
+{{- $pages := .pages -}}
+{{- $page := .page -}}
+
+<div class="mx-auto max-w-4xl px-6 lg:px-8 py-16 lg:py-24">
+
+  <header class="mb-12">
+    <h1 class="text-3xl lg:text-4xl font-semibold tracking-tight">{{ $page.Title }}</h1>
+    {{ with $page.Params.summary }}
+      <p class="mt-3 max-w-prose leading-relaxed opacity-70">{{ . }}</p>
+    {{ end }}
+    {{ with $page.Content }}
+      <div class="mt-4 prose dark:prose-invert max-w-prose">{{ . }}</div>
+    {{ end }}
+    <p class="mt-6 text-xs uppercase tracking-[0.18em] opacity-50">
+      {{ len $pages }} {{ if eq (len $pages) 1 }}entry{{ else }}entries{{ end }}
+    </p>
+  </header>
+
+  <ul class="divide-y divide-current/10 border-t border-current/10">
+    {{ range $pages }}
+      <li class="py-6 sm:flex sm:gap-8">
+        <p class="sm:w-28 shrink-0 text-sm opacity-50 tabular-nums">
+          {{ .Date.Format "Jan 2006" }}
+        </p>
+
+        <div class="mt-1 sm:mt-0 min-w-0">
+          <h2 class="text-lg font-medium leading-snug">
+            <a href="{{ .RelPermalink }}"
+               class="hover:underline decoration-1 underline-offset-4">{{ .Title }}</a>
+          </h2>
+
+          {{/* Events carry venue and location where other sections carry a summary. */}}
+          {{ with .Params.event }}
+            <p class="mt-1 text-sm opacity-60">
+              {{ . }}{{ with $.page.Scratch }}{{ end }}
+              {{ with $.Params.location }} · {{ . }}{{ end }}
+            </p>
+          {{ end }}
+          {{ with .Params.location }}
+            {{ if not $.Params.event }}<p class="mt-1 text-sm opacity-60">{{ . }}</p>{{ end }}
+          {{ end }}
+
+          {{ with .Params.summary }}
+            <p class="mt-2 text-sm leading-relaxed opacity-70 max-w-prose">{{ . }}</p>
+          {{ end }}
+        </div>
+      </li>
+    {{ end }}
+  </ul>
+
+  {{ if not $pages }}
+    <p class="py-10 text-sm opacity-60">Nothing here yet.</p>
+  {{ end }}
+</div>
