@@ -9,7 +9,7 @@ image:
 
 I am thrilled to share that on **May 11, 2026**, I successfully defended my Ph.D. dissertation at Penn State University!
 
-**Dissertation:** *Advancing Trustworthy AI Through Low-Resource Multilingual Natural Language Processing and Cybersecurity*
+**Dissertation:** [*Trustworthy AI for Language-Diverse Harmful Content: Attacks and Defenses in Multilingual NLP*](https://etda.libraries.psu.edu/catalog/25810jsl5710)
 
 **Advisor:** [Dr. Dongwon Lee](https://pike.psu.edu/dongwon/), College of IST, Penn State
 
