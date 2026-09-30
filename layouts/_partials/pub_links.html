@@ -1,0 +1,53 @@
+{{/*
+  Action links for one publication.
+
+  Sources are deliberately plural: older entries use the url_* front-matter
+  fields, newer ones use the `links:` array, and the DOI moved from a
+  top-level `doi` to hugoblox.ids.doi. Reading all of them means the row
+  works regardless of which era an entry was written in.
+*/}}
+{{- $p := . -}}
+{{- $out := slice -}}
+
+{{/* PDF — url_pdf, or a links entry of type pdf */}}
+{{- $pdf := $p.Params.url_pdf | default "" -}}
+{{- with $p.Params.links -}}
+  {{- range . -}}{{- if eq (.type | lower) "pdf" -}}{{- $pdf = .url -}}{{- end -}}{{- end -}}
+{{- end -}}
+{{- with $pdf }}{{ $out = $out | append (dict "label" "PDF" "url" .) }}{{ end -}}
+
+{{/* DOI — top-level, or the current hugoblox.ids location */}}
+{{- $doi := $p.Params.doi | default "" -}}
+{{- with $p.Params.hugoblox -}}
+  {{- with .ids -}}{{- with .doi -}}{{- $doi = . -}}{{- end -}}{{- end -}}
+{{- end -}}
+{{- with $doi }}
+  {{ $href := . }}
+  {{ if not (hasPrefix $href "http") }}{{ $href = printf "https://doi.org/%s" $href }}{{ end }}
+  {{ $out = $out | append (dict "label" "DOI" "url" $href) }}
+{{ end -}}
+
+{{- with $p.Params.url_code }}{{ $out = $out | append (dict "label" "Code" "url" .) }}{{ end -}}
+{{- with $p.Params.url_dataset }}{{ $out = $out | append (dict "label" "Dataset" "url" .) }}{{ end -}}
+{{- with $p.Params.url_poster }}{{ $out = $out | append (dict "label" "Poster" "url" .) }}{{ end -}}
+{{- with $p.Params.url_project }}{{ $out = $out | append (dict "label" "Project" "url" .) }}{{ end -}}
+{{- with $p.Params.url_slides }}{{ $out = $out | append (dict "label" "Slides" "url" .) }}{{ end -}}
+{{- with $p.Params.url_video }}{{ $out = $out | append (dict "label" "Video" "url" .) }}{{ end -}}
+
+{{/* Cite — Hugo Blox emits a cite.bib alongside every publication page. */}}
+{{- $out = $out | append (dict "label" "Cite" "url" (printf "%scite.bib" $p.RelPermalink)) -}}
+
+{{- if $out }}
+  <ul class="mt-3 flex flex-wrap gap-x-2 gap-y-2">
+    {{ range $out }}
+      <li>
+        <a href="{{ .url }}"
+           {{ if hasPrefix .url "http" }}target="_blank" rel="noopener noreferrer"{{ end }}
+           class="inline-block border border-current/20 px-2.5 py-1 text-xs tracking-wide
+                  opacity-70 hover:opacity-100 hover:border-current/50 transition-all">
+          {{ .label }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+{{- end -}}

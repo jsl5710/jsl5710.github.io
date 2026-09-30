@@ -1,0 +1,84 @@
+{{- define "main" -}}
+{{/*
+  Publications grouped by type, in the same visual language as the other
+  listings: a small-caps rule per group, hairline rows, year in the left
+  column.
+
+  Groups are driven by the CSL value in publication_types. Workshop papers
+  share the 'paper-conference' type with main-conference papers -- CSL has
+  no separate workshop type -- so they are split out by looking for
+  "Workshop" in the publication string, which is where that distinction
+  actually lives.
+
+  Each group is a <details>, so it collapses natively without JavaScript.
+  They start open: a publication list that hides itself until clicked is one
+  nobody reads, and this page is what people arrive at to find a paper.
+*/}}
+{{- $pages := .RegularPages -}}
+
+{{- $isWorkshop := slice -}}
+{{- $conf := slice -}}
+{{- range where $pages "Params.publication_types" "intersect" (slice "paper-conference") -}}
+  {{- $pub := printf "%v %v" (.Params.publication | default "") (.Params.publication_short | default "") -}}
+  {{- if or (in $pub "Workshop") (in $pub "workshop") -}}
+    {{- $isWorkshop = $isWorkshop | append . -}}
+  {{- else -}}
+    {{- $conf = $conf | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $groups := slice
+      (dict "label" "Journal Articles"  "items" (where $pages "Params.publication_types" "intersect" (slice "article-journal")))
+      (dict "label" "Book Chapters"     "items" (where $pages "Params.publication_types" "intersect" (slice "chapter")))
+      (dict "label" "Conference Papers" "items" $conf)
+      (dict "label" "Workshop Papers"   "items" $isWorkshop)
+      (dict "label" "Preprints"         "items" (where $pages "Params.publication_types" "intersect" (slice "article")))
+      (dict "label" "Theses"            "items" (where $pages "Params.publication_types" "intersect" (slice "thesis")))
+-}}
+
+<div class="mx-auto max-w-4xl px-6 lg:px-8 py-16 lg:py-24">
+
+  <header class="mb-12">
+    <h1 class="text-3xl lg:text-4xl font-semibold tracking-tight">{{ .Title }}</h1>
+    <p class="mt-6 text-xs uppercase tracking-[0.18em] opacity-50">
+      {{ len $pages }} publications
+    </p>
+  </header>
+
+  {{ range $groups }}
+    {{ if .items }}
+      <details open class="mb-12 group">
+        <summary class="cursor-pointer list-none mb-5 flex items-baseline gap-4">
+          <span class="text-xs font-semibold uppercase tracking-[0.18em] opacity-60">{{ .label }}</span>
+          <span class="text-xs opacity-40">{{ len .items }}</span>
+          <span class="h-px flex-1 bg-current/15"></span>
+          <span class="text-xs opacity-40 group-open:rotate-90 transition-transform" aria-hidden="true">›</span>
+        </summary>
+
+        {{/* Year sub-groups within each type, newest first. */}}
+        {{ range .items.ByDate.Reverse.GroupByDate "2006" }}
+          <div class="mb-8 last:mb-0">
+            <p class="mb-3 text-sm font-medium opacity-45 tabular-nums">{{ .Key }}</p>
+            <ul class="divide-y divide-current/10 border-t border-current/10">
+              {{ range .Pages }}
+                <li class="py-6">
+                  <h3 class="text-lg font-medium leading-snug">
+                    <a href="{{ .RelPermalink }}" class="hover:underline decoration-1 underline-offset-4">{{ .Title }}</a>
+                  </h3>
+                  {{ with .Params.publication }}
+                    <p class="mt-1 text-sm opacity-60">{{ . | markdownify }}</p>
+                  {{ end }}
+                  {{ with .Params.summary }}
+                    <p class="mt-2 text-sm leading-relaxed opacity-70 max-w-prose">{{ . }}</p>
+                  {{ end }}
+                  {{ partial "pub_links.html" . }}
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+      </details>
+    {{ end }}
+  {{ end }}
+</div>
+{{- end -}}
